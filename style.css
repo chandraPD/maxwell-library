@@ -105,6 +105,18 @@ ul.menuhead li a:hover {
 }
 
 /* Add Styline */
-.list-title h4 {
+.list-title {
     text-align: center;
+}
+.flex-content {
+    display: flex;
+    justify-content: center;
+}
+
+.list-content {
+    text-align: center;
+}
+
+.text {
+    border: 1px solid;
 }

@@ -48,15 +48,15 @@
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Apakah anda yakin ingin menghapus data ini?</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">Do you want to delete?</h5>
                   <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                   </button>
                 </div>
-                <div class="modal-body">Aplikasi yang anda hapus tidak dapat dikembalikan</div>
+                <div class="modal-body">If you delete this, you can't be returned</div>
                 <div class="modal-footer">
                   <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                  <a class="btn btn-danger" id="btn-delete" href="#" data-dismiss="modal"  data-toggle="modal" data-target="#BerhasilModal">Hapus</a>
+                  <a class="btn btn-danger" id="btn-delete" href="#" data-dismiss="modal"  data-toggle="modal" data-target="#BerhasilModal">Delete</a>
                 </div>
               </div>
             </div>
@@ -65,12 +65,12 @@
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Data Anda Berhasil Dihapus</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">Delete Complete!</h5>
                   <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                   </button>
                 </div>
-                <div class="modal-body"><img class="check" src="assets/check.png"></div><p>Data sudah dihapus</p>
+                <div class="modal-body"><img class="check" src="assets/check.png"></div><p>Data has been deleted</p>
                 <div class="modal-footer">
                   <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>                 
                 </div>
@@ -81,12 +81,12 @@
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Data Anda Berhasil Disave</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">Save Complete!</h5>
                   <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                   </button>
                 </div>
-                <div class="modal-body"><img class="check" src="assets/check.png"></div><p>Data sudah disave</p>
+                <div class="modal-body"><img class="check" src="assets/check.png"></div><p>Data already saved</p>
                 <div class="modal-footer">
                   <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>                 
                 </div>
@@ -126,7 +126,7 @@
                             <div class="text">Description</div>
                         </div>
                         <div class="col-sm-10">
-                            <textarea name="txtcomment" id="txtcomment" cols="50" rows="5" placeholder="Book Description"></textarea>
+                            <textarea name="txtcomment" id="txtcomment" cols="50" rows="5" placeholder="Type Here"></textarea>
                         </div>
                     </div>
                 </div>
@@ -167,6 +167,9 @@
                     </div>
 
                     <!--Adding list books-->
+                    <div class="list-title">
+                      <h4>Recomended</h4>
+                    </div>
                     <div class="d-flex justify-content-center">
                       <div class="list-content">
                         <div class="card" style="width: 18rem;">

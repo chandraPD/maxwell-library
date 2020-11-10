@@ -36,16 +36,16 @@
             <h1 class="form-title">Login</h1>
             <p class="form-subtitle">Welcome Back, Please Login to your Account</p>
 
-            <form action="#">
+            <form action="#" id="loginForm">
               <div class="container-form">
-                <div class="custom-form-group bottom-label">
+                <div class="form-group bottom-label">
                   <label for="exampleInputEmail1" class="label-login">Email address</label>
-                  <input type="email" class="form-control custom-form" id="exampleInputEmail1"
+                  <input type="email" name="email" class="form-control custom-form" id="exampleInputEmail1"
                     placeholder="Enter email">
                 </div>
-                <div class="custom-form-group bottom-label">
+                <div class="form-group bottom-label">
                   <label for="exampleInputPassword1" class="label-login">Password</label>
-                  <input type="password" class="form-control custom-form" id="exampleInputPassword1"
+                  <input type="password" name="password" class="form-control custom-form" id="exampleInputPassword1"
                     placeholder="Password">
                 </div>
               </div>
@@ -57,7 +57,7 @@
               </div>
               <div class="container-btn">
                 <div class="row">
-                  <input name="login" id="login" class="btn login-btn" type="button" value="Login" />
+                  <input name="login" id="login" class="btn login-btn" type="submit" value="Login" />
                   <input name="signup" id="signup" class="btn signup-btn" type="button" value="Sign Up" onclick="displaySignUp()" />
                 </div>
               </div>
@@ -70,7 +70,7 @@
             <h1 class="form-title">Register</h1>
             <p class="form-subtitle">Welcome! Please Register to your Account</p>
 
-            <form role="form">
+            <form role="form" id="formRegister">
               <div class="container-form">
                   <div class="custom-form-group">
                       <label for="inputUsername" class="label-login">Username</label>
@@ -135,6 +135,18 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
+  <!-- jQuery -->
+<script src="../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- jquery-validation -->
+<script src="../plugins/jquery-validation/jquery.validate.min.js"></script>
+<script src="../plugins/jquery-validation/additional-methods.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../dist/js/demo.js"></script>
+
   <script>
     var login = document.getElementById("login");
     var register = document.getElementById("register");
@@ -158,6 +170,51 @@
       forgotPassword.style.display="block";
     }
 
+  </script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $.validator.setDefaults({
+      submitHandler: function () {
+        alert( "Form successful submitted!" );
+      }
+    });
+    $('#loginForm').validate({
+      rules: {
+        email: {
+          required: true,
+          email: true,
+        },
+        password: {
+          required: true,
+        },
+        terms: {
+          required: true
+        },
+      },
+      messages: {
+        email: {
+          required: "Please enter a email address",
+          email: "Please enter a valid email address"
+        },
+        password: {
+          required: "Please provide a password",
+        },
+        terms: "Please accept our terms"
+      },
+      errorElement: 'span',
+      errorPlacement: function (error, element) {
+        error.addClass('invalid-feedback');
+        element.closest('.form-group').append(error);
+      },
+      highlight: function (element, errorClass, validClass) {
+        $(element).addClass('is-invalid');
+      },
+      unhighlight: function (element, errorClass, validClass) {
+        $(element).removeClass('is-invalid');
+      }
+    });
+  });
   </script>
 
 </body>

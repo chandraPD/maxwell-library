@@ -19,9 +19,9 @@ p{
 
 img.big-preview{
     background-size: cover;
-    background-image: url(/assets/background.png);
+    background-image: url(../assets/background.png);
     max-height: 350px;
-    max-width: 1200px;
+    max-width: 100%;
     
 }
 
@@ -49,8 +49,8 @@ h1.titletext{
 }
 
 a#button_borrow{
-    position: absolute;    
-    top: 85%;
+    position: absolute;      
+    top: 65%;
     left: 80%;    
     color: white;   
     font-size: 25px; 
@@ -78,7 +78,7 @@ p.date{
 }
 
 img.small-preview{
-    top: 45%;
+    top: 35%;
     left: 90%;
     transform: translate(-50%,-50%);
     position: absolute;    
@@ -88,7 +88,7 @@ img.small-preview{
 }
 
 ul.menuhead{    
-    margin-left: 1000px;
+    margin-left: 900px;
     float: right;
 }
 
@@ -102,4 +102,192 @@ ul.menuhead li{
 ul.menuhead li a:hover {
     background-color: transparent;
     color: blue;
+}
+
+.list-title{
+    margin-top: 30px;
+    margin-left: 70px;
+}
+
+.list-content{
+    margin: 20px;
+}
+
+.row#recomended{
+    
+    margin: 20px;    
+}
+
+a#toggle{
+    color: black;
+    float: right;    
+    margin-left: 1000px;
+    text-decoration: none;
+    position: absolute;
+}
+
+@media (max-width: 1024px){
+    ul.menuhead{    
+        margin-left: 500px;
+        float: right;
+               
+    }
+
+    a#toggle{
+        color: black;
+        float: right;    
+        margin-left: 500px;
+        text-decoration: none;
+        position: absolute;
+    }
+
+    .row#recomended #recomendedcard{     
+        padding: 10px;        
+        height: auto;      
+    }
+
+    
+}
+
+@media (max-width: 800px){
+    img.big-preview{
+        background-size: cover;
+        background-image: url(../assets/background.png);
+        max-height: 350px;
+        max-width: 100%;        
+    }
+
+    ul.menuhead{    
+        margin-left: 500px;
+        float: right;
+    }
+
+    a#toggle{
+        color: black;
+        float: right;    
+        margin-left: 500px;
+        text-decoration: none;                
+    }
+
+    img.small-preview{
+        top: 25%;
+        left: 90%;
+        transform: translate(-50%,-50%);
+        position: absolute;    
+        height: 150px;
+        width: 100px
+        
+    }
+
+    .row#recomended{
+        text-decoration: none;
+        margin-left: 80px;
+        display: list-item;
+        color: white;
+    }
+
+    a#button_borrow{
+        position: absolute;              
+        top: 40%;
+        left: 75%;    
+        color: white;   
+        font-size: 25px; 
+        width: 150px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    }
+}
+
+@media (max-width: 450px){
+        ul.menuhead{    
+            margin-left: 200px;
+            float: right;
+        }
+
+        a#button_borrow{
+            position: absolute;              
+            top: 26%;
+            left: 65%;    
+            color: white;   
+            font-size: 15px; 
+            width: 75px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        img.small-preview{
+            top: 20%;
+            left: 80%;
+            transform: translate(-50%,-50%);
+            position: absolute;    
+            height: 150px;
+            width: 100px
+            
+        }
+
+        h1.statustext{
+            color: green;
+            font-size: 20px;
+            margin-left: 70px;
+        }
+
+        .row#recomended{
+            text-decoration: none;
+            margin-left: 60px;
+            display: list-item;
+            color: white;
+        }
+
+        a#toggle{
+            color: black;
+            float: right;    
+            margin-left: 300px;
+            text-decoration: none;
+            position: absolute;
+        }
+}
+
+@media (max-width: 330px){
+    ul.menuhead{    
+        margin-left: 150px;
+        float: right;
+        display: list-item;
+        color: transparent;
+    }
+
+    a#button_borrow{
+        position: absolute;              
+        top: 24%;
+        left: 70%;    
+        color: white;   
+        font-size: 10px; 
+        width: 60px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    img.small-preview{
+        top: 18%;
+        left: 80%;
+        transform: translate(-50%,-50%);
+        position: absolute;    
+        height: 100px;
+        width: 75px
+        
+    }
+
+    .row#recomended{
+        text-decoration: none;
+        margin-left: 15px;
+        display: list-item;
+        color: white;
+    }
+
+    a#toggle{
+        color: black;
+        float: right;    
+        margin-left: 250px;
+        text-decoration: none;
+        position: absolute;
+    }
 }

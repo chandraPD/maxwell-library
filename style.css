@@ -167,7 +167,7 @@ a#toggle{
 @media (max-width: 800px){
     img.big-preview{
         background-size: cover;
-        background-image: url(../assets/background.png);
+        background-image: url(./assets/background.png);
         max-height: 350px;
         max-width: 100%;        
     }

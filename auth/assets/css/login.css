@@ -30,13 +30,19 @@ body {
 .main-title p {
   position: absolute;
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
   margin-top: 0;
   line-height: 4rem;
   bottom: 0rem;
   left: 3rem;
+}
+
+@media (min-width: 1440px) {
+  .main-title img {
+    max-height: 100vh;
+  }
 }
 
 .main-title::after {
@@ -63,7 +69,7 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
-  padding: 68px 100px;
+  padding: 1rem 5rem;
   background-color: #fff;
 }
 
@@ -75,30 +81,36 @@ body {
 }
 
 .container-form {
-  box-shadow: 5px 8px 8px #888888;
-  border-radius: 5px; 
-  
+  -webkit-box-shadow: 10px 10px 7px -3px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 10px 10px 7px -3px rgba(0, 0, 0, 0.17);
+  box-shadow: 10px 10px 7px -3px rgba(0, 0, 0, 0.17);
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 
 .custom-form {
   border: 0px;
   border-radius: 5px;
-  
+  height: 1rem;
+  padding: 1rem;
+  font-weight: 100;
+  font-size: 0.9rem;
 }
 
 .custom-form-group {
   border-left: 1px solid #999;
   border-right: 1px solid #999;
   border-top: 1px solid #999;
-  border-radius: 5px;  
-    
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
 }
 
 .bottom-label {
-  border-bottom: 1px solid #999;
+  border: 1px solid #e0e0e0;
 }
 
 .label-login {
+  margin: 0.4rem;
   padding-left: 10px;
   padding-top: 4px;
   color: #8a8a8a;
@@ -119,10 +131,10 @@ body {
 }
 
 .login-wrapper {
-  width: 600px;
+  width: 37.5rem;
   max-width: 100%;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .register-wrapper {
@@ -197,9 +209,9 @@ body {
   border-radius: 5px;
   font-size: 20px;
   font-weight: bold;
-  color: #D0CCCC;
+  color: #d0cccc;
   margin-bottom: 14px;
-  border: 1px solid #D0CCCC;
+  border: 1px solid #d0cccc;
 }
 
 .login-wrapper .signup-btn:hover {
@@ -210,7 +222,7 @@ body {
   font-weight: bold;
   color: #fff;
   margin-bottom: 14px;
-  border: 1px solid #D0CCCC;
+  border: 1px solid #d0cccc;
 }
 
 .register-wrapper .signup-btn {
@@ -230,9 +242,9 @@ body {
   border-radius: 5px;
   font-size: 20px;
   font-weight: bold;
-  color: #D0CCCC;
+  color: #d0cccc;
   margin-bottom: 14px;
-  border: 1px solid #D0CCCC;
+  border: 1px solid #d0cccc;
 }
 
 .register-wrapper .login-btn:hover {
@@ -243,7 +255,7 @@ body {
   font-weight: bold;
   color: #fff;
   margin-bottom: 14px;
-  border: 1px solid #D0CCCC;
+  border: 1px solid #d0cccc;
 }
 
 .forgot-wrapper .submit-btn {
@@ -263,9 +275,9 @@ body {
   border-radius: 5px;
   font-size: 20px;
   font-weight: bold;
-  color: #D0CCCC;
+  color: #d0cccc;
   margin-bottom: 14px;
-  border: 1px solid #D0CCCC;
+  border: 1px solid #d0cccc;
 }
 
 .forgot-wrapper .login-btn:hover {
@@ -276,7 +288,7 @@ body {
   font-weight: bold;
   color: #fff;
   margin-bottom: 14px;
-  border: 1px solid #D0CCCC;
+  border: 1px solid #d0cccc;
 }
 
 .container-btn {
@@ -308,7 +320,6 @@ body {
 
 .login-img {
   width: 100%;
-  height: 100vh;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: left;
@@ -318,4 +329,11 @@ body {
 .custom-form:focus {
   outline: none !important;
   box-shadow: none;
+}
+
+.login-wrapper h1,
+.register-wrapper h1,
+.forgot-wrapper h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }

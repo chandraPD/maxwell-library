@@ -28,9 +28,102 @@
     <!-- Site wrapper -->
     <div class="wrapper">
 
-        <div w3-include-html="include_navbar.html"></div>
-        <div w3-include-html="include_sidebar.html"></div>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-dark navbar-primary">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        class="nav-link dropdown-toggle">All Categories</a>
+                    <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow"
+                        style="left: 0px; right: inherit;">
+                        <li><a href="#" class="dropdown-item">Some action </a></li>
+                        <li><a href="#" class="dropdown-item">Some other action</a></li>
 
+                        <li class="dropdown-divider"></li>
+
+                        <!-- Level two dropdown-->
+                        <li class="dropdown-submenu dropdown-hover">
+                            <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false" class="dropdown-item dropdown-toggle">Hover for action</a>
+                            <ul aria-labelledby="dropdownSubMenu2" class="dropdown-menu border-0 shadow">
+                                <li>
+                                    <a tabindex="-1" href="#" class="dropdown-item">level 2</a>
+                                </li>
+
+                                <!-- Level three dropdown-->
+                                <li class="dropdown-submenu">
+                                    <a id="dropdownSubMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false" class="dropdown-item dropdown-toggle">level 2</a>
+                                    <ul aria-labelledby="dropdownSubMenu3" class="dropdown-menu border-0 shadow">
+                                        <li><a href="#" class="dropdown-item">3rd level</a></li>
+                                        <li><a href="#" class="dropdown-item">3rd level</a></li>
+                                    </ul>
+                                </li>
+                                <!-- End Level three -->
+
+                                <li><a href="#" class="dropdown-item">level 2</a></li>
+                                <li><a href="#" class="dropdown-item">level 2</a></li>
+                            </ul>
+                        </li>
+                        <!-- End Level two -->
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        class="nav-link dropdown-toggle">All Time</a>
+                    <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow"
+                        style="left: 0px; right: inherit;">
+                        <li><a href="#" class="dropdown-item">Some action </a></li>
+                        <li><a href="#" class="dropdown-item">Some other action</a></li>
+
+                        <li class="dropdown-divider"></li>
+
+                        <!-- Level two dropdown-->
+                        <li class="dropdown-submenu dropdown-hover">
+                            <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false" class="dropdown-item dropdown-toggle">Hover for action</a>
+                            <ul aria-labelledby="dropdownSubMenu2" class="dropdown-menu border-0 shadow">
+                                <li>
+                                    <a tabindex="-1" href="#" class="dropdown-item">level 2</a>
+                                </li>
+
+                                <!-- Level three dropdown-->
+                                <li class="dropdown-submenu">
+                                    <a id="dropdownSubMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false" class="dropdown-item dropdown-toggle">level 2</a>
+                                    <ul aria-labelledby="dropdownSubMenu3" class="dropdown-menu border-0 shadow">
+                                        <li><a href="#" class="dropdown-item">3rd level</a></li>
+                                        <li><a href="#" class="dropdown-item">3rd level</a></li>
+                                    </ul>
+                                </li>
+                                <!-- End Level three -->
+
+                                <li><a href="#" class="dropdown-item">level 2</a></li>
+                                <li><a href="#" class="dropdown-item">level 2</a></li>
+                            </ul>
+                        </li>
+                        <!-- End Level two -->
+                    </ul>
+                </li>
+            </ul>
+            <!-- SEARCH FORM -->
+            <form  id="search-books"  class="form-inline ml-3">
+                <div id="searchbar" class="input-group input-group-sm">
+                    <input id="search" class="form-control form-control-navbar searchbar" type="text" placeholder="Search" aria-label="Search">
+                    <div class="input-group-append">
+                        <button class="btn btn-navbar" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <a id="toggle" class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </nav>
+        <!-- /.navbar -->
+        <div w3-include-html="include_sidebar.html"></div>
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
@@ -231,11 +324,38 @@
                 slidesToScroll: 3
             });
         });
+
+        function delay(callback, ms) {
+            var timer = 0;
+            return function() {
+            var context = this, args = arguments;
+            clearTimeout(timer);
+            timer = setTimeout(function () {
+                callback.apply(context, args);
+            }, ms || 0);
+            };
+        }
+
+        // search Books by Title
+        const books = document.querySelectorAll('.title-book');
+        const searchBar = document.forms['search-books'].querySelector('input');
+        searchBar.addEventListener('keyup', delay(function(e){
+            const term = e.target.value.toLowerCase();
+            Array.from(books).forEach(function(book){
+                const title = book.textContent;
+
+                if(title.toLowerCase().indexOf(term) != -1){
+                    book.parentElement.parentElement.style.display = 'block';
+                }else{
+                    book.parentElement.parentElement.style.display = 'none';
+                }
+            })
+        },500));
+
+        // Filtering Books By Categories
     </script>
 
     <!-- Page specific script -->
-
-
 </body>
 
 </html>

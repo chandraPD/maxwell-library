@@ -103,3 +103,8 @@ ul.menuhead li a:hover {
     background-color: transparent;
     color: blue;
 }
+
+/* Add Styline */
+.list-title h4 {
+    text-align: center;
+}

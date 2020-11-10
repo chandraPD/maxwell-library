@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Login Template</title>
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/login.css" />
+</head>
+
+<body>
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-7 px-0 d-none d-sm-block">
+          <div class="main-title">
+            <h1>
+              Book is a window <br />
+              to the world
+            </h1>
+            <p>Photo by Mark Pan4ratte on Unsplash</p>
+            <div class="img-cover"></div>
+            <img src="assets/images/cover.png" alt="login image" class="login-img" />
+          </div>
+        </div>
+        <div class="col-sm-5 login-section-wrapper">
+          <div class="brand-wrapper">
+            <img src="assets/images/bookshelf.png" alt="logo" class="logo" />
+          </div>
+
+          <!--Login Form-->
+          <div class="login-wrapper my-auto" id="login">
+            <h1 class="form-title">Login</h1>
+            <p class="form-subtitle">Welcome Back, Please Login to your Account</p>
+
+            <form action="#">
+              <div class="container-form">
+                <div class="custom-form-group">
+                  <label for="exampleInputEmail1" class="label-login">Email address</label>
+                  <input type="email" class="form-control custom-form" id="exampleInputEmail1"
+                    placeholder="Enter email">
+                </div>
+                <div class="custom-form-group bottom-label">
+                  <label for="exampleInputPassword1" class="label-login">Password</label>
+                  <input type="password" class="form-control custom-form" id="exampleInputPassword1"
+                    placeholder="Password">
+                </div>
+              </div>
+              <div class="pass-manager">
+                <input type="checkbox" id="rememberPassword" name="rememberPassword">
+                <label for="rememberPassword">Remember Password</label>
+
+                <button type="button" class="forgot-btn" onclick="displayForgotPassword()">Forgot Password</button>
+              </div>
+              <div class="container-btn">
+                <div class="row">
+                  <input name="login" id="login" class="btn login-btn" type="button" value="Login" />
+                  <input name="signup" id="signup" class="btn signup-btn" type="button" value="Sign Up" onclick="displaySignUp()" />
+                </div>
+              </div>
+            </form>
+
+          </div>
+
+          <!--Register Form-->
+          <div class="register-wrapper my-auto" id="register">
+            <h1 class="form-title">Register</h1>
+            <p class="form-subtitle">Welcome! Please Register to your Account</p>
+
+            <form role="form">
+              <div class="container-form">
+                  <div class="custom-form-group">
+                      <label for="inputUsername" class="label-login">Username</label>
+                      <input type="text" class="form-control custom-form" id="inputUsername" placeholder="Enter username" autocomplete="off">
+                    </div>
+                    <div class="custom-form-group">
+                      <label for="inputFullName" class="label-login">Full Name</label>
+                      <input type="text" class="form-control custom-form" id="inputFullName" placeholder="Enter full name" autocomplete="off">
+                    </div>
+                <div class="custom-form-group">
+                  <label for="inputEmail" class="label-login">Email address</label>
+                  <input type="email" class="form-control custom-form" id="inputEmail" placeholder="Enter email" autocomplete="off">
+                </div>
+                <div class="custom-form-group bottom-label">
+                  <label for="inputPassword" class="label-login">Password</label>
+                  <input type="password" class="form-control custom-form" id="inputPassword" placeholder="Password">
+                </div>
+              </div>
+              <div class="container-btn">
+                <div class="row ">
+                  <input name="signup" id="signup" class="btn signup-btn" type="button" value="Sign Up"  />
+                  <input name="login" id="login" class="btn login-btn" type="button" value="Login" onclick="displayLogIn()"/>                  
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!--Form Forgot Password-->
+          <div class="forgot-wrapper my-auto" id="forgotPassword">
+            <h1 class="form-title">Forgot Password</h1>
+            <p class="form-subtitle">Forgot your password? Don't worry, we got you covered.</p>
+
+            <form action="#">
+              <div class="container-form">
+                  <div class="custom-form-group">
+                      <label for="inputUsername" class="label-login">Username</label>
+                      <input type="text" class="form-control custom-form" id="inputUsername" placeholder="Enter username" autocomplete="off">
+                    </div>
+                <div class="custom-form-group bottom-label">
+                  <label for="inputEmail" class="label-login">Email address</label>
+                  <input type="email" class="form-control custom-form" id="inputEmail" placeholder="Enter email" autocomplete="off">
+                </div>
+              </div>
+              <div class="container-btn">
+                <div class="row ">
+                  <input name="submit" id="submit" class="btn submit-btn" type="button" value="Submit"/>
+                  <input name="login" id="login" class="btn login-btn" type="button" value="Back to Login" onclick="displayLogIn()"/>                  
+                </div>
+              </div>
+            </form>
+
+          </div>
+
+          <p class="terms">
+            By signing up, you agree to Book’s <br />
+            Terms and Conditions & Privacy Policy
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <script>
+    var login = document.getElementById("login");
+    var register = document.getElementById("register");
+    var forgotPassword = document.getElementById("forgotPassword");
+
+    function displaySignUp() {
+      login.style.display = "none";
+      register.style.display = "block";
+      forgotPassword.style.display="none";
+    }
+
+    function displayLogIn() {
+      login.style.display="block";
+      register.style.display="none";
+      forgotPassword.style.display="none";
+    }
+
+    function displayForgotPassword() {
+      login.style.display="none";
+      register.style.display="none";
+      forgotPassword.style.display="block";
+    }
+
+  </script>
+
+</body>
+
+</html>

@@ -8,15 +8,20 @@
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./plugins/fontawesome-free/css/all.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- overlayScrollbars -->
-    <link rel="stylesheet" href="../../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="./plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="./dist/css/adminlte.min.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./plugins/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./plugins/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -29,22 +34,6 @@
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
-            <section class="content-header">
-                <div class="container-fluid">
-                    <div class="row mb-2">
-                        <div class="col-sm-6">
-                            <h1>Fixed Layout</h1>
-                        </div>
-                        <div class="col-sm-6">
-                            <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item"><a href="#">Layout</a></li>
-                                <li class="breadcrumb-item active">Fixed Layout</li>
-                            </ol>
-                        </div>
-                    </div>
-                </div><!-- /.container-fluid -->
-            </section>
             <!-- /.modal -->
             <div class="modal fade" id="modal-xl">
                 <div class="modal-dialog modal-xl">
@@ -70,34 +59,141 @@
             <!-- /.modal -->
             <!-- Main content -->
             <section class="content">
-
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12">
-                            <!-- Default box -->
-                            <div class="card">
-                                <div class="card-header">
-                                    <h3 class="card-title">Title</h3>
-
-                                    <div class="card-tools">
-                                        <button type="button" class="btn btn-tool" data-card-widget="collapse"
-                                            data-toggle="tooltip" title="Collapse">
-                                            <i class="fas fa-minus"></i></button>
-                                        <button type="button" class="btn btn-tool" data-card-widget="remove"
-                                            data-toggle="tooltip" title="Remove">
-                                            <i class="fas fa-times"></i></button>
+                            <section class="center slider">
+                                <div>
+                                    <img src="./assets/books/brief-answer-to-the-big-questions.jpg">
+                                </div>
+                                <div>
+                                    <img src="./assets/books/dilan.jpg">
+                                </div>
+                                <div>
+                                    <img src="./assets/books/harry-potter.jpg">
+                                </div>
+                                <div>
+                                    <img src="./assets/books/fantastic-beasts.jpg">
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-12">
+                            <div>
+                                <div class="filter-container p-0 row">
+                                    <div class="filtr-item col-sm-4 list-book" data-category="1" data-sort="white sample">
+                                        <a href="detail.html">
+                                            <img src="./assets/books/brief-answer-to-the-big-questions.jpg"
+                                                class="img-fluid img-book" alt="white sample" />
+                                        </a>
+                                        <div class="list-book-detail" >
+                                            <div class="title-book" >
+                                                Brief Answer To The Big Question
+                                            </div>
+                                            <div class="desc-book" >
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quisquam. Enim eos distinctio
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filtr-item col-sm-4 list-book" data-category="1" data-sort="white sample">
+                                        <a href="detail.html">
+                                            <img src="./assets/books/dilan.jpg" class="img-fluid img-book"
+                                                alt="white sample" />
+                                        </a>
+                                        <div class="list-book-detail" >
+                                            <div class="title-book" >
+                                                Dilan
+                                            </div>
+                                            <div class="desc-book" >
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quisquam. Enim eos distinctio 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filtr-item col-sm-4 list-book" data-category="1" data-sort="white sample">
+                                        <a href="detail.html">
+                                            <img src="./assets/books/harry-potter.jpg" class="img-fluid img-book"
+                                                alt="white sample" />
+                                        </a>
+                                        <div class="list-book-detail" >
+                                            <div class="title-book" >
+                                                Harry Potter
+                                            </div>
+                                            <div class="desc-book" >
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quisquam. Enim eos distinctio 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filtr-item col-sm-4 list-book" data-category="1" data-sort="white sample">
+                                        <a href="detail.html">
+                                            <img src="./assets/books/fantastic-beasts.jpg" class="img-fluid img-book"
+                                                alt="white sample" />
+                                        </a>
+                                        <div class="list-book-detail" >
+                                            <div class="title-book" >
+                                                Fantastic Beasts
+                                            </div>
+                                            <div class="desc-book" >
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quisquam. Enim eos distinctio 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filtr-item col-sm-4 list-book" data-category="1" data-sort="white sample">
+                                        <a href="detail.html">
+                                            <img src="./assets/books/brief-answer-to-the-big-questions.jpg"
+                                                class="img-fluid mb-2" alt="white sample" />
+                                        </a>
+                                        <div class="list-book-detail" >
+                                            <div class="title-book" >
+                                                Brief Answer To The Big Question
+                                            </div>
+                                            <div class="desc-book" >
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quisquam. Enim eos distinctio
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filtr-item col-sm-4 list-book" data-category="1" data-sort="white sample">
+                                        <a href="detail.html">
+                                            <img src="./assets/books/dilan.jpg" class="img-fluid img-book"
+                                                alt="white sample" />
+                                        </a>
+                                        <div class="list-book-detail" >
+                                            <div class="title-book" >
+                                                Dilan
+                                            </div>
+                                            <div class="desc-book" >
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quisquam. Enim eos distinctio 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filtr-item col-sm-4 list-book" data-category="1" data-sort="white sample">
+                                        <a href="detail.html">
+                                            <img src="./assets/books/harry-potter.jpg" class="img-fluid img-book"
+                                                alt="white sample" />
+                                        </a>
+                                        <div class="list-book-detail" >
+                                            <div class="title-book" >
+                                                Harry Potter
+                                            </div>
+                                            <div class="desc-book" >
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quisquam. Enim eos distinctio 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filtr-item col-sm-4 list-book" data-category="1" data-sort="white sample">
+                                        <a href="detail.html">
+                                            <img src="./assets/books/fantastic-beasts.jpg" class="img-fluid img-book"
+                                                alt="white sample" />
+                                        </a>
+                                        <div class="list-book-detail" >
+                                            <div class="title-book" >
+                                                Fantastic Beasts
+                                            </div>
+                                            <div class="desc-book" >
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quisquam. Enim eos distinctio 
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="card-body">
-                                    Start creating your amazing application!
-                                </div>
-                                <!-- /.card-body -->
-                                <div class="card-footer">
-                                    Footer
-                                </div>
-                                <!-- /.card-footer-->
                             </div>
-                            <!-- /.card -->
                         </div>
                     </div>
                 </div>
@@ -106,22 +202,39 @@
         </div>
         <!-- /.content-wrapper -->
         <div w3-include-html="include_footer.html"></div>
-
     </div>
     <!-- ./wrapper -->
     <!-- jQuery -->
-    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="./plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
-    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- overlayScrollbars -->
-    <script src="../../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <script type="text/javascript" src="./plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="../../dist/js/adminlte.min.js"></script>
+    <script type="text/javascript" src="./dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
-    <script src="../../dist/js/demo.js"></script>
+    <script type="text/javascript" src="./dist/js/demo.js"></script>
 
     <!-- extra JS to include HTML -->
     <script src="js.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./plugins/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    
+    <script>
+        // slick slider
+        $(document).on('ready', function () {
+            $(".center").slick({
+                dots: true,
+                infinite: true,
+                centerMode: true,
+                slidesToShow: 1,
+                slidesToScroll: 3
+            });
+        });
+    </script>
+
+    <!-- Page specific script -->
+
 
 </body>
 

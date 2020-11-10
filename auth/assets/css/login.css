@@ -152,6 +152,18 @@ body {
   color: #b0adad;
 }
 
+.register-wrapper label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #b0adad;
+}
+
+.forgot-wrapper label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #b0adad;
+}
+
 .login-wrapper .form-control::-webkit-input-placeholder {
   color: #b0adad;
 }

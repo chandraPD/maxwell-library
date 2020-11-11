@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./plugins/daterangepicker/daterangepicker.css">
     <!-- Tempusdominus Bbootstrap 4 -->
     <link rel="stylesheet" href="./plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
-    
+
 
     <link rel="stylesheet" type="text/css" href="./plugins/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="./plugins/slick/slick-theme.css">
@@ -82,27 +82,31 @@
       <section class="content-header">
         <div class="container-fluid">
           <div class="button">
-            <a class="float" href="index.html" role="button"><i class="fas fa-arrow-left"></i></a>
-            <ul class="menuhead">
-              <li><a href="#" data-toggle="modal" data-target="#EditModal">Edit</a></li>
-              <li><a href="#" data-toggle="modal" data-target="#deleteModal">Delete</a></li>
-            </ul>
+            <div class="back-btn">
+              <a href="index.html" role="button"><i class="fas fa-arrow-left"></i></a>
+            </div>
           </div>
           <div class="row">
             <div class="col-sm-12">
               <img class="big-preview" width="1600px" height="1200px">
+              <div class="menu-right">
+                <ul class="menuhead">
+                  <li><a href="#" data-toggle="modal" data-target="#EditModal">Edit</a></li>
+                  <li><a href="#" data-toggle="modal" data-target="#deleteModal">Delete</a></li>
+                </ul>
+                <img class="small-preview" src="./assets/covernya2.png">
+              </div>
             </div>
           </div>
         </div><!-- /.container-fluid -->
       </section>
-      
+
       <!-- Main content -->
       <section class="content">
         <div class="category">
           <p>Novel</p>
         </div>
         <div class="container-fluid">
-          <img class="small-preview" src="./assets/background.png">
 
           <div class="row">
             <div class="col-sm-6">
@@ -137,7 +141,7 @@
       <section>
         <!--Adding list books-->
         <div class="list-title">
-          <h4>Recomended</h4>
+          <h4>Recomended</h4><br>
         </div>
         <div class="row" id="recomended">
           <div class="col-xs-4 col-sm-4 col-lg-4">

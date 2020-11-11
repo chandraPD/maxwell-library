@@ -18,8 +18,9 @@ p{
 }
 
 img.big-preview{
+    width: 100%;
     background-size: cover;
-    background-image: url(./assets/background.png);
+    background-image: url(./assets/covernya.png);
     max-height: 350px;
     max-width: 100%;
 
@@ -50,11 +51,11 @@ h1.titletext{
 
 a#button_borrow{
 
-    position: absolute;      
+    position: absolute;
     top: 40%;
-    left: 67%;    
-    color: white;   
-    font-size: 25px; 
+    left: 67%;
+    color: white;
+    font-size: 25px;
     width: 150px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -79,19 +80,20 @@ p.date{
 }
 
 img.small-preview{
-    top: 32%;
-    left: 70%;
-    transform: translate(-50%,-50%);
+    right: 3rem;
+    margin-top: -7rem;
     position: absolute;
-    height: 150px;
-    width: 100px
-
+    height: 14rem;
+    width: 10rem;
+    filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.25));
+    border-radius: 15px;
 }
 
 
-ul.menuhead{    
-    margin-left: 1300px;
-    float: right;
+ul.menuhead {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
 }
 
 ul.menuhead li{
@@ -116,8 +118,8 @@ ul.menuhead li a:hover {
 }
 
 #recomendedcard img{
-    height: 250px;
-    width: 250px;
+    height: 18rem;
+    width: 100%;
     margin: auto;
 }
 
@@ -130,25 +132,24 @@ a#toggle{
 }
 
 @media (max-width: 1920px){
-    ul.menuhead{    
+    /* ul.menuhead{
         margin-left: 900px;
         float: right;
-               
+                */
     }
 
-    img.small-preview{
+    /* img.small-preview{
         top: 35%;
         left: 80%;
         transform: translate(-50%,-50%);
-        position: absolute;    
+        position: absolute;
         height: 150px;
         width: 100px
-        
-    }
+    } */
 
     a#toggle{
         color: black;
-        float: right;    
+        float: right;
         margin-left: 500px;
         text-decoration: none;
         position: absolute;
@@ -159,38 +160,38 @@ a#toggle{
     }
 
     a#button_borrow{
-        position: absolute;      
+        position: absolute;
         top: 50%;
-        left: 75%;    
-        color: white;   
-        font-size: 25px; 
+        left: 75%;
+        color: white;
+        font-size: 25px;
         width: 150px;
         border-radius: 10px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     }
-    
-}
+
+
 
 @media (max-width: 1440px){
-    ul.menuhead{    
+    /* ul.menuhead{
         margin-left: 800px;
-        float: right;
-               
+        float: right; */
+
     }
 
-    img.small-preview{
+    /* img.small-preview{
         top: 30%;
         left: 90%;
         transform: translate(-50%,-50%);
-        position: absolute;    
+        position: absolute;
         height: 150px;
         width: 100px
-        
-    }
+
+    } */
 
     a#toggle{
         color: black;
-        float: right;    
+        float: right;
         margin-left: 500px;
         text-decoration: none;
         position: absolute;
@@ -201,35 +202,35 @@ a#toggle{
     }
 
     a#button_borrow{
-        position: absolute;      
+        position: absolute;
         top: 55%;
-        left: 80%;    
-        color: white;   
-        font-size: 25px; 
+        left: 80%;
+        color: white;
+        font-size: 25px;
         width: 150px;
         border-radius: 10px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     }
-    
-}
+
+
 
 @media (max-width: 1220px){
-    ul.menuhead{    
+    /* ul.menuhead{
         margin-left: 700px;
         float: right;
-               
-    }
-    
+
+    } */
+
 }
 
 @media (max-width: 1024px){
-    ul.menuhead{
+    /* ul.menuhead{
         margin-left: 500px;
         float: right;
 
-    }
+    } */
 
-    img.small-preview{
+    /* img.small-preview{
         top: 30%;
         left: 90%;
         transform: translate(-50%,-50%);
@@ -237,7 +238,7 @@ a#toggle{
         height: 150px;
         width: 100px
 
-    }
+    } */
 
     a#toggle{
         color: black;
@@ -261,10 +262,10 @@ a#toggle{
         max-width: 100%;
     }
 
-    ul.menuhead{
+    /* ul.menuhead{
         margin-left: 500px;
         float: right;
-    }
+    } */
 
     a#toggle{
         color: black;
@@ -273,7 +274,7 @@ a#toggle{
         text-decoration: none;
     }
 
-    img.small-preview{
+    /* img.small-preview{
         top:17%;
         left: 90%;
         transform: translate(-50%,-50%);
@@ -281,7 +282,7 @@ a#toggle{
         height: 150px;
         width: 100px
 
-    }
+    } */
 
     .row#recomended{
         text-decoration: none;
@@ -291,11 +292,11 @@ a#toggle{
     }
 
     a#button_borrow{
-        position: absolute;              
+        position: absolute;
         top: 30%;
-        left: 75%;    
-        color: white;   
-        font-size: 25px; 
+        left: 75%;
+        color: white;
+        font-size: 25px;
         width: 150px;
         border-radius: 10px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -303,18 +304,18 @@ a#toggle{
 }
 
 @media (max-width: 450px){
-        ul.menuhead{
+        /* ul.menuhead{
             margin-left: 200px;
             float: right;
-        }
+        } */
 
         a#button_borrow{
 
-            position: absolute;              
+            position: absolute;
             top: 20%;
-            left: 65%;    
-            color: white;   
-            font-size: 15px; 
+            left: 65%;
+            color: white;
+            font-size: 15px;
 
             width: 75px;
             border-radius: 10px;
@@ -322,9 +323,6 @@ a#toggle{
         }
 
         img.small-preview{
-            top: 15%;
-            left: 80%;
-            transform: translate(-50%,-50%);
             position: absolute;
             height: 150px;
             width: 100px
@@ -354,12 +352,12 @@ a#toggle{
 }
 
 @media (max-width: 330px){
-    ul.menuhead{
+    /* ul.menuhead{
         margin-left: 150px;
         float: right;
         display: list-item;
         color: transparent;
-    }
+    } */
 
     a#button_borrow{
         position: absolute;
@@ -372,7 +370,7 @@ a#toggle{
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     }
 
-    img.small-preview{
+    /* img.small-preview{
         top: 14%;
         left: 80%;
         transform: translate(-50%,-50%);
@@ -380,7 +378,7 @@ a#toggle{
         height: 100px;
         width: 75px
 
-    }
+    } */
 
     .row#recomended{
         text-decoration: none;
@@ -473,12 +471,9 @@ a.recomendedcard1 {
 }
 
 .recommend-title{
+    font-weight: 600;
     text-align: center;
 }
-
-/* .modal-content#edit-module {
-    width: 150%;
-} */
 
 h2.title-container {
     font-weight: bold;
@@ -499,7 +494,6 @@ h2.title-container {
     pointer-events: none;
     color: #aaa;
 }
-
 
 #input-search{
     border-radius: 22px;
@@ -522,4 +516,42 @@ form#search-books {
 
 h3.book-not-found {
     text-align: center;
+}
+.menuhead a {
+    color: white;
+    font-weight: 600;
+}
+
+.back-btn {
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+}
+
+.back-btn a {
+    color: black;
+    position: absolute;
+    margin-left: 1rem;
+    margin-top: .6rem;
+}
+
+.row#recomended {
+    margin: 2rem;
+}
+
+.list-title h4 {
+    float: left;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.recomendedcard img {
+    width: 100%;
+}
+
+.card-text {
+    text-align: left;
 }

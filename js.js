@@ -28,11 +28,3 @@ function includeHTML() {
 }
 
 includeHTML();
-
-
-//   search Book
-const searchBar = document.forms('search-books').querySelector('input');
-searchBar.addEventListener('keyup', function (e) {
-    const term = e.target.value.toLowerCase();
-    // const books = list
-})

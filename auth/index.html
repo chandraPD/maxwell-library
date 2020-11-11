@@ -47,46 +47,31 @@
                 Welcome Back, Please Login to your Account
               </p>
 
-              <form action="#">
-                <div class="container-form">
-                  <div class="custom-form-group bottom-label">
-                    <label for="exampleInputEmail1" class="label-login"
-                      >Email address</label
-                    >
-                    <input
-                      type="email"
-                      class="form-control custom-form"
-                      id="exampleInputEmail1"
-                      placeholder="Enter email"
-                    />
-                  </div>
-                  <div class="custom-form-group bottom-label">
-                    <label for="exampleInputPassword1" class="label-login"
-                      >Password</label
-                    >
-                    <input
-                      type="password"
-                      class="form-control custom-form"
-                      id="exampleInputPassword1"
-                      placeholder="Password"
-                    />
-                  </div>
-                </div>
-                <div class="pass-manager">
-                  <input
-                    type="checkbox"
-                    id="rememberPassword"
-                    name="rememberPassword"
-                  />
-                  <label for="rememberPassword">Remember Password</label>
 
-                  <button
-                    type="button"
-                    class="forgot-btn"
-                    onclick="displayForgotPassword()"
-                  >
-                    Forgot Password
-                  </button>
+            <form action="#" id="loginForm">
+              <div class="container-form">
+                <div class="form-group bottom-label">
+                  <label for="exampleInputEmail1" class="label-login">Email address</label>
+                  <input type="email" name="email" class="form-control custom-form" id="exampleInputEmail1"
+                    placeholder="Enter email">
+                </div>
+                <div class="form-group bottom-label">
+                  <label for="exampleInputPassword1" class="label-login">Password</label>
+                  <input type="password" name="password" class="form-control custom-form" id="exampleInputPassword1"
+                    placeholder="Password">
+                </div>
+              </div>
+              <div class="pass-manager">
+                <input type="checkbox" id="rememberPassword" name="rememberPassword">
+                <label for="rememberPassword">Remember Password</label>
+
+                <button type="button" class="forgot-btn" onclick="displayForgotPassword()">Forgot Password</button>
+              </div>
+              <div class="container-btn">
+                <div class="row">
+                  <input name="login" id="login" class="btn login-btn" type="submit" value="Login" />
+                  <input name="signup" id="signup" class="btn signup-btn" type="button" value="Sign Up"
+                    onclick="displaySignUp()" />
                 </div>
                 <div class="container-btn">
                   <div class="row">
@@ -117,74 +102,35 @@
                 Welcome! Please Register to your Account
               </p>
 
-              <form role="form">
-                <div class="container-form">
-                  <div class="custom-form-group">
-                    <label for="inputUsername" class="label-login"
-                      >Username</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control custom-form"
-                      id="inputUsername"
-                      placeholder="Enter username"
-                      autocomplete="off"
-                    />
-                  </div>
-                  <div class="custom-form-group">
-                    <label for="inputFullName" class="label-login"
-                      >Full Name</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control custom-form"
-                      id="inputFullName"
-                      placeholder="Enter full name"
-                      autocomplete="off"
-                    />
-                  </div>
-                  <div class="custom-form-group">
-                    <label for="inputEmail" class="label-login"
-                      >Email address</label
-                    >
-                    <input
-                      type="email"
-                      class="form-control custom-form"
-                      id="inputEmail"
-                      placeholder="Enter email"
-                      autocomplete="off"
-                    />
-                  </div>
-                  <div class="custom-form-group bottom-label">
-                    <label for="inputPassword" class="label-login"
-                      >Password</label
-                    >
-                    <input
-                      type="password"
-                      class="form-control custom-form"
-                      id="inputPassword"
-                      placeholder="Password"
-                    />
-                  </div>
+
+            <form role="form" id="formRegister">
+              <div class="container-form">
+                <div class="form-group bottom-label">
+                  <label for="inputUsername" class="label-login">Username</label>
+                  <input type="text" name="userName" class="form-control custom-form" id="inputUsername"
+                    placeholder="Enter username" autocomplete="off">
                 </div>
-                <div class="container-btn">
-                  <div class="row">
-                    <input
-                      name="signup"
-                      id="signup"
-                      class="btn signup-btn"
-                      type="button"
-                      value="Sign Up"
-                    />
-                    <input
-                      name="login"
-                      id="login"
-                      class="btn login-btn"
-                      type="button"
-                      value="Login"
-                      onclick="displayLogIn()"
-                    />
-                  </div>
+                <div class="form-group bottom-label">
+                  <label for="inputFullName" class="label-login">Full Name</label>
+                  <input type="text" name="fullName" class="form-control custom-form" id="inputFullName"
+                    placeholder="Enter full name" autocomplete="off">
+                </div>
+                <div class="form-group bottom-label">
+                  <label for="inputEmail" class="label-login">Email address</label>
+                  <input type="email" name="email" class="form-control custom-form" id="inputEmail"
+                    placeholder="Enter email" autocomplete="off">
+                </div>
+                <div class="form-group bottom-label">
+                  <label for="inputPassword" class="label-login">Password</label>
+                  <input type="password" name="password" class="form-control custom-form" id="exampleInputPassword"
+                    placeholder="Password">
+                </div>
+              </div>
+              <div class="container-btn">
+                <div class="row ">
+                  <input name="signup" id="signup" class="btn signup-btn" type="submit" value="Sign Up" />
+                  <input name="login" id="login" class="btn login-btn" type="button" value="Login"
+                    onclick="displayLogIn()" />
                 </div>
               </form>
             </div>
@@ -196,51 +142,25 @@
                 Forgot your password? Don't worry, we got you covered.
               </p>
 
-              <form action="#">
-                <div class="container-form">
-                  <div class="custom-form-group">
-                    <label for="inputUsername" class="label-login"
-                      >Username</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control custom-form"
-                      id="inputUsername"
-                      placeholder="Enter username"
-                      autocomplete="off"
-                    />
-                  </div>
-                  <div class="custom-form-group bottom-label">
-                    <label for="inputEmail" class="label-login"
-                      >Email address</label
-                    >
-                    <input
-                      type="email"
-                      class="form-control custom-form"
-                      id="inputEmail"
-                      placeholder="Enter email"
-                      autocomplete="off"
-                    />
-                  </div>
+
+            <form action="#" id="formForgot">
+              <div class="container-form">
+                <div class="form-group bottom-label">
+                  <label for="inputUsername" class="label-login">Username</label>
+                  <input type="text" name="userName" class="form-control custom-form" id="inputUsername"
+                    placeholder="Enter username" autocomplete="off">
                 </div>
-                <div class="container-btn">
-                  <div class="row">
-                    <input
-                      name="submit"
-                      id="submit"
-                      class="btn submit-btn"
-                      type="button"
-                      value="Submit"
-                    />
-                    <input
-                      name="login"
-                      id="login"
-                      class="btn login-btn"
-                      type="button"
-                      value="Back to Login"
-                      onclick="displayLogIn()"
-                    />
-                  </div>
+                <div class="form-group bottom-label">
+                  <label for="inputEmail" class="label-login">Email address</label>
+                  <input type="email" name="email" class="form-control custom-form" id="inputEmail"
+                    placeholder="Enter email" autocomplete="off">
+                </div>
+              </div>
+              <div class="container-btn">
+                <div class="row ">
+                  <input name="submit" id="submit" class="btn submit-btn" type="submit" value="Submit" />
+                  <input name="login" id="login" class="btn login-btn" type="button" value="Back to Login"
+                    onclick="displayLogIn()" />
                 </div>
               </form>
             </div>
@@ -252,9 +172,11 @@
           </div>
         </div>
       </div>
+
     </main>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
+

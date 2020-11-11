@@ -50,8 +50,8 @@ h1.titletext{
 
 a#button_borrow{
     position: absolute;      
-    top: 50%;
-    left: 80%;    
+    top: 32%;
+    left: 60%;    
     color: white;   
     font-size: 25px; 
     width: 150px;
@@ -62,7 +62,7 @@ a#button_borrow{
 h1.statustext{
     color: green;
     font-size: 20px;
-    margin-left: 100px;
+    margin-left: 30px;
 }
 
 p.date{
@@ -78,8 +78,8 @@ p.date{
 }
 
 img.small-preview{
-    top: 30%;
-    left: 90%;
+    top: 25%;
+    left: 63%;
     transform: translate(-50%,-50%);
     position: absolute;    
     height: 150px;
@@ -88,7 +88,7 @@ img.small-preview{
 }
 
 ul.menuhead{    
-    margin-left: 900px;
+    margin-left: 1300px;
     float: right;
 }
 
@@ -113,10 +113,6 @@ ul.menuhead li a:hover {
     margin: 20px;
 }
 
-.row#recomended{
-    margin: 20px; 
-}
-
 #recomendedcard img{
     
     height: 280px;
@@ -129,6 +125,90 @@ a#toggle{
     margin-left: 1000px;
     text-decoration: none;
     position: absolute;
+}
+
+@media (max-width: 1920px){
+    ul.menuhead{    
+        margin-left: 900px;
+        float: right;
+               
+    }
+
+    img.small-preview{
+        top: 35%;
+        left: 80%;
+        transform: translate(-50%,-50%);
+        position: absolute;    
+        height: 150px;
+        width: 100px
+        
+    }
+
+    a#toggle{
+        color: black;
+        float: right;    
+        margin-left: 500px;
+        text-decoration: none;
+        position: absolute;
+    }
+
+    .row#recomended{
+        text-decoration: none;
+    }
+
+    a#button_borrow{
+        position: absolute;      
+        top: 50%;
+        left: 75%;    
+        color: white;   
+        font-size: 25px; 
+        width: 150px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    }
+    
+}
+
+@media (max-width: 1440px){
+    ul.menuhead{    
+        margin-left: 900px;
+        float: right;
+               
+    }
+
+    img.small-preview{
+        top: 30%;
+        left: 90%;
+        transform: translate(-50%,-50%);
+        position: absolute;    
+        height: 150px;
+        width: 100px
+        
+    }
+
+    a#toggle{
+        color: black;
+        float: right;    
+        margin-left: 500px;
+        text-decoration: none;
+        position: absolute;
+    }
+
+    .row#recomended{
+        text-decoration: none;
+    }
+
+    a#button_borrow{
+        position: absolute;      
+        top: 55%;
+        left: 80%;    
+        color: white;   
+        font-size: 25px; 
+        width: 150px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    }
+    
 }
 
 @media (max-width: 1024px){
@@ -201,7 +281,7 @@ a#toggle{
 
     a#button_borrow{
         position: absolute;              
-        top: 33%;
+        top: 30%;
         left: 75%;    
         color: white;   
         font-size: 25px; 
@@ -219,7 +299,7 @@ a#toggle{
 
         a#button_borrow{
             position: absolute;              
-            top: 18%;
+            top: 20%;
             left: 65%;    
             color: white;   
             font-size: 15px; 
@@ -229,7 +309,7 @@ a#toggle{
         }
 
         img.small-preview{
-            top: 13%;
+            top: 15%;
             left: 80%;
             transform: translate(-50%,-50%);
             position: absolute;    

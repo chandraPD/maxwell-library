@@ -21,15 +21,116 @@
     <link rel="stylesheet" type="text/css" href="./plugins/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="./plugins/slick/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    
+
+     <!-- Ckeditor -->
+     <script src="//cdn.ckeditor.com/4.15.1/standard/ckeditor.js"></script>
 </head>
+
 
 <body class="hold-transition sidebar-mini layout-fixed">
   <!-- Site wrapper -->
   <div class="wrapper">
 
     <div w3-include-html="include_sidebar.html"></div>
-    <div w3-include-html="include_navbar.html"></div>
+
+        <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-light navbar-white">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+              <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                  class="nav-link dropdown-toggle">All Categories</a>
+              <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow"
+                  style="left: 0px; right: inherit;">
+                  <li><a href="#" class="dropdown-item">Some action </a></li>
+                  <li><a href="#" class="dropdown-item">Some other action</a></li>
+
+                  <li class="dropdown-divider"></li>
+
+                  <!-- Level two dropdown-->
+                  <li class="dropdown-submenu dropdown-hover">
+                      <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                          aria-expanded="false" class="dropdown-item dropdown-toggle">Hover for action</a>
+                      <ul aria-labelledby="dropdownSubMenu2" class="dropdown-menu border-0 shadow">
+                          <li>
+                              <a tabindex="-1" href="#" class="dropdown-item">level 2</a>
+                          </li>
+
+                          <!-- Level three dropdown-->
+                          <li class="dropdown-submenu">
+                              <a id="dropdownSubMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                  aria-expanded="false" class="dropdown-item dropdown-toggle">level 2</a>
+                              <ul aria-labelledby="dropdownSubMenu3" class="dropdown-menu border-0 shadow">
+                                  <li><a href="#" class="dropdown-item">3rd level</a></li>
+                                  <li><a href="#" class="dropdown-item">3rd level</a></li>
+                              </ul>
+                          </li>
+                          <!-- End Level three -->
+
+                          <li><a href="#" class="dropdown-item">level 2</a></li>
+                          <li><a href="#" class="dropdown-item">level 2</a></li>
+                      </ul>
+                  </li>
+                  <!-- End Level two -->
+              </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+              <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                  class="nav-link dropdown-toggle">All Time</a>
+              <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow"
+                  style="left: 0px; right: inherit;">
+                  <li><a href="#" class="dropdown-item">Some action </a></li>
+                  <li><a href="#" class="dropdown-item">Some other action</a></li>
+
+                  <li class="dropdown-divider"></li>
+
+                  <!-- Level two dropdown-->
+                  <li class="dropdown-submenu dropdown-hover">
+                      <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                          aria-expanded="false" class="dropdown-item dropdown-toggle">Hover for action</a>
+                      <ul aria-labelledby="dropdownSubMenu2" class="dropdown-menu border-0 shadow">
+                          <li>
+                              <a tabindex="-1" href="#" class="dropdown-item">level 2</a>
+                          </li>
+
+                          <!-- Level three dropdown-->
+                          <li class="dropdown-submenu">
+                              <a id="dropdownSubMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                  aria-expanded="false" class="dropdown-item dropdown-toggle">level 2</a>
+                              <ul aria-labelledby="dropdownSubMenu3" class="dropdown-menu border-0 shadow">
+                                  <li><a href="#" class="dropdown-item">3rd level</a></li>
+                                  <li><a href="#" class="dropdown-item">3rd level</a></li>
+                              </ul>
+                          </li>
+                          <!-- End Level three -->
+
+                          <li><a href="#" class="dropdown-item">level 2</a></li>
+                          <li><a href="#" class="dropdown-item">level 2</a></li>
+                      </ul>
+                  </li>
+                  <!-- End Level two -->
+              </ul>
+          </li>
+      </ul>
+      <!-- SEARCH FORM -->
+      <form  id="search-books"  class="form-inline ml-3">
+          <div id="searchbar" class="input-group input-group-sm">
+              <input id="search" class="form-control form-control-navbar searchbar" value="" type="text" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                  <button class="btn btn-navbar" type="submit">
+                      <i class="fas fa-search"></i>
+                  </button>
+              </div>
+          </div>
+      </form>
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+              <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+          </li>
+      </ul>
+    </nav>
+    <!-- /.navbar -->
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
@@ -99,10 +200,10 @@
             <div class="card" id="recomendedcard" >
               <img src="./assets/novel-dilan.jpg" class="card-img-top" alt="Dilan 1991">
               <div class="card-body">
-                <h5 class="card-title">Dilan 1991</h5>
+                <h5 class="recommend-title">Dilan 1991</h5>
                 <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati aspernatur enim
                   ullam officia ... </p>
-                <a class="recomendedcard1" href="#" class="btn btn-primary">Read More</a>
+                <a class="recomendedcard1 btn btn-primary" href="#" class="btn btn-primary">Read More</a>
               </div>
             </div>
           </div>
@@ -111,10 +212,10 @@
             <div class="card" id="recomendedcard" >
               <img src="./assets/buku-seni-minimalis.jpg" class="card-img-top" alt="Dilan 1991">
               <div class="card-body">
-                <h5 class="card-title">Seni Hidup Minimalis</h5>
+                <h5 class="recommend-title">Seni Hidup Minimalis</h5>
                 <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati aspernatur enim
                   ullam officia ... </p>
-                <a class="recomendedcard1" href="#" class="btn btn-primary">Read More</a>
+                <a class="recomendedcard1 btn btn-primary" href="#" class="btn btn-primary">Read More</a>
               </div>
             </div>
           </div>
@@ -123,10 +224,10 @@
             <div class="card" id="recomendedcard" >
               <img src="./assets/novel-milea.jpg" class="card-img-top" alt="Milea">
               <div class="card-body">
-                <h5 class="card-title">Milea</h5>
+                <h5 class="recommend-title">Milea</h5>
                 <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati aspernatur enim
                   ullam officia ... </p>
-                <a class="recomendedcard1" href="#" class="btn btn-primary">Read More</a>
+                <a class="recomendedcard1 btn btn-primary" href="#">Read More</a>
               </div>
             </div>
           </div>
@@ -136,128 +237,132 @@
     </div>
   </div>
 
-  <!-- /.modal -->
-  <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabesl"
-  aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Do you want to delete?</h5>
-        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">×</span>
-        </button>
-      </div>
-      <div class="modal-body">If you delete this, you can't be returned</div>
-      <div class="modal-footer">
-        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-        <a class="btn btn-danger" id="btn-delete" href="#" data-dismiss="modal" data-toggle="modal"
-          data-target="#BerhasilModal">Delete</a>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="BerhasilModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabesl"
-  aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Delete Complete!</h5>
-        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">×</span>
-        </button>
-      </div>
-      <div class="modal-body"><img class="check" src="./assets/check.png"></div>
-      <p>Data has been deleted</p>
-      <div class="modal-footer">
-        <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="BerhasilModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabesl"
-  aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Save Complete!</h5>
-        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">×</span>
-        </button>
-      </div>
-      <div class="modal-body"><img class="check" src="./assets/check.png"></div>
-      <p>Data already saved</p>
-      <div class="modal-footer">
-        <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="EditModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabesl"
-  aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Edit Data</h5>
-        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">×</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="row">
-          <div class="col-sm-2">
-            <p>Url Image</p>
-          </div>
-          <div class="col-sm-10">
-            <input type="text" id="url" name="url" class="form-control" placeholder="/assets/background.png">
-          </div>
-        </div>
-        <hr class="divider">
-        <div class="row">
-          <div class="col-sm-2">
-            <p>Book Tittle</p>
-          </div>
-          <div class="col-sm-10">
-            <input type="text" id="title" name="title" class="form-control" placeholder="Gunung">
-          </div>
-        </div>
-        <hr class="divider">
-        <div class="row">
-          <div class="col-sm-2">
-            <p>Date</p>
-          </div>
-          <div class="col-sm-10">
-            <input type="text" id="date" name="date" class="form-control" readonly placeholder="10 November 2020">
-          </div>
-        </div>
-        <hr class="divider">
-        <div class="row">
-          <div class="col-sm-2">
-            <p>Category</p>
-          </div>
-          <div class="col-sm-10">
-            <input type="text" id="category" name="category" class="form-control" readonly placeholder="Novel">
-          </div>
-        </div>
-        <hr class="divider">
-        <div class="row">
-          <div class="col-sm-2">
-            <div class="text">Description</div>
-          </div>
-          <div class="col-sm-10">
-            <textarea name="txtcomment" id="txtcomment" cols="50" rows="5"
-              placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac diam eget est rutrum ultrices. Donec laoreet enim a massa dapibus, cursus egestas dui pulvinar. Proin sit amet accumsan lectus. Nullam auctor auctor consequat. Donec semper magna erat, sed fringilla lacus pretium eget. Cras porttitor, nibh sit amet interdum bibendum, nibh velit accumsan tellus, vel vehicula tellus leo vitae ipsum. Praesent sit amet libero sed orci ullamcorper efficitur. Pellentesque in euismod purus, sit amet ultrices tortor. Vestibulum ante dui, tempor at dui id, tincidunt euismod diam. Integer pellentesque massa nibh, ac eleifend odio malesuada sed. Phasellus orci sem, cursus nec orci ut, accumsan facilisis lacus. Nullam at elementum nibh, ac gravida felis. In sagittis rhoncus nisi tempus dignissim. Sed fringilla consequat ante vitae lobortis. Cras posuere ligula vel enim suscipit malesuada. Vivamus non nulla ut ante imperdiet euismod quis nec massa."></textarea>
+    <!-- /.modal -->
+      <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabesl"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Do you want to delete?</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">If you delete this, you can't be returned</div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+              <a class="btn btn-danger" id="btn-delete" href="#" data-dismiss="modal" data-toggle="modal"
+                data-target="#BerhasilModal">Delete</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="modal-footer">
-        <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
-        <a class="btn btn-warning" id="btn-delete" href="#" data-dismiss="modal" data-toggle="modal"
-          data-target="#BerhasilModal2">Save</a>
+      <div class="modal fade" id="BerhasilModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabesl"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Delete Complete!</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body"><img class="check" src="./assets/check.png"></div>
+            <p>Data has been deleted</p>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
-<!-- /.modal -->
+      <div class="modal fade" id="BerhasilModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabesl"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Save Complete!</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body"><img class="check" src="./assets/check.png"></div>
+            <p>Data already saved</p>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="EditModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabesl"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content" id="edit-module">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Edit Data</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-sm-2">
+                  <p class="title-module">Url Image</p>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" id="url" name="url" class="form-control" placeholder="/assets/background.png">
+                </div>
+              </div>
+              <hr class="divider">
+              <div class="row">
+                <div class="col-sm-2">
+                  <p class="title-module">Book Tittle</p>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" id="title" name="title" class="form-control" placeholder="Gunung">
+                </div>
+              </div>
+              <hr class="divider">
+              <div class="row">
+                <div class="col-sm-2">
+                  <p class="title-module">Date</p>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" id="date" name="date" class="form-control" readonly placeholder="10 November 2020">
+                </div>
+              </div>
+              <hr class="divider">
+              <div class="row">
+                <div class="col-sm-2">
+                  <p class="title-module">Category</p>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" id="category" name="category" class="form-control" readonly placeholder="Novel">
+                </div>
+              </div>
+              <hr class="divider">
+              <div class="row">
+                <div class="col-sm-2">
+                    <p class="title-module">Description</p>
+                </div>
+                <hr class="divider">
+                <div class="col-sm-10">
+                <!-- <textarea name="txtcomment" id="txtcomment" cols="50" rows="5" placeholder="Type Here"></textarea> -->
+                <textarea name="txtcomment" id="txtcomment" cols="50" rows="5" placeholder="Type Here"></textarea>
+                <script>
+                        CKEDITOR.replace( 'txtcomment' );
+                </script>  
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+              <a class="btn btn-warning" id="btn-delete" href="#" data-dismiss="modal" data-toggle="modal"
+                data-target="#BerhasilModal2">Save</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal -->
 
   <!-- ./wrapper -->
   <!-- jQuery -->

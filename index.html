@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AdminLTE 3 | Fixed Sidebar</title>
+    <title>Maxwell | Library</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
@@ -21,6 +21,9 @@
     <link rel="stylesheet" type="text/css" href="./plugins/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="./plugins/slick/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="./home/style.css">
+    <!-- Flickity -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
 </head>
 
@@ -59,23 +62,43 @@
             <!-- /.modal -->
             <!-- Main content -->
             <section class="content">
-                <div class="container-fluid">
+
+              <div class="main-carousel">
+                <!-- Flickity HTML init -->
+                <div class="carousel"
+                data-flickity='{ "wrapAround": true, "lazyLoad": true }'>
+                <div class="carousel-cell" style="background-image: url('./assets/books/uburlembur.png');">
+                  <div class="carousel-info">
+                    <div class="carousel-text">
+                      <h2>Ubur-ubur Lembur</h2>
+                      <h3>Raditya Dika</h3>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-cell" style="background-image: url('./assets/books/laskar.png');">
+                  <div class="carousel-info">
+                    <div class="carousel-text">
+                      <h2>Laskar Pelangi</h2>
+                      <h3>Andrea Hirata</h3>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-cell" style="background-image: url('./assets/books/dilan.png');">
+                  <div class="carousel-info">
+                    <div class="carousel-text">
+                      <h2>Dilan 1990</h2>
+                      <h3>Raditya Dika</h3>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+
+                <div class="container-fluid book-list">
                     <div class="row">
                         <div class="col-12">
-                            <section class="center slider">
-                                <div>
-                                    <img src="./assets/books/brief-answer-to-the-big-questions.jpg">
-                                </div>
-                                <div>
-                                    <img src="./assets/books/dilan.jpg">
-                                </div>
-                                <div>
-                                    <img src="./assets/books/harry-potter.jpg">
-                                </div>
-                                <div>
-                                    <img src="./assets/books/fantastic-beasts.jpg">
-                                </div>
-                            </section>
                         </div>
                         <div class="col-12">
                             <div>
@@ -104,7 +127,7 @@
                                                 Dilan
                                             </div>
                                             <div class="desc-book" >
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quisquam. Enim eos distinctio 
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quisquam. Enim eos distinctio
                                             </div>
                                         </div>
                                     </div>
@@ -118,7 +141,7 @@
                                                 Harry Potter
                                             </div>
                                             <div class="desc-book" >
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quisquam. Enim eos distinctio 
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quisquam. Enim eos distinctio
                                             </div>
                                         </div>
                                     </div>
@@ -132,14 +155,14 @@
                                                 Fantastic Beasts
                                             </div>
                                             <div class="desc-book" >
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quisquam. Enim eos distinctio 
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quisquam. Enim eos distinctio
                                             </div>
                                         </div>
                                     </div>
                                     <div class="filtr-item col-sm-4 list-book" data-category="1" data-sort="white sample">
                                         <a href="detail.html">
                                             <img src="./assets/books/brief-answer-to-the-big-questions.jpg"
-                                                class="img-fluid mb-2" alt="white sample" />
+                                                class="img-fluid img-book" alt="white sample" />
                                         </a>
                                         <div class="list-book-detail" >
                                             <div class="title-book" >
@@ -160,7 +183,7 @@
                                                 Dilan
                                             </div>
                                             <div class="desc-book" >
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quisquam. Enim eos distinctio 
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quisquam. Enim eos distinctio
                                             </div>
                                         </div>
                                     </div>
@@ -174,7 +197,7 @@
                                                 Harry Potter
                                             </div>
                                             <div class="desc-book" >
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quisquam. Enim eos distinctio 
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quisquam. Enim eos distinctio
                                             </div>
                                         </div>
                                     </div>
@@ -188,7 +211,7 @@
                                                 Fantastic Beasts
                                             </div>
                                             <div class="desc-book" >
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quisquam. Enim eos distinctio 
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quisquam. Enim eos distinctio
                                             </div>
                                         </div>
                                     </div>
@@ -219,7 +242,7 @@
     <script src="js.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="./plugins/slick/slick.js" type="text/javascript" charset="utf-8"></script>
-    
+
     <script>
         // slick slider
         $(document).on('ready', function () {
@@ -232,6 +255,9 @@
             });
         });
     </script>
+
+    <!-- Flickity -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
     <!-- Page specific script -->
 

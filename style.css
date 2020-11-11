@@ -50,7 +50,7 @@ h1.titletext{
 
 a#button_borrow{
     position: absolute;      
-    top: 55%;
+    top: 50%;
     left: 80%;    
     color: white;   
     font-size: 25px; 
@@ -78,7 +78,7 @@ p.date{
 }
 
 img.small-preview{
-    top: 35%;
+    top: 30%;
     left: 90%;
     transform: translate(-50%,-50%);
     position: absolute;    
@@ -158,11 +158,9 @@ a#toggle{
         position: absolute;
     }
 
-    .row#recomended #recomendedcard{     
-        padding: 10px;        
-        height: auto;      
+    .row#recomended{
+        text-decoration: none;
     }
-
     
 }
 
@@ -187,7 +185,7 @@ a#toggle{
     }
 
     img.small-preview{
-        top:20%;
+        top:17%;
         left: 90%;
         transform: translate(-50%,-50%);
         position: absolute;    
@@ -198,14 +196,14 @@ a#toggle{
 
     .row#recomended{
         text-decoration: none;
-        margin-left: 80px;
+        margin-left: 200px;
         display: list-item;
-        color: white;
+        color: black;        
     }
 
     a#button_borrow{
         position: absolute;              
-        top: 35%;
+        top: 33%;
         left: 75%;    
         color: white;   
         font-size: 25px; 
@@ -223,7 +221,7 @@ a#toggle{
 
         a#button_borrow{
             position: absolute;              
-            top: 20%;
+            top: 18%;
             left: 65%;    
             color: white;   
             font-size: 15px; 
@@ -233,7 +231,7 @@ a#toggle{
         }
 
         img.small-preview{
-            top: 15%;
+            top: 13%;
             left: 80%;
             transform: translate(-50%,-50%);
             position: absolute;    
@@ -252,7 +250,7 @@ a#toggle{
             text-decoration: none;
             margin-left: 60px;
             display: list-item;
-            color: white;
+            color: black;
         }
 
         a#toggle{
@@ -274,7 +272,7 @@ a#toggle{
 
     a#button_borrow{
         position: absolute;              
-        top: 20%;
+        top: 18%;
         left: 70%;    
         color: white;   
         font-size: 10px; 
@@ -284,7 +282,7 @@ a#toggle{
     }
 
     img.small-preview{
-        top: 15%;
+        top: 14%;
         left: 80%;
         transform: translate(-50%,-50%);
         position: absolute;    
@@ -296,8 +294,8 @@ a#toggle{
     .row#recomended{
         text-decoration: none;
         margin-left: 15px;
-        display: list-item;
-        color: white;
+        orientation: auto;
+        color: black;
     }
 
     a#toggle{

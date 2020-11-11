@@ -512,3 +512,14 @@ form#search-books {
 .list-book-content {
     padding: 20px;;
 }
+
+.books-nf {
+    width: 100%;
+    margin: 10px;
+    background: white;
+    border-radius: 15px;
+}
+
+h3.book-not-found {
+    text-align: center;
+}

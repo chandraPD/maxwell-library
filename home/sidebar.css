@@ -1,0 +1,31 @@
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active, .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active {
+    background-color: #000;
+    color: #fff;
+}
+
+[class*=sidebar-light] .user-panel {
+    border-bottom: 0;
+    flex-direction: column;
+    text-align:center;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+[class*="sidebar-light"] .brand-link {
+    border-bottom: 0;
+}
+
+.my-center{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my-center img {
+    width: 7rem;
+}
+
+.user-panel .info {
+    margin-top: 4%;
+}
+

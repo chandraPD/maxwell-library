@@ -160,7 +160,7 @@ a#toggle{
 
     .row#recomended #recomendedcard{     
         padding: 10px;        
-        height: auto;      
+        height: auto;
     }
 
     
@@ -200,7 +200,7 @@ a#toggle{
         text-decoration: none;
         margin-left: 80px;
         display: list-item;
-        color: white;
+        color: black;
     }
 
     a#button_borrow{
@@ -252,7 +252,7 @@ a#toggle{
             text-decoration: none;
             margin-left: 60px;
             display: list-item;
-            color: white;
+            color:black;
         }
 
         a#toggle{
@@ -297,7 +297,7 @@ a#toggle{
         text-decoration: none;
         margin-left: 15px;
         display: list-item;
-        color: white;
+        color: black;
     }
 
     a#toggle{
@@ -307,6 +307,7 @@ a#toggle{
         text-decoration: none;
         position: absolute;
     }
+
 }
 
 /* slick slider */
@@ -370,6 +371,9 @@ img.img-fluid.img-book {border-top-left-radius: 10px;border-top-right-radius: 10
 /* Add Styline */
 .list-title h4 {
     text-align: center;
+    margin-left: 55px ;
+    margin-right: 60px ;
+
 }
 
 h5.card-title {
@@ -377,15 +381,22 @@ h5.card-title {
     margin-left: 30px;
 }
 
-
+/* button recommend */
 a.recomendedcard1 {
-    margin-left: 80px;
+    margin-left: 75px;
 }
 
 .recommend-title{
     text-align: center;
 }
 
+
+h5 {
+    text-align: center;
+}
+
+/* width of edit module */
 .modal-content#edit-module {
     width: 150%;
+
 }

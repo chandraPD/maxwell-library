@@ -353,6 +353,7 @@ a#toggle{
 
 .filtr-item.col-sm-4.list-book {
     padding: 7.5px;
+    max-width: 360px;
 }
 
 img.img-fluid.img-book {border-top-left-radius: 10px;border-top-right-radius: 10px; height: 15rem;}
@@ -386,4 +387,37 @@ a.recomendedcard1 {
 
 .modal-content#edit-module {
     width: 150%;
+}
+
+h2.title-container {
+    font-weight: bold;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+
+#input-search{
+    border-radius: 22px;
+}
+
+form#search-books {
+    margin-left: 20%;
+}
+
+.list-book-content {
+    padding: 20px;;
 }

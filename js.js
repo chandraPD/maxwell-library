@@ -40,3 +40,9 @@ $(document).on('ready', function () {
         slidesToScroll: 3
     });
 });
+
+$(function () {
+    $('#datetimepicker4').datetimepicker({
+        format: 'L'
+    });
+});

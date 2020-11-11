@@ -26,11 +26,24 @@
 }
 
 .user-panel .image {
-    padding-left: 0;
+    padding-left: 0.3rem;
 }
 
 .sidebar-mini.sidebar-collapse .main-sidebar .user-panel .image img {
     width: 2.1rem;
+}
+
+.sidebar-mini.sidebar-collapse .main-sidebar.sidebar-focused .user-panel, .sidebar-mini.sidebar-collapse .main-sidebar:hover .user-panel {
+    text-align:left;
+    flex-direction: row;
+}
+
+.sidebar-mini.sidebar-collapse .main-sidebar.sidebar-focused .user-panel .image, .sidebar-mini.sidebar-collapse .main-sidebar:hover .user-panel .image {
+    margin-top: 5%;
+}
+
+.sidebar-mini.sidebar-collapse .main-sidebar.sidebar-focused .sidebar-form, .sidebar-mini.sidebar-collapse .main-sidebar.sidebar-focused .user-panel > .info, .sidebar-mini.sidebar-collapse .main-sidebar:hover .sidebar-form, .sidebar-mini.sidebar-collapse .main-sidebar:hover .user-panel > .info {
+    margin-right: 5%;
 }
 
 .user-panel .info {

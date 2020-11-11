@@ -114,13 +114,15 @@ ul.menuhead li a:hover {
 }
 
 .row#recomended{
-    margin: 20px;
+
+    margin: 20px; 
+    padding-left: 120px;
 }
 
 #recomendedcard img{
-
-    height: 280px;
+    height: 250px;
     width: 250px;
+    margin: auto;
 }
 
 a#toggle{
@@ -360,9 +362,28 @@ img.img-fluid.img-book {border-top-left-radius: 10px;border-top-right-radius: 10
     padding-top: 0px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-/* Add Styline */
+
 }
 
+/* Add Styline */
 .list-title h4 {
     text-align: center;
+}
+
+h5.card-title {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+
+a.recomendedcard1 {
+    margin-left: 80px;
+}
+
+.recommend-title{
+    text-align: center;
+}
+
+.modal-content#edit-module {
+    width: 150%;
 }

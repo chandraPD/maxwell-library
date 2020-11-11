@@ -1,52 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Login Template</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="assets/css/login.css" />
-  </head>
 
-  <body>
-    <main>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-7 px-0 d-none d-sm-block">
-            <div class="main-title">
-              <h1>
-                Book is a window <br />
-                to the world
-              </h1>
-              <p>Photo by Mark Pan4ratte on Unsplash</p>
-              <div class="img-cover"></div>
-              <img
-                src="assets/images/cover.png"
-                alt="login image"
-                class="login-img"
-              />
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Login Template</title>
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/login.css" />
+</head>
+
+<body>
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-7 px-0 d-none d-sm-block">
+          <div class="main-title">
+            <h1>
+              Book is a window <br />
+              to the world
+            </h1>
+            <p>Photo by Mark Pan4ratte on Unsplash</p>
+            <div class="img-cover"></div>
+            <img src="assets/images/cover.png" alt="login image" class="login-img" />
           </div>
-          <div class="col-sm-5 login-section-wrapper">
-            <div class="brand-wrapper">
-              <img src="assets/images/bookshelf.png" alt="logo" class="logo" />
-            </div>
+        </div>
+        <div class="col-sm-5 login-section-wrapper">
+          <div class="brand-wrapper">
+            <img src="assets/images/bookshelf.png" alt="logo" class="logo" />
+          </div>
 
-            <!--Login Form-->
-            <div class="login-wrapper my-auto" id="login">
-              <h1 class="form-title">Login</h1>
-              <p class="form-subtitle">
-                Welcome Back, Please Login to your Account
-              </p>
-
+          <!--Login Form-->
+          <div class="login-wrapper my-auto" id="login">
+            <h1 class="form-title">Login</h1>
+            <p class="form-subtitle">Welcome Back, Please Login to your Account</p>
 
             <form action="#" id="loginForm">
               <div class="container-form">
@@ -73,35 +61,15 @@
                   <input name="signup" id="signup" class="btn signup-btn" type="button" value="Sign Up"
                     onclick="displaySignUp()" />
                 </div>
-                <div class="container-btn">
-                  <div class="row">
-                    <input
-                      name="login"
-                      id="login"
-                      class="btn login-btn"
-                      type="button"
-                      value="Login"
-                    />
-                    <input
-                      name="signup"
-                      id="signup"
-                      class="btn signup-btn"
-                      type="button"
-                      value="Sign Up"
-                      onclick="displaySignUp()"
-                    />
-                  </div>
-                </div>
-              </form>
-            </div>
+              </div>
+            </form>
 
-            <!--Register Form-->
-            <div class="register-wrapper my-auto" id="register">
-              <h1 class="form-title">Register</h1>
-              <p class="form-subtitle">
-                Welcome! Please Register to your Account
-              </p>
+          </div>
 
+          <!--Register Form-->
+          <div class="register-wrapper my-auto" id="register">
+            <h1 class="form-title">Register</h1>
+            <p class="form-subtitle">Welcome! Please Register to your Account</p>
 
             <form role="form" id="formRegister">
               <div class="container-form">
@@ -132,16 +100,14 @@
                   <input name="login" id="login" class="btn login-btn" type="button" value="Login"
                     onclick="displayLogIn()" />
                 </div>
-              </form>
-            </div>
+              </div>
+            </form>
+          </div>
 
-            <!--Form Forgot Password-->
-            <div class="forgot-wrapper my-auto" id="forgotPassword">
-              <h1 class="form-title">Forgot Password</h1>
-              <p class="form-subtitle">
-                Forgot your password? Don't worry, we got you covered.
-              </p>
-
+          <!--Form Forgot Password-->
+          <div class="forgot-wrapper my-auto" id="forgotPassword">
+            <h1 class="form-title">Forgot Password</h1>
+            <p class="form-subtitle">Forgot your password? Don't worry, we got you covered.</p>
 
             <form action="#" id="formForgot">
               <div class="container-form">
@@ -162,21 +128,35 @@
                   <input name="login" id="login" class="btn login-btn" type="button" value="Back to Login"
                     onclick="displayLogIn()" />
                 </div>
-              </form>
-            </div>
+              </div>
+            </form>
 
-            <p class="terms">
-              By signing up, you agree to Book’s <br />
-              Terms and Conditions & Privacy Policy
-            </p>
           </div>
+
+          <p class="terms">
+            By signing up, you agree to Book’s <br />
+            Terms and Conditions & Privacy Policy
+          </p>
         </div>
       </div>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="./assets/js/script.js"></script>
-  </body>
+  <!-- jQuery -->
+  <script src="../plugins/jquery/jquery.min.js"></script>
+
+  <!-- jquery-validation -->
+  <script src="../plugins/jquery-validation/jquery.validate.min.js"></script>
+  <script src="../plugins/jquery-validation/additional-methods.min.js"></script>
+
+  <!--custom javascript-->
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/loginvalidation.js"></script>
+  <script src="assets/js/registervalidation.js"></script>
+  <script src="assets/js/forgotvalidation.js"></script>
+
+</body>
+
 </html>
-

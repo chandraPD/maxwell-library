@@ -19,9 +19,9 @@ p{
 
 img.big-preview{
     background-size: cover;
-    background-image: url(/assets/background.png);
+    background-image: url(./assets/background.png);
     max-height: 350px;
-    max-width: 1200px;
+    max-width: 100%;
     
 }
 
@@ -49,8 +49,8 @@ h1.titletext{
 }
 
 a#button_borrow{
-    position: absolute;    
-    top: 85%;
+    position: absolute;      
+    top: 55%;
     left: 80%;    
     color: white;   
     font-size: 25px; 
@@ -78,7 +78,7 @@ p.date{
 }
 
 img.small-preview{
-    top: 45%;
+    top: 35%;
     left: 90%;
     transform: translate(-50%,-50%);
     position: absolute;    
@@ -88,7 +88,7 @@ img.small-preview{
 }
 
 ul.menuhead{    
-    margin-left: 1000px;
+    margin-left: 900px;
     float: right;
 }
 
@@ -104,18 +104,288 @@ ul.menuhead li a:hover {
     color: blue;
 }
 
-/* Add Styling */
+.list-title{
+    margin-top: 30px;
+    margin-left: 70px;
+}
 
-.list-title {
+.list-content{
+    margin: 20px;
+}
+
+.row#recomended{
+    margin: 20px; 
+    padding-left: 120px;
+}
+
+#recomendedcard img{
+    
+    height: 250px;
+    width: 250px;
+    margin: auto;
+}
+
+a#toggle{
+    color: black;
+    float: right;    
+    margin-left: 1000px;
+    text-decoration: none;
+    position: absolute;
+}
+
+@media (max-width: 1024px){
+    ul.menuhead{    
+        margin-left: 500px;
+        float: right;
+               
+    }
+
+    img.small-preview{
+        top: 30%;
+        left: 90%;
+        transform: translate(-50%,-50%);
+        position: absolute;    
+        height: 150px;
+        width: 100px
+        
+    }
+
+    a#toggle{
+        color: black;
+        float: right;    
+        margin-left: 500px;
+        text-decoration: none;
+        position: absolute;
+    }
+
+    .row#recomended #recomendedcard{     
+        padding: 10px;        
+        height: auto;      
+    }
+
+    
+}
+
+@media (max-width: 800px){
+    img.big-preview{
+        background-size: cover;
+        background-image: url(./assets/background.png);
+        max-height: 350px;
+        max-width: 100%;        
+    }
+
+    ul.menuhead{    
+        margin-left: 500px;
+        float: right;
+    }
+
+    a#toggle{
+        color: black;
+        float: right;    
+        margin-left: 500px;
+        text-decoration: none;                
+    }
+
+    img.small-preview{
+        top:20%;
+        left: 90%;
+        transform: translate(-50%,-50%);
+        position: absolute;    
+        height: 150px;
+        width: 100px
+        
+    }
+
+    .row#recomended{
+        text-decoration: none;
+        margin-left: 80px;
+        display: list-item;
+        color: white;
+    }
+
+    a#button_borrow{
+        position: absolute;              
+        top: 35%;
+        left: 75%;    
+        color: white;   
+        font-size: 25px; 
+        width: 150px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    }
+}
+
+@media (max-width: 450px){
+        ul.menuhead{    
+            margin-left: 200px;
+            float: right;
+        }
+
+        a#button_borrow{
+            position: absolute;              
+            top: 20%;
+            left: 65%;    
+            color: white;   
+            font-size: 15px; 
+            width: 75px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        img.small-preview{
+            top: 15%;
+            left: 80%;
+            transform: translate(-50%,-50%);
+            position: absolute;    
+            height: 150px;
+            width: 100px
+            
+        }
+
+        h1.statustext{
+            color: green;
+            font-size: 20px;
+            margin-left: 70px;
+        }
+
+        .row#recomended{
+            text-decoration: none;
+            margin-left: 60px;
+            display: list-item;
+            color: white;
+        }
+
+        a#toggle{
+            color: black;
+            float: right;    
+            margin-left: 300px;
+            text-decoration: none;
+            position: absolute;
+        }
+}
+
+@media (max-width: 330px){
+    ul.menuhead{    
+        margin-left: 150px;
+        float: right;
+        display: list-item;
+        color: transparent;
+    }
+
+    a#button_borrow{
+        position: absolute;              
+        top: 20%;
+        left: 70%;    
+        color: white;   
+        font-size: 10px; 
+        width: 60px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    img.small-preview{
+        top: 15%;
+        left: 80%;
+        transform: translate(-50%,-50%);
+        position: absolute;    
+        height: 100px;
+        width: 75px
+        
+    }
+
+    .row#recomended{
+        text-decoration: none;
+        margin-left: 15px;
+        display: list-item;
+        color: white;
+    }
+
+    a#toggle{
+        color: black;
+        float: right;    
+        margin-left: 250px;
+        text-decoration: none;
+        position: absolute;
+    }
+}
+
+/* slick slider */
+
+.slider {
+    width: 50%;
+    margin: 100px auto;
+}
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+}
+
+.slick-active {
+    opacity: .5;
+}
+
+.slick-current {
+    opacity: 1;
+}
+
+.title-book {
+    font-weight: bold;
+    text-align: center;
+    font-size: larger;
+}
+
+.list-book-detail {
+    padding: 10px;
+}
+
+.filtr-item.col-sm-4.list-book {
+    padding: 7.5px;
+}
+
+img.img-fluid.img-book {border-top-left-radius: 10px;border-top-right-radius: 10px;}
+
+.list-book-detail {
+    background: white;
+    padding-top: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+/* Add Styline */
+.list-title h4 {
     text-align: center;
 }
 
-.flex-content {
-    display: flex;
-    justify-content: center;
-} 
+h5.card-title {
+    font-size: 20px;
+    margin-left: 30px;
+}
 
-.list-content {
+
+a.recomendedcard1 {
+    margin-left: 80px;
+}
+
+.recommend-title{
     text-align: center;
 }
 
+.modal-content#edit-module {
+    width: 150%;
+}

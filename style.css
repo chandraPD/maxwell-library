@@ -104,15 +104,18 @@ ul.menuhead li a:hover {
     color: blue;
 }
 
-/* Add Styline */
+/* Add Styling */
+
 .list-title {
     text-align: center;
 }
+
 .flex-content {
     display: flex;
     justify-content: center;
-}
+} 
 
 .list-content {
     text-align: center;
 }
+

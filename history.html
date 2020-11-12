@@ -201,13 +201,7 @@
       </div>
       <!-- /.modal -->
       <section class="content-header">
-        <div class="container-fluid">
-          <div class="row mb-2">
-            <div class="col-sm-6">
-              <h1>My History</h1>
-            </div>
-          </div>
-        </div><!-- /.container-fluid -->
+        <!-- /.container-fluid -->
       </section>
       <!-- Main content -->
       <section class="content">
@@ -218,16 +212,17 @@
               <div class="panel-heading" style="padding: 2% 0">
                 <div class="row">
                   <div class="col-md-2">
-                    <strong class="history-text">Book History</strong>
+                    <strong class="history-text borrowed" id="title-borrowed">Borrowed Books</strong>
+                    <strong class="history-text current" id="title-current">Current Read</strong>
                   </div>
                   <div class="col-md-10">
                     <div class="btn-group">
                       <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                        Filter History
+                        View History
                       </button>
                       <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Current Read</a>
-                        <a class="dropdown-item" href="#">Borrowed</a>
+                        <button class="dropdown-item" href="#" onclick="displayBorrowedBooks()">Borrowed</a>
+                        <button class="dropdown-item" href="#" onclick="displayCurrentRead()">Current Read</a>
                       </div>
                     </div>
                   </div>
@@ -235,7 +230,7 @@
               </div>
 
 
-              <div class="panel-body">
+              <div class="panel-body borrowed" id="borrowed-books">
                 <div class="row">
                   <div class="col-md-1"><img src="assets/books/brief-answer-to-the-big-questions.jpg" class="media-object">
                   </div>
@@ -243,7 +238,7 @@
                     <div class="row">
                       <div class="col-md-12">
 
-                        <span><strong>Book Title</strong></span>
+                        <span><strong>Book Title (Borrowed)</strong></span>
                         <span class="label label-info-custom">Category</span>
                         <br>
                         <div class="book-description">
@@ -267,7 +262,7 @@
                     <div class="row">
                       <div class="col-md-12">
 
-                        <span><strong>Book Title</strong></span>
+                        <span><strong>Book Title (Borrowed)</strong></span>
                         <span class="label label-info-custom">Category</span>
                         <br>
                         <div class="book-description">
@@ -292,7 +287,7 @@
                     <div class="row">
                       <div class="col-md-12">
 
-                        <span><strong>Book Title</strong></span>
+                        <span><strong>Book Title (Borrowed)</strong></span>
                         <span class="label label-info-custom">Category</span>
                         <br>
                         <div class="book-description">
@@ -315,7 +310,7 @@
                     <div class="row">
                       <div class="col-md-12">
 
-                        <span><strong>Book Title</strong></span>
+                        <span><strong>Book Title (Borrowed)</strong></span>
                         <span class="label label-info-custom">Category</span>
                         <br>
                         <div class="book-description">
@@ -337,7 +332,138 @@
                     <div class="row">
                       <div class="col-md-12">
 
-                        <span><strong>Book Title</strong></span>
+                        <span><strong>Book Title (Borrowed)</strong></span>
+                        <span class="label label-info-custom">Category</span>
+                        <br>
+                        <div class="book-description">
+                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate exercitationem
+                          reiciendis ipsa? Nihil laborum recusandae, vero voluptate incidunt quas? Dolor ab enim
+                          exercitationem sit quam reiciendis officiis sed sapiente aspernatur.</span>
+                        </div>
+                        <br>
+                      </div>
+                      <div class="col-md-12">
+                        Borrowed On: 03/10/2013
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="card-tools">
+                  <ul class="pagination pagination-sm custom-pagination-pos">
+                    <li class="page-item"><a href="#" class="page-link">&laquo;</a></li>
+                    <li class="page-item"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item"><a href="#" class="page-link">&raquo;</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Current Read -->
+              <div class="panel-body current" id="current-books">
+                <div class="row">
+                  <div class="col-md-1"><img src="assets/books/brief-answer-to-the-big-questions.jpg" class="media-object">
+                  </div>
+                  <div class="col-md-11">
+                    <div class="row">
+                      <div class="col-md-12">
+
+                        <span><strong>Book Title (Current)</strong></span>
+                        <span class="label label-info-custom">Category</span>
+                        <br>
+                        <div class="book-description">
+                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate exercitationem
+                          reiciendis ipsa? Nihil laborum recusandae, vero voluptate incidunt quas? Dolor ab enim
+                          exercitationem sit quam reiciendis officiis sed sapiente aspernatur.</span>
+                        </div>
+                        <br>
+                      </div>
+                      <div class="col-md-12">
+                        Borrowed On: 05/30/2014
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-1"><img src="assets/books/dilan.jpg" class="media-object">
+                  </div>
+                  <div class="col-md-11">
+                    <div class="row">
+                      <div class="col-md-12">
+
+                        <span><strong>Book Title (Current)</strong></span>
+                        <span class="label label-info-custom">Category</span>
+                        <br>
+                        <div class="book-description">
+                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate exercitationem
+                          reiciendis ipsa? Nihil laborum recusandae, vero voluptate incidunt quas? Dolor ab enim
+                          exercitationem sit quam reiciendis officiis sed sapiente aspernatur.</span>
+                        </div>
+                        <br>
+                      </div>
+                      <div class="col-md-12">
+                        Borrowed On: 03/10/2013
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                
+                <div class="row">
+                  <div class="col-md-1"><img src="assets/books/fantastic-beasts.jpg" class="media-object">
+                  </div>
+                  <div class="col-md-11">
+                    <div class="row">
+                      <div class="col-md-12">
+
+                        <span><strong>Book Title (Current)</strong></span>
+                        <span class="label label-info-custom">Category</span>
+                        <br>
+                        <div class="book-description">
+                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate exercitationem
+                          reiciendis ipsa? Nihil laborum recusandae, vero voluptate incidunt quas? Dolor ab enim
+                          exercitationem sit quam reiciendis officiis sed sapiente aspernatur.</span>
+                        </div>
+                        <br>
+                      </div>
+                      <div class="col-md-12">
+                        Borrowed On: 03/10/2013
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-1"><img src="assets/books/harry-potter.jpg" class="media-object">
+                  </div>
+                  <div class="col-md-11">
+                    <div class="row">
+                      <div class="col-md-12">
+
+                        <span><strong>Book Title (Current)</strong></span>
+                        <span class="label label-info-custom">Category</span>
+                        <br>
+                        <div class="book-description">
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi accusamus laboriosam
+                          aliquid reiciendis dolore doloremque rerum minus, quo numquam nulla, et eveniet consectetur
+                          vitae tempora! Facere dolore dicta ab in.</span>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        Borrowed On: 05/30/2014
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-1"><img src="assets/books/laskar.png" class="media-object">
+                  </div>
+                  <div class="col-md-11">
+                    <div class="row">
+                      <div class="col-md-12">
+
+                        <span><strong>Book Title (Current)</strong></span>
                         <span class="label label-info-custom">Category</span>
                         <br>
                         <div class="book-description">
@@ -395,6 +521,10 @@
 
   <!-- Flickity -->
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="home/js/historyview.js"></script>
+  
+
+  
 
 
 </body>

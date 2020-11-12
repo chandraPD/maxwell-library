@@ -101,3 +101,7 @@
 .book-description {
     text-align: justify;
 }
+
+.current {
+    display:none;
+}

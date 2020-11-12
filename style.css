@@ -4,7 +4,7 @@
 
 .button{
     margin-left: 20px;
-    margin-top: 10px;    
+    margin-top: 10px;
     position: absolute;
     z-index: 100;
 }
@@ -22,19 +22,19 @@ img.big-preview{
     background-image: url(./assets/background.png);
     max-height: 350px;
     max-width: 100%;
-    
+
 }
 
-.category {	
+.category {
 	width:60px;
 	height:20px;
 	bottom:40px;
     right:40px;
     margin-left: 70px;
-	background-color:yellow;	
-    border-radius:50px;	
-    text-align: center;	
-    transition: 0.6s ease;            
+	background-color:yellow;
+    border-radius:50px;
+    text-align: center;
+    transition: 0.6s ease;
 }
 
 p.content{
@@ -49,9 +49,10 @@ h1.titletext{
 }
 
 a#button_borrow{
+
     position: absolute;      
-    top: 55%;
-    left: 80%;    
+    top: 40%;
+    left: 67%;    
     color: white;   
     font-size: 25px; 
     width: 150px;
@@ -62,7 +63,7 @@ a#button_borrow{
 h1.statustext{
     color: green;
     font-size: 20px;
-    margin-left: 100px;
+    margin-left: 30px;
 }
 
 p.date{
@@ -71,24 +72,25 @@ p.date{
     font-weight: bold;
 }
 
-.category p{    
+.category p{
     color: black;
     text-decoration: none;
-    font-size: 15px;            
+    font-size: 15px;
 }
 
 img.small-preview{
-    top: 35%;
-    left: 90%;
+    top: 32%;
+    left: 70%;
     transform: translate(-50%,-50%);
-    position: absolute;    
+    position: absolute;
     height: 150px;
     width: 100px
-    
+
 }
 
+
 ul.menuhead{    
-    margin-left: 900px;
+    margin-left: 1300px;
     float: right;
 }
 
@@ -113,13 +115,7 @@ ul.menuhead li a:hover {
     margin: 20px;
 }
 
-.row#recomended{
-    margin: 20px; 
-    padding-left: 120px;
-}
-
 #recomendedcard img{
-    
     height: 250px;
     width: 250px;
     margin: auto;
@@ -127,15 +123,57 @@ ul.menuhead li a:hover {
 
 a#toggle{
     color: black;
-    float: right;    
+    float: right;
     margin-left: 1000px;
     text-decoration: none;
     position: absolute;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1920px){
     ul.menuhead{    
+        margin-left: 900px;
+        float: right;
+               
+    }
+
+    img.small-preview{
+        top: 35%;
+        left: 80%;
+        transform: translate(-50%,-50%);
+        position: absolute;    
+        height: 150px;
+        width: 100px
+        
+    }
+
+    a#toggle{
+        color: black;
+        float: right;    
         margin-left: 500px;
+        text-decoration: none;
+        position: absolute;
+    }
+
+    .row#recomended{
+        text-decoration: none;
+    }
+
+    a#button_borrow{
+        position: absolute;      
+        top: 50%;
+        left: 75%;    
+        color: white;   
+        font-size: 25px; 
+        width: 150px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    }
+    
+}
+
+@media (max-width: 1440px){
+    ul.menuhead{    
+        margin-left: 800px;
         float: right;
                
     }
@@ -160,10 +198,63 @@ a#toggle{
 
     .row#recomended #recomendedcard{     
         padding: 10px;        
-        height: auto;   
+        height: auto;  
+    } 
+    .row#recomended{
+        text-decoration: none;
     }
 
+    a#button_borrow{
+        position: absolute;      
+        top: 55%;
+        left: 80%;    
+        color: white;   
+        font-size: 25px; 
+        width: 150px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    }
     
+
+
+@media (max-width: 1220px){
+    ul.menuhead{    
+        margin-left: 700px;
+        float: right;
+               
+    }
+    
+}
+
+@media (max-width: 1024px){
+    ul.menuhead{
+        margin-left: 500px;
+        float: right;
+
+    }
+
+    img.small-preview{
+        top: 30%;
+        left: 90%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        height: 150px;
+        width: 100px
+
+    }
+
+    a#toggle{
+        color: black;
+        float: right;
+        margin-left: 500px;
+        text-decoration: none;
+        position: absolute;
+    }
+
+    .row#recomended{
+        text-decoration: none;
+    }
+
 }
 
 @media (max-width: 800px){
@@ -171,41 +262,41 @@ a#toggle{
         background-size: cover;
         background-image: url(./assets/background.png);
         max-height: 350px;
-        max-width: 100%;        
+        max-width: 100%;
     }
 
-    ul.menuhead{    
+    ul.menuhead{
         margin-left: 500px;
         float: right;
     }
 
     a#toggle{
         color: black;
-        float: right;    
+        float: right;
         margin-left: 500px;
-        text-decoration: none;                
+        text-decoration: none;
     }
 
     img.small-preview{
-        top:20%;
+        top:17%;
         left: 90%;
         transform: translate(-50%,-50%);
-        position: absolute;    
+        position: absolute;
         height: 150px;
         width: 100px
-        
+
     }
 
     .row#recomended{
         text-decoration: none;
-        margin-left: 80px;
+        margin-left: 200px;
         display: list-item;
         color: black;
     }
 
     a#button_borrow{
         position: absolute;              
-        top: 35%;
+        top: 30%;
         left: 75%;    
         color: white;   
         font-size: 25px; 
@@ -216,17 +307,19 @@ a#toggle{
 }
 
 @media (max-width: 450px){
-        ul.menuhead{    
+        ul.menuhead{
             margin-left: 200px;
             float: right;
         }
 
         a#button_borrow{
+
             position: absolute;              
             top: 20%;
             left: 65%;    
             color: white;   
             font-size: 15px; 
+
             width: 75px;
             border-radius: 10px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -236,10 +329,10 @@ a#toggle{
             top: 15%;
             left: 80%;
             transform: translate(-50%,-50%);
-            position: absolute;    
+            position: absolute;
             height: 150px;
             width: 100px
-            
+
         }
 
         h1.statustext{
@@ -252,12 +345,12 @@ a#toggle{
             text-decoration: none;
             margin-left: 60px;
             display: list-item;
-            color:black;
+            color: black;
         }
 
         a#toggle{
             color: black;
-            float: right;    
+            float: right;
             margin-left: 300px;
             text-decoration: none;
             position: absolute;
@@ -265,7 +358,7 @@ a#toggle{
 }
 
 @media (max-width: 330px){
-    ul.menuhead{    
+    ul.menuhead{
         margin-left: 150px;
         float: right;
         display: list-item;
@@ -273,36 +366,36 @@ a#toggle{
     }
 
     a#button_borrow{
-        position: absolute;              
-        top: 20%;
-        left: 70%;    
-        color: white;   
-        font-size: 10px; 
+        position: absolute;
+        top: 18%;
+        left: 70%;
+        color: white;
+        font-size: 10px;
         width: 60px;
         border-radius: 10px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     }
 
     img.small-preview{
-        top: 15%;
+        top: 14%;
         left: 80%;
         transform: translate(-50%,-50%);
-        position: absolute;    
+        position: absolute;
         height: 100px;
         width: 75px
-        
+
     }
 
     .row#recomended{
         text-decoration: none;
         margin-left: 15px;
-        display: list-item;
+        orientation: auto;
         color: black;
     }
 
     a#toggle{
         color: black;
-        float: right;    
+        float: right;
         margin-left: 250px;
         text-decoration: none;
         position: absolute;
@@ -356,9 +449,10 @@ a#toggle{
 
 .filtr-item.col-sm-4.list-book {
     padding: 7.5px;
+    max-width: 360px;
 }
 
-img.img-fluid.img-book {border-top-left-radius: 10px;border-top-right-radius: 10px;}
+img.img-fluid.img-book {border-top-left-radius: 10px;border-top-right-radius: 10px; height: 15rem;}
 
 .list-book-detail {
     background: white;
@@ -390,13 +484,39 @@ a.recomendedcard1 {
     text-align: center;
 }
 
+/* .modal-content#edit-module {
+    width: 150%;
+} */
 
-h5 {
-    text-align: center;
+h2.title-container {
+    font-weight: bold;
 }
 
-/* width of edit module */
-.modal-content#edit-module {
-    width: 150%;
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
 
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+
+#input-search{
+    border-radius: 22px;
+}
+
+form#search-books {
+    margin-left: 20%;
+}
+
+.list-book-content {
+    padding: 20px;;
 }

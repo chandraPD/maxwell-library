@@ -136,7 +136,8 @@
             </div>
           </div>
           <div class="borrowbutton">
-            <a class="btn btn-warning" id="button_borrow" href="#" data-toggle="modal" data-target="#BorrowModal">Borrow</a>
+            <a id="button_borrow" class="btn btn-warning" href="#" onclick="showModal1('borrow')">Borrow</a>
+            <a id="button_borrow2" class="btn btn-warning" href="#" onclick="showModal1('borrowed')">Cancel</a>            
           </div>
         </div>
       </section>
@@ -206,6 +207,25 @@
           </div>
         </div>
       </div>
+      <div class="modal fade" id="cancelModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabesl"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Do you want to cancel?</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">Are you serious want to cancel?</div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+              <a class="btn btn-danger" id="btn-delete" href="#" data-dismiss="modal" data-toggle="modal"
+                data-target="#CancelModal">Cancel</a>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="modal fade" id="BerhasilModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabesl"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -259,7 +279,27 @@
           <p>Book already success to borrow</p>
         </div>
           <div class="modal-footer">
-            <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+            <button id="btn" class="btn btn-secondary" type="button" data-dismiss="modal" onclick="clickstatus()">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="CancelModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabesl"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Cancel Complete!</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          <img class="check" src="./assets/check.png">
+          <p>Book already Canceled to borrow</p>
+        </div>
+          <div class="modal-footer">
+            <button id="btn" class="btn btn-secondary" type="button" data-dismiss="modal" onclick="clickstatus()">Close</button>
           </div>
         </div>
       </div>
@@ -279,7 +319,7 @@
                   <label class="title-module">Url Image</label>
                 </div>
                 <div class="col-lg-10">
-                  <input type="text" name="url" class="form-control" placeholder="/assets/background.png">
+                  <input type="text" name="url" class="form-control" placeholder="">
                 </div>
               </div>
               <hr class="divider">
@@ -288,7 +328,7 @@
                   <label class="title-module">Book Tittle</label>
                 </div>
                 <div class="col-lg-4">
-                  <input type="text" name="title" class="form-control" placeholder="Dilan 1991">
+                  <input type="text" name="title" class="form-control" placeholder="">
                 </div>
               </div>
               <hr class="divider">
@@ -345,7 +385,7 @@
       </div>
       <div class="modal fade" id="BorrowModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabesl"
       aria-hidden="true">
-      <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-dialog modal-md" role="document">
         <div class="modal-content" id="edit-module">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Borrow Book</h5>
@@ -356,19 +396,19 @@
           <div class="modal-body">
             <hr class="divider">
             <div class="row">
-              <div class="col-lg-2">
+              <div class="col-md-3">
                 <label class="title-module">Username:</label>
               </div>
-              <div class="col-lg-10">
+              <div class="col-md-6">
                 <input type="text"  name="name" class="form-control" readonly placeholder="Niki Zefanya">
               </div>
             </div>
             <hr class="divider">
             <div class="row">
-              <div class="col-lg-2">
+              <div class="col-md-3">
               <label class="title-module">Date Borrow:</label>
               </div>
-              <div class="col-lg-10">
+              <div class="col-md-6">
                   <div class="input-group date" id="datetimepicker5" data-target-input="nearest">
                     <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker5"/>
                     <div class="input-group-append" data-target="#datetimepicker5" data-toggle="datetimepicker">
@@ -379,10 +419,10 @@
             </div>
             <hr class="divider">
             <div class="row">
-              <div class="col-lg-2">
+              <div class="col-md-3">
               <label class="title-module">Date Return:</label>
               </div>
-              <div class="col-lg-10">
+              <div class="col-md-6">
                   <div class="input-group date" id="datetimepicker6" data-target-input="nearest">
                     <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker6"/>
                     <div class="input-group-append" data-target="#datetimepicker6" data-toggle="datetimepicker">
@@ -422,6 +462,21 @@
   <script src="./plugins/daterangepicker/daterangepicker.js"></script>
   <!-- Tempusdominus Bootstrap 4 -->
   <script src="./plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+  <script>	    
+    function clickstatus(){      
+      var status = document.getElementById("button_borrow").value;
+      var borrowedbtn = document.getElementById("button_borrow");
+      if (status == "borrowed") {    
+    sessionStorage.setItem("lastname", "Borrow");
+    document.getElementById("button_borrow").value="borrow";
+    document.getElementById("button_borrow").innerHTML = sessionStorage.getItem("lastname");
+    } else{
+      sessionStorage.setItem("lastname", "Borrowed");
+    document.getElementById("button_borrow").value="borrowed";
+    document.getElementById("button_borrow").innerHTML = sessionStorage.getItem("lastname");    
+    } 
+      }
+    </script>
   <script type="text/javascript" src="modal.js"></script>
 </body>
 

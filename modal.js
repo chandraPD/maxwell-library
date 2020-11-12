@@ -25,7 +25,7 @@ function showModal(arg){
 function showModal1(arg){
     if(arg == 'borrow'){
         $('#BorrowModal').modal('show');
-        document.document.getElementById("button_borrow").value="borrowed";        
+        $('#borrow_button').val('Borrowed');
     }else if (arg== 'borrowed') {        
         $('#cancelModal').modal('show')        
     }    

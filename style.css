@@ -49,7 +49,7 @@ h1.titletext{
     font-weight: bold;
 }
 
-a#button_borrow{
+button#button_borrow{
 
     position: absolute;
     top: 40%;
@@ -159,7 +159,7 @@ a#toggle{
         text-decoration: none;
     }
 
-    a#button_borrow{
+    button#button_borrow{
         position: absolute;
         top: 50%;
         left: 75%;
@@ -201,7 +201,7 @@ a#toggle{
         text-decoration: none;
     }
 
-    a#button_borrow{
+    button#button_borrow{
         position: absolute;
         top: 55%;
         left: 80%;
@@ -291,7 +291,7 @@ a#toggle{
         color: black;
     }
 
-    a#button_borrow{
+    button#button_borrow{
         position: absolute;
         top: 30%;
         left: 75%;
@@ -313,7 +313,7 @@ a#toggle{
             margin-left: 80px;
         }
 
-        a#button_borrow{
+        button#button_borrow{
 
             position: absolute;
             top: 20%;
@@ -360,7 +360,7 @@ a#toggle{
         margin-left: 65px;
     }
 
-    a#button_borrow{
+    button#button_borrow{
 
         position: absolute;
         top: 18%;
@@ -386,7 +386,7 @@ a#toggle{
         margin-left: 40px;
     }
 
-    a#button_borrow{
+    button#button_borrow{
         position: absolute;
         top: 18%;
         left: 70%;

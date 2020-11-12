@@ -352,3 +352,42 @@ body {
 .form-group {
   margin-bottom: 0rem;
 }
+
+
+@media (max-width: 1136px) {
+  .login-img {
+    width: 100vw;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: left;
+    object-position: left;
+  }
+  .forgot-btn {
+    
+    float: left;
+  }
+  .container-btn {
+    margin-top: 15%;
+    margin-left: 16px;
+}
+}
+
+@media(max-width: 574px) {
+  .forgot-btn {
+    margin-right: 0;
+    margin-bottom: 18%;
+    float:right
+  }
+}
+
+@media(max-width: 394px) {
+  .forgot-btn {
+    margin-right: 0;
+    float:left;
+  }
+  .container-btn {
+    margin-top: -10%;
+    margin-left: 16px;
+    float: left;
+}
+}

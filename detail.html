@@ -134,7 +134,7 @@
             </div>
           </div>
           <div class="borrowbutton">
-            <a class="btn btn-warning" id="button_borrow" href="#" data-toggle="modal" data-target="#BorrowModal">Borrow</a>
+            <a id="button_borrow" class="btn btn-warning" href="#" data-toggle="modal" data-target="#BorrowModal">Borrow</a>            
           </div>
         </div>
       </section>
@@ -257,7 +257,27 @@
           <p>Book already success to borrow</p>
         </div>
           <div class="modal-footer">
-            <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+            <button id="btn" class="btn btn-secondary" type="button" data-dismiss="modal" onclick="clickstatus()">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="CancelModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabesl"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Borrow Complete!</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          <img class="check" src="./assets/check.png">
+          <p>Book already success to borrow</p>
+        </div>
+          <div class="modal-footer">
+            <button id="btn" class="btn btn-secondary" type="button" data-dismiss="modal" onclick="clickstatus()">Close</button>
           </div>
         </div>
       </div>
@@ -425,6 +445,21 @@
   <script src="./plugins/daterangepicker/daterangepicker.js"></script>
   <!-- Tempusdominus Bootstrap 4 -->
   <script src="./plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+  <script>	    
+    function clickstatus(){
+      var a = document.getElementById("button_borrow").value;
+      if (a == "borrowed") {  
+    sessionStorage.setItem("lastname", "Borrow")
+    document.getElementById("button_borrow").value="borrow";
+    document.getElementById("button_borrow").innerHTML = sessionStorage.getItem("lastname");
+    } else{
+      sessionStorage.setItem("lastname", "Borrowed");
+    document.getElementById("button_borrow").value="borrowed";
+    document.getElementById("button_borrow").innerHTML = sessionStorage.getItem("lastname");
+    
+    } 
+      }
+    </script>
 </body>
 
 </html>

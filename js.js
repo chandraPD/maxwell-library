@@ -51,13 +51,14 @@ $(function () {
 $(function () {
     $('#datetimepicker5').datetimepicker({
         format: 'L',
+        maxDate : new Date(),
         minDate: new Date()
     });
 });
 
 $(function () {
-    $('#datetimepicker6').datetimepicker({
-        format: 'L',
-        minDate: new Date()
+    $('#datetimepicker6').datetimepicker({        
+        format: 'L',        
+        minDate: new Date()        
     });
 });

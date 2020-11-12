@@ -134,7 +134,7 @@
             </div>
           </div>
           <div class="borrowbutton">
-            <a class="btn btn-warning" id="button_borrow" href="#">Borrow</a>
+            <a class="btn btn-warning" id="button_borrow" href="#" data-toggle="modal" data-target="#BorrowModal">Borrow</a>
           </div>
         </div>
       </section>
@@ -214,8 +214,10 @@
                 <span aria-hidden="true">×</span>
               </button>
             </div>
-            <div class="modal-body"><img class="check" src="./assets/check.png"></div>
+            <div class="modal-body">
+            <img class="check" src="./assets/check.png">
             <p>Data has been deleted</p>
+          </div>
             <div class="modal-footer">
               <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
             </div>
@@ -240,6 +242,26 @@
           </div>
         </div>
       </div>
+      <div class="modal fade" id="BerhasilModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabesl"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Borrow Complete!</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          <img class="check" src="./assets/check.png">
+          <p>Book already success to borrow</p>
+        </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
       <div class="modal fade" id="EditModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabesl"
         aria-hidden="true">
         <div class="modal-dialog modal-xl" role="document">
@@ -320,6 +342,63 @@
           </div>
         </div>
       </div>
+      <div class="modal fade" id="BorrowModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabesl"
+      aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content" id="edit-module">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Borrow Book</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <hr class="divider">
+            <div class="row">
+              <div class="col-lg-2">
+                <label class="title-module">Username:</label>
+              </div>
+              <div class="col-lg-10">
+                <input type="text" id="url" name="url" class="form-control" readonly placeholder="Niki Zefanya">
+              </div>
+            </div>
+            <hr class="divider">
+            <div class="row">
+              <div class="col-lg-2">
+              <label class="title-module">Date Borrow:</label>
+              </div>
+              <div class="col-lg-10">
+                  <div class="input-group date" id="datetimepicker5" data-target-input="nearest">
+                    <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker5"/>
+                    <div class="input-group-append" data-target="#datetimepicker5" data-toggle="datetimepicker">
+                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <hr class="divider">
+            <div class="row">
+              <div class="col-lg-2">
+              <label class="title-module">Date Return:</label>
+              </div>
+              <div class="col-lg-10">
+                  <div class="input-group date" id="datetimepicker6" data-target-input="nearest">
+                    <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker6"/>
+                    <div class="input-group-append" data-target="#datetimepicker6" data-toggle="datetimepicker">
+                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+              <a class="btn btn-warning" id="btn-delete" href="#" data-dismiss="modal" data-toggle="modal"
+                data-target="#BerhasilModal3">Confirm</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
       <!-- /.modal -->
 
   <!-- ./wrapper -->

@@ -469,11 +469,28 @@ a#toggle{
 }
 
 .filtr-item.col-sm-4.list-book {
-    padding: 7.5px;
+    padding: 15px 7.5px;
     max-width: 360px;
+    
 }
 
-img.img-fluid.img-book {border-top-left-radius: 10px;border-top-right-radius: 10px; height: 15rem;}
+img.img-fluid.img-book {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+    height: 15rem; width: 100%;
+    box-shadow: 10px 0 5px 0.5px #888;
+}
+
+.custom-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.desc-book {
+    text-align: justify
+}
 
 .list-book-detail {
     padding: 1.2rem !important;
@@ -481,7 +498,7 @@ img.img-fluid.img-book {border-top-left-radius: 10px;border-top-right-radius: 10
     padding-top: 0px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-
+    box-shadow: 10px 0 5px 0.5px #888;
 }
 
 /* Add Styline */

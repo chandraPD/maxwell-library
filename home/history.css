@@ -49,3 +49,19 @@
 .panel-order .panel-deading {
     margin-bottom: 0;
 }
+
+.pull-right {
+    float:right;
+}
+
+.label-info-custom {
+    border: 1px solid rgb(255, 230, 0);
+    padding: 0.2rem;
+    background-color: #ffc107;
+    border-radius: 5px;
+    margin-left: 0.5rem;
+}
+
+.custom-pagination-pos {
+    margin-left: 45%;
+}

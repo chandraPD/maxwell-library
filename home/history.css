@@ -75,7 +75,8 @@
 }
 
 .custom-pagination-pos {
-    margin-left: 45%;
+  display: flex;
+  justify-content: center;
 }
 
 .history-table {

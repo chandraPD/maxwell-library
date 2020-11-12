@@ -67,6 +67,11 @@
         float:right;
     }
 
+    .book-description {
+        margin-top: 15px;
+        text-align: justify;
+    }
+
 }
 
 .custom-pagination-pos {
@@ -90,4 +95,8 @@
 
 .label-info-custom {
     float:right;
+}
+
+.book-description {
+    text-align: justify;
 }

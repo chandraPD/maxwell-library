@@ -111,8 +111,6 @@ ul.menuhead li a:hover {
 .list-title{
     margin-top: 30px;
     margin-left: 70px;
-    display:flex;
-    justify-content: center;
 }
 
 .list-content{
@@ -259,7 +257,7 @@ a#toggle{
 @media (max-width: 800px){
     img.big-preview{
         background-size: cover;
-        background-image: url(./assets/novel-dilan-mini);
+        background-image: url(./assets/novel-dilanmini.jpg);
         max-height: 350px;
         max-width: 100%;
     }
@@ -606,14 +604,4 @@ h3.book-not-found {
 
 .book-list {
     margin-top: 0px !important;
-}
-
-.recomendedcard-read {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #ffc107;
-    border-color: #ffc929;
-    color: rgb(255, 255, 255);
-    font-size: 1.2rem;
 }

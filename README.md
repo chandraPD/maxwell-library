@@ -82,12 +82,12 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
-[contributors-url]: https://chandrapd.github.io/maxwell-library/graphs/contributors
+[contributors-url]: https://github.com/chandraPD/maxwell-library/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat-square
-[forks-url]: https://chandrapd.github.io/maxwell-library/network/members
+[forks-url]:https://github.com/chandraPD/maxwell-library/network/members
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
-[stars-url]: https://chandrapd.github.io/maxwell-library/stargazers
+[stars-url]: https://github.com/chandraPD/maxwell-library/stargazers
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
-[issues-url]: https://chandrapd.github.io/maxwell-library/issues
+[issues-url]:https://github.com/chandraPD/maxwell-library/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
-[license-url]: https://chandrapd.github.io/maxwell-library/main/LICENSE.txt
+[license-url]: https://github.com/chandraPD/maxwell-library/main/LICENSE.txt

@@ -100,7 +100,6 @@ function confirmBook() {
     if (url != '' && title != '' && date != '' && category != '') {
         $('#ModalBook').modal('hide');
         $('#BerhasilModal2').modal('show');
-        console.log('test2');
     }
 
 }
@@ -113,4 +112,21 @@ function showModal1(arg) {
     }
 }
 
+function clickstatus() {
+    var status = document.getElementById("button_borrow").value;
+    var borrowedbtn = document.getElementById("button_borrow");
+    if (status == "borrowed") {
+        sessionStorage.setItem("lastname", "Borrow");
+        document.getElementById("button_borrow").value = "borrow";
+        document.getElementById("button_borrow").innerHTML = sessionStorage.getItem("lastname");
+    } else {
+        if (document.getElementById("returndate").value !== "" && document.getElementById("borrowdate").value !== "") {
+            sessionStorage.setItem("lastname", "Borrowed");
+            document.getElementById("button_borrow").value = "borrowed";
+            document.getElementById("button_borrow").innerHTML = sessionStorage.getItem("lastname");
+            $('#BorrowModal').modal('hide');
+            $('#BerhasilModal3').modal('show');
+        }
+    }
+}
 

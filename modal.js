@@ -1,11 +1,7 @@
 function showModal(arg) {
+    resetModal();
     if (arg == 'add') {
         document.querySelector('#modal-title').textContent = 'Add Data';
-        $('[name="url"]').val('');
-        $('[name="title"]').val('');
-        $('[name="date"]').val('');
-        $('[name="category"] option[value=""]').attr('selected', 'selected');
-        CKEDITOR.instances["description"].setData("");
     } else if (arg == 'edit') {
         document.querySelector('#modal-title').textContent = 'Edit Data';
 
@@ -103,6 +99,23 @@ function confirmBook() {
     }
 
 }
+
+function resetModal(){
+    $('[name="url"]').removeClass('is-invalid');
+    $('[class="error invalid-feedback url"]').remove();
+    $('[name="title"]').removeClass('is-invalid');
+    $('[class="error invalid-feedback title"]').remove();
+    $('[name="date"]').removeClass('is-invalid');
+    $('[class="error invalid-feedback date"]').remove();
+    $('[name="category"]').removeClass('is-invalid');
+    $('[class="error invalid-feedback date"]').remove();
+    $('[name="url"]').val('');
+    $('[name="title"]').val('');
+    $('[name="date"]').val('');
+    $('[name="category"] option[value=""]').attr('selected', 'selected');
+    CKEDITOR.instances["description"].setData("");
+}
+
 function showModal1(arg) {
     if (arg == 'borrow') {
         $('#BorrowModal').modal('show');

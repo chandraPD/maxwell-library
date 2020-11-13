@@ -29,18 +29,6 @@ function includeHTML() {
 
 includeHTML();
 
-
-// slick slider
-$(document).on('ready', function () {
-    $(".center").slick({
-        dots: true,
-        infinite: true,
-        centerMode: true,
-        slidesToShow: 1,
-        slidesToScroll: 3
-    });
-});
-
 $(function () {
     $('#datetimepicker4').datetimepicker({
         format: 'L'

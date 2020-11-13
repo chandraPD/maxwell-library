@@ -22,13 +22,90 @@ function showModal(arg){
     $('#ModalBook').modal('show');
 }
 
-function showModal1(arg){
-    if(arg == 'borrow'){
-        $('#BorrowModal').modal('show');
-        $('#borrow_button').val('Borrowed');
-    }else if (arg== 'borrowed') {        
-        $('#cancelModal').modal('show')        
-    }    
-}
+    function showModal1(arg){
+        if(arg == 'borrow'){
+            $('#BorrowModal').modal('show');
+            $('#borrow_button').val('Borrowed');
+        }else if (arg== 'borrowed') {        
+            $('#cancelModal').modal('show')        
+        }    
+    }
+
+    $('[name="url"]').keyup(function() {
+        var url = $('[name="url"]').val();
+        if(url == ''){
+            $('[name="url"]').addClass('is-invalid');
+            $('[class="error invalid-feedback url"]').remove();
+            $('[name="url"]').parent().append('<span class="error invalid-feedback url">URL Required</span>');
+        }else{
+            $('[name="url"]').removeClass('is-invalid');
+            $('[class="error invalid-feedback url"]').remove();
+        }
+    });
+    $('[name="title"]').keyup(function() {
+        var title = $('[name="title"]').val();
+        if(title == ''){
+            $('[name="title"]').addClass('is-invalid');
+            var test = $('[name="title"]').parent();
+            $('[class="error invalid-feedback title"]').remove();
+            $('[name="title"]').parent().append('<span class="error invalid-feedback title">Title Required</span>');
+        }else{
+            $('[name="title"]').removeClass('is-invalid');
+            $('[class="error invalid-feedback title"]').remove();
+        }
+    });
+   
+    $('[name="category"]').change(function() {
+        var category = $('[name="category"] :selected').val();
+        if(category == ''){
+            $('[name="category"]').addClass('is-invalid');
+        }else{
+            $('[name="category"]').removeClass('is-invalid');
+        }
+    });
+
+    function confirmBook(){
+        var url = $('[name="url"]').val();
+        var title = $('[name="title"]').val();
+        var date = $('[name="date"]').val();
+        var category = $('[name="category"] :selected').val();
+        if(url == ''){
+            $('[name="url"]').addClass('is-invalid');
+            $('[class="error invalid-feedback url"]').remove();
+            $('[name="url"]').parent().append('<span class="error invalid-feedback url">URL Required</span>');
+        }else{
+            $('[name="url"]').removeClass('is-invalid');
+            $('[class="error invalid-feedback url"]').remove();
+        }
+        if(title == ''){
+            $('[name="title"]').addClass('is-invalid');
+            var test = $('[name="title"]').parent();
+            $('[class="error invalid-feedback title"]').remove();
+            $('[name="title"]').parent().append('<span class="error invalid-feedback title">Title Required</span>');
+        }else{
+            $('[name="title"]').removeClass('is-invalid');
+            $('[class="error invalid-feedback title"]').remove();
+        }
+        if(date == ''){
+            $('[name="date"]').addClass('is-invalid');
+            $('[class="error invalid-feedback date"]').remove();
+            $('[name="date"]').parent().append('<span class="error invalid-feedback date">Date Required</span>');
+        }else{
+            $('[name="date"]').removeClass('is-invalid');
+            $('[class="error invalid-feedback date"]').remove();
+        }
+        if(category == ''){
+            $('[name="category"]').addClass('is-invalid');
+        }else{
+            $('[name="category"]').removeClass('is-invalid');
+        }
+
+        if(url != '' && title != '' && date != '' && category != ''){
+            $('#ModalBook').modal('hide');
+            $('#BerhasilModal2').modal('show');
+            console.log('test2');
+        }
+
+    }
 
 

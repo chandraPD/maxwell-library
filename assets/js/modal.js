@@ -2,9 +2,9 @@ function showModal(arg) {
     resetModal();
     if (arg == 'add') {
         document.querySelector('#modal-title').textContent = 'Add Data';
+        CKEDITOR.instances["description"].setData("");
     } else if (arg == 'edit') {
         document.querySelector('#modal-title').textContent = 'Edit Data';
-
         // get data book
         $('[name="url"]').val('./assets/novel-dilan.jpg');
         $('[name="title"]').val('Dilan 1991');
@@ -17,10 +17,12 @@ function showModal(arg) {
 
 function showModal1(arg) {
     if (arg == 'borrow') {
+        today = new Date();
+        document.getElementsByName('borrowdate')[0].value = today.toLocaleDateString();
+        document.getElementsByName('returndate')[0].value = '';
         $('#BorrowModal').modal('show');
-        $('#borrow_button').val('Borrowed');
     } else if (arg == 'borrowed') {
-        $('#cancelModal').modal('show')
+        $('#cancelModal').modal('show');
     }
 }
 
@@ -112,22 +114,11 @@ function resetModal(){
     $('[name="url"]').val('');
     $('[name="title"]').val('');
     $('[name="date"]').val('');
-    $('[name="category"] option[value=""]').attr('selected', 'selected');
-    CKEDITOR.instances["description"].setData("");
-}
-
-function showModal1(arg) {
-    if (arg == 'borrow') {
-        $('#BorrowModal').modal('show');
-        $('#borrow_button').val('Borrowed');
-    } else if (arg == 'borrowed') {
-        $('#cancelModal').modal('show')
-    }
+    $('[name="category"]').val('');
 }
 
 function clickstatus() {
     var status = document.getElementById("button_borrow").value;
-    var borrowedbtn = document.getElementById("button_borrow");
     if (status == "borrowed") {
         sessionStorage.setItem("lastname", "Borrow");
         document.getElementById("button_borrow").value = "borrow";
@@ -141,5 +132,6 @@ function clickstatus() {
             $('#BerhasilModal3').modal('show');
         }
     }
+
 }
 

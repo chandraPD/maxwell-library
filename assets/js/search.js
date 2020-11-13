@@ -1,4 +1,3 @@
-
 function delay(callback, ms) {
     var timer = 0;
     return function() {
@@ -9,6 +8,7 @@ function delay(callback, ms) {
     }, ms || 0);
     };
 }
+
 // search Books by Title
 const books = document.querySelectorAll('.title-book');
 const searchBar = document.forms['search-books'].querySelector('input');

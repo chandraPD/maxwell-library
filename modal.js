@@ -23,12 +23,12 @@ function showModal(arg){
 }
 
 function showModal1(arg){
-    if(arg == 'borrow'){
-        $('#BorrowModal').modal('show');
+      if(arg == 'borrow'){        
+        $('#BorrowModal').modal('show');            
         $('#borrow_button').val('Borrowed');
     }else if (arg== 'borrowed') {        
         $('#cancelModal').modal('show')        
-    }    
+    } 
 }
 
 

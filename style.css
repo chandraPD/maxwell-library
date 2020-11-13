@@ -620,3 +620,13 @@ h3.book-not-found {
 .book-list {
     margin-top: 0px !important;
 }
+
+.recomendedcard-read {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffc107;
+    border-color: #ffc929;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+}

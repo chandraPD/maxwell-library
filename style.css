@@ -39,7 +39,7 @@ img.big-preview{
 }
 
 p.content{
-    text-align: left;
+    text-align: justify;
     margin-left: 70px;
 }
 
@@ -289,11 +289,13 @@ a#toggle{
         margin-left: 200px;
         display: list-item;
         color: black;
+        list-style-type:none;
+        display: flex
     }
 
     button#button_borrow{
         position: absolute;
-        top: 30%;
+        /* top: 30%; */
         left: 75%;
         color: white;
         font-size: 25px;

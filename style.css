@@ -111,6 +111,8 @@ ul.menuhead li a:hover {
 .list-title{
     margin-top: 30px;
     margin-left: 70px;
+    display:flex;
+    justify-content: center;
 }
 
 .list-content{

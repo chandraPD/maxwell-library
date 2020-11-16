@@ -468,31 +468,8 @@
 
   <!-- bs-custom-file-input -->
   <script src="assets/vendors/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
-
-  <!-- page script -->
-  <script>
-    $(function () {
-      $("#example1").DataTable({
-        responsive: true,
-        autoWidth: false,
-      });
-      $("#example2").DataTable({
-        paging: true,
-        lengthChange: false,
-        searching: false,
-        ordering: true,
-        info: true,
-        autoWidth: false,
-        responsive: true,
-      });
-    });
-  </script>
-
-  <script type="text/javascript">
-    $(document).ready(function () {
-      bsCustomFileInput.init();
-    });
-    </script>
+  <script src="assets/js/dtpage.js"></script>
+  <script src="assets/js/customfileinput.js"></script>
 </body>
 
 </html>

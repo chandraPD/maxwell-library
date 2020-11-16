@@ -23,6 +23,8 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/sidebar.css">
     <link rel="icon" href="./assets/media/icon/favicons.ico">
     
+    <!-- Sweet Alert -->
+    <link rel="stylesheet" href="sweetalert2.min.css">
     
     
     
@@ -266,12 +268,12 @@
               <div class="col-lg-6">
                 <div class="data">
                     <h5 >First Name</h5>
-                    <span id="firstName">Niki</span>
+                    <span id="firstname">Niki</span>
                     <hr>
                 </div>
                 <div class="data">
                     <h5 >Last Name</h5>
-                    <span id="lastName">Zefanya</span>
+                    <span id="lastname">Zefanya</span>
                     <hr>
                 </div>
                 <div class="data">
@@ -293,12 +295,12 @@
                 </div>
                 <div class="data">
                     <h5 >Phone Number</h5>
-                    <span id="phoneNumber">+628123456789</span>
+                    <span id="phonenumber">+628123456789</span>
                     <hr>
                 </div>
                 <div class="data">
                     <h5 >Your Balance</h5>
-                    <span id="myBalance">Rp 20.000,-</span>
+                    <span id="mybalance">Rp 20.000,-</span>
                     <hr>
                 </div>
               </div>
@@ -306,14 +308,15 @@
       </div>  
     </div>
     <div id="container-editform">
-      <form action="#">
+      <h3 style="text-align:center;">Edit your profile</h3>
+      <!-- <form action="#"> -->
           <div class="form-item">
             <div class="row">
               <div class="col-lg-8">
                 <label class="input-title">First Name</label>
               </div>
               <div class="col-lg-12">
-                <input class="input-value" type="text" name="user-firstname">
+                <input class="input-value" id="user-firstname" type="text" name="user-firstname">
               </div>
             </div>
           </div>
@@ -324,7 +327,7 @@
                 <label class="input-title">Last Name</label>
               </div>
               <div class="col-lg-12">
-                <input class="input-value" type="text" name="user-lastname">
+                <input class="input-value" id="user-lastname" type="text" name="user-lastname">
               </div>
             </div>
           </div>
@@ -335,7 +338,7 @@
                 <label class="input-title">Date of Birth</label>
               </div>
               <div class="col-lg-12">
-                <input class="input-value" type="text" name="date-birth" placeholder="dd/mm/yyyy">
+                <input class="input-value" id="date-birth" type="text" name="date-birth" placeholder="dd/mm/yyyy">
               </div>
             </div>
           </div>
@@ -346,7 +349,7 @@
                 <label class="input-title">Address</label>
               </div>
               <div class="col-lg-12">
-                <input class="input-value" type="text" name="user-address">
+                <input class="input-value" id="user-address" type="text" name="user-address">
               </div>
             </div>
           </div>
@@ -357,7 +360,7 @@
                 <label class="input-title">Email</label>
               </div>
               <div class="col-lg-12">
-                <input class="input-value" type="email" name="user-email" placeholder="example@gmail.com">
+                <input class="input-value" id="user-email" type="email" name="user-email" placeholder="example@gmail.com">
               </div>
             </div>
           </div>
@@ -368,19 +371,17 @@
                 <label class="input-title">Phone Number</label>
               </div>
               <div class="col-lg-12">
-                <input class="input-value" type="text" name="user-number" placeholder="+62-812-345-6789">
+                <input class="input-value" id="user-number" type="text" name="user-number" placeholder="+62-812-345-6789">
               </div>
             </div>
           </div>
-          
+
           <div class="btn-editform">
-            <input class="btn btn-warning" type="submit" value="Submit">
+            <input class="btn btn-warning" type="submit" value="Submit" onclick="submitEditProfile()">
             <button type="button" class="btn btn-secondary">Close</button>
           </div>
-      </form>
+      <!-- </form> -->
     </div>
-
-
   </section>
     
     
@@ -425,7 +426,15 @@
 
 
 
-
+    <!-- Sweeet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="sweetalert2.min.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+    <!-- / Sweet Alert -->
+    
+  
     <!-- JS -->
     <script src="profile.js"></script>
 

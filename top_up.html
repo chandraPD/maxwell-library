@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Detail Buku</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./assets/vendors/plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="./assets/vendors/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="./assets/vendors/dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <!-- daterange picker -->
+    <link rel="stylesheet" href="./assets/vendors/plugins/daterangepicker/daterangepicker.css">
+    <!-- Tempusdominus Bbootstrap 4 -->
+    <link rel="stylesheet"
+        href="./assets/vendors/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./assets/vendors/plugins/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./assets/vendors/plugins/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/topup.css">
+    <link rel="icon" href="./assets/media/icon/favicons.ico">
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css'>
+
+
+
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+    <!-- Site wrapper -->
+    <div class="wrapper">
+        <div w3-include-html="include_navbar.html"></div>
+        <div w3-include-html="include_sidebar.html"></div>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+                <h1>Saldo : Rp<input type="text" id="saldo" readonly value="50000"></h1>
+            <section class="signup-step-container">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-8">
+                            <div class="wizard">
+                                <div class="wizard-inner">
+                                    <div class="connecting-line"></div>
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li role="presentation" class="active">
+                                            <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab"
+                                                aria-expanded="true"><span class="round-tab">1 </span> <i>Step 1</i></a>
+                                        </li>
+                                        <li role="presentation" class="disabled">
+                                            <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab"
+                                                aria-expanded="false"><span class="round-tab">2</span> <i>Step 2</i></a>
+                                        </li>
+                                        <li role="presentation" class="disabled">
+                                            <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab"><span
+                                                    class="round-tab">3</span> <i>Step 3</i></a>
+                                        </li>
+                                        <li role="presentation" class="disabled">
+                                            <a href="#step4" data-toggle="tab" aria-controls="step4" role="tab"><span
+                                                    class="round-tab">4</span> <i>Step 4</i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <form role="form" action="index.html" class="login-box">
+                                    <div class="tab-content" id="main_form">
+                                        <div class="tab-pane active" role="tabpanel" id="step1">
+                                            <h4 class="text-center">Step 1 Pick Nominal</h4>
+                                            <div class="radio-group">
+                                                <div class="row row-cols-1 row-cols-md-4">
+                                                    <div class="md-1"><input type="radio" id="option1" name="option" value="10000"></div>
+                                                    <div class="md-1"><label>Rp 10000</label><br></div>
+                                                    <div class="md-1"><input type="radio" id="option2" name="option" value="20000"></div>
+                                                    <div class="md-1"><label>Rp 20000</label><br></div>
+                                                    <div class="md-1"><input type="radio" id="option3" name="option" value="50000"></div>
+                                                    <div class="md-1"><label>Rp 50000</label><br></div>
+                                                    <div class="md-1"><input type="radio" id="option4" name="option" value="100000"></div>
+                                                    <div class="md-1"><label>Rp 100000</label><br></div>
+                                                    <div class="md-1"><input type="radio" id="option5" name="option" value="200000"></div>
+                                                    <div class="md-1"><label>Rp 200000</label><br></div>
+                                                    <div class="md-1"><input type="radio" id="option6" name="option" value=""></div>
+                                                    <div class="md-1"><input type="text" id="any" name="any"></div>
+                                                </div>
+                                            </div>
+                                            <ul class="list-inline pull-right">
+                                                <li><button onclick="nextclik()" type="button" class="default-btn next-step">Continue to next
+                                                        step</button></li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane" role="tabpanel" id="step2">
+                                            <h4 class="text-center">Step 2 Select Payment</h4>
+                                            <div class="radio-group2">
+                                                <div class="row row-cols-1 row-cols-md-2">
+                                                    <div class='radio1' data-value="credit"><img src="assets/media/icon/creditcard.jpg" width="200px" height="100px"></div><p class="payment-name">Credit Card</p>
+                                                    <div class='radio1' data-value="paypal"><img src="assets/media/icon/paypal.jpg" width="200px" height="100px"></div><p class="payment-name">Paypal</p>
+                                                    <div class='radio1' data-value="ovo"><img src="assets/media/icon/ovo.png" width="200px" height="100px"></div><p class="payment-name">OVO</p>
+                                                    <div class='radio1' data-value="gopay"><img src="assets/media/icon/gopay.jpg" width="200px" height="100px"></div><p class="payment-name">Gopay</p><p class="payment-name"></p>
+                                                    <div class='radio1' data-value="dana"><img src="assets/media/icon/dana.jpg" width="200px" height="100px"></div><p class="payment-name">Dana</p>
+                                                    <div class='radio1' data-value="cash"><img src="assets/media/icon/cash.png" width="200px" height="100px"></div><p class="payment-name">Cash</p>
+                                                </div>                                                
+                                            </div>
+                                            <ul class="list-inline pull-right">
+                                                <li><button type="button" class="default-btn prev-step">Back</button>
+                                                </li>
+                                                <li><button type="button"
+                                                        class="default-btn next-step">Continue</button></li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane" role="tabpanel" id="step3">
+                                            <h4 class="text-center">Step 3 Confirm Topup</h4>
+                                            <div class="row row-cols-1 row-cols-md-1">                                                
+                                                <div class="md-2"><input type="password" placeholder="Password"></div>
+                                                <div class="md-2"><input type="password" placeholder="Confirm Password"></div>
+                                            </div>
+                                            <ul class="list-inline pull-right">
+                                                <li><button type="button" class="default-btn prev-step">Back</button>
+                                                </li>
+                                                <li><button type="button"
+                                                        class="default-btn next-step">Continue</button></li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane" role="tabpanel" id="step4">
+                                            <h4 class="text-center">Step 4 Success Top Up</h4>
+                                            <div class="form-card">
+                                                <h2 class="fs-title text-center">Success !</h2> <br><br>
+                                                <div class="row justify-content-center">
+                                                    <div class="col-3"> <img src="assets/media/check.png" class="fit-image"> </div>
+                                                </div> <br><br>
+                                                <div class="row justify-content-center">
+                                                    <div class="col-7 text-center">
+                                                        <h5>You Have Successfully Top Up</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul class="list-inline pull-right">
+                                                <li><a href="index.html" class="default-btn next-step">Finish</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /.content -->
+        </div>
+
+
+        <!-- jQuery -->
+        <script src="./assets/vendors/plugins/jquery/jquery.min.js"></script>
+        <!-- Bootstrap 4 -->
+        <script src="./assets/vendors/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- overlayScrollbars -->
+        <!-- <script src="./plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script> -->
+        <!-- AdminLTE App -->
+        <script src="./assets/vendors/dist/js/adminlte.min.js"></script>
+        <!-- AdminLTE for demo purposes -->
+        <script src="./assets/vendors/dist/js/demo.js"></script>
+        <script src="./assets/js/js.js" type="text/javascript"></script>
+        <script src="./assets/js/topup.js" type="text/javascript"></script>
+        <!-- Ckeditor -->
+        <script src="//cdn.ckeditor.com/4.15.1/standard/ckeditor.js"></script>
+        <!-- InputMask -->
+        <script src="./assets/vendors/plugins/moment/moment.min.js"></script>
+        <script src="./assets/vendors/plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script>
+        <!-- date-range-picker -->
+        <script src="./assets/vendors/plugins/daterangepicker/daterangepicker.js"></script>
+        <!-- Tempusdominus Bootstrap 4 -->
+        <script src="./assets/vendors/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+        <script type="text/javascript" src="./assets/js/modal.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        <script src="http://jquerypost.com/cdn/jquery-1.12.4.min.js"></script>
+</body>
+
+</html>

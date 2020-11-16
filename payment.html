@@ -220,16 +220,16 @@
                             <div class="invoice-1 detail">
                                 <h3>Payment Form</h3>
                                 <form role="form">
-                                    <div class="card-body">
+                                    <div class="card-body table-responsive p-0">
                                         <div class="form-group">
-                                            <label for="displayInvoiceNo">Invoice 1</label>
+                                            <label for="displayInvoiceNo">Invoice No.</label>
                                             <input type="text" class="form-control" id="displayInvoiceNo"
-                                                value="Invoice No." disabled>
+                                                value="Invoice 1" disabled>
                                         </div>
                                         <br>
 
                                         <label>Books</label>
-                                        <table class="table table-bordered">
+                                        <table class="table text-nowrap">
                                             <thead>
                                                 <tr>
                                                     <th style="width: 10px">No.</th>
@@ -276,7 +276,7 @@
                                     <!-- /.card-body -->
 
                                     <div class="card-footer">
-                                        <button type="submit" class="btn btn-warning">Pay</button>
+                                        <button class="btn btn-warning btn-pay">Pay</button>
                                     </div>
                                 </form>
                             </div>
@@ -284,16 +284,16 @@
                             <div class="invoice-2 detail">
                                 <h3>Payment Form</h3>
                                 <form role="form">
-                                    <div class="card-body">
+                                    <div class="card-body table-responsive p-0">
                                         <div class="form-group">
-                                            <label for="displayInvoiceNo">Invoice 2</label>
+                                            <label for="displayInvoiceNo">Invoice No.</label>
                                             <input type="text" class="form-control" id="displayInvoiceNo"
-                                                value="Invoice No." disabled>
+                                                value="Invoice 2" disabled>
                                         </div>
                                         <br>
 
                                         <label>Books</label>
-                                        <table class="table table-bordered">
+                                        <table class="table text-nowrap">
                                             <thead>
                                                 <tr>
                                                     <th style="width: 10px">No.</th>
@@ -340,7 +340,7 @@
                                     <!-- /.card-body -->
 
                                     <div class="card-footer">
-                                        <button type="submit" class="btn btn-warning">Pay</button>
+                                        <button class="btn btn-warning btn-pay">Pay</button>
                                     </div>
                                 </form>
                             </div>
@@ -348,16 +348,16 @@
                             <div class="invoice-3 detail">
                                 <h3>Payment Form</h3>
                                 <form role="form">
-                                    <div class="card-body">
+                                    <div class="card-body table-responsive p-0">
                                         <div class="form-group">
-                                            <label for="displayInvoiceNo">Invoice 3</label>
+                                            <label for="displayInvoiceNo">Invoice No.</label>
                                             <input type="text" class="form-control" id="displayInvoiceNo"
-                                                value="Invoice No." disabled>
+                                                value="Invoice 3" disabled>
                                         </div>
                                         <br>
 
                                         <label>Books</label>
-                                        <table class="table table-bordered">
+                                        <table class="table text-nowrap">
                                             <thead>
                                                 <tr>
                                                     <th style="width: 10px">No.</th>
@@ -404,7 +404,7 @@
                                     <!-- /.card-body -->
 
                                     <div class="card-footer">
-                                        <button type="submit" class="btn btn-warning">Pay</button>
+                                        <button class="btn btn-warning btn-pay">Pay</button>
                                     </div>
                                 </form>
                             </div>
@@ -593,6 +593,21 @@
     <script src="assets/js/dtpage.js"></script>
 
     <script src="assets/js/payment.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+
+    <script>
+document.querySelector(".btn-pay").addEventListener('click', function(){
+    Swal.fire(
+  'Good job!',
+  'You clicked the button!',
+  'success'
+)
+});
+    </script>
 
 
 </body>

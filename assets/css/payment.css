@@ -1,0 +1,8 @@
+.invoice-1, .invoice-2, .invoice-3 {
+    display:none
+}
+
+.balance-value {
+    border: 1px solid #ffc107;
+    border-radius: 5px;
+}

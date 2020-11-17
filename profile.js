@@ -28,12 +28,14 @@ submitForm.addEventListener('click', function() {
             'You should fill in the blank',
             'error'
           );
+        editForm.style.display = 'none';
     }else{
         Swal.fire(
             'Submitted !',
             'You clicked the button!',
             'success'
           );
+          submitEditProfile();
     }
 });
 

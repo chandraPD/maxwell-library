@@ -779,6 +779,20 @@ button.edit-profile {
     .content-user {
         margin: 0;
     }
+
+    .container-changepwd {
+        border: 3px solid;
+        margin: 0;;
+    }
+
+
+    .content-changepwd {
+        margin-left: 0;
+        border: 3px solid;
+    }
+
+    
+
 }
 
 
@@ -787,14 +801,14 @@ button.edit-profile {
 .container-changepwd {
     margin-left: 275px;
 }
+
 .content-changepwd {
     width: 75%;
     padding: 30px 0 60px 30px;
     position: relative;
     background-color: lightblue;
-    margin: 250px auto;
+    margin: 150px auto;
     border-radius: 10px;
-    border: 5px solid transparent;
 }
 
 h3.changepwd-title {

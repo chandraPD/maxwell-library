@@ -15,6 +15,20 @@
     border-bottom: 0;
 }
 
+ul#topup{    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+u#topup li{
+    display: inline ;        
+}
+
+ul#topup p{
+    font-size: 18px;
+}
+
 .my-center{
     display: inline-block;
     margin-left: auto;

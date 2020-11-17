@@ -723,6 +723,9 @@ button.edit-profile {
     padding-left: 30px;
 }
 
+.data a{
+    color: black;
+}
 .edit-btn {
     padding: 25px;
 }
@@ -781,8 +784,11 @@ button.edit-profile {
 
 /* Style Change_Password */
 
+.container-changepwd {
+    margin-left: 275px;
+}
 .content-changepwd {
-    width: 56%;
+    width: 75%;
     padding: 30px 0 60px 30px;
     position: relative;
     background-color: lightblue;

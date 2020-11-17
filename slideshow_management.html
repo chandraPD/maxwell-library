@@ -20,7 +20,13 @@
 
   <!-- DataTables -->
   <link rel="stylesheet" href="assets/vendors/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css" />
-  <link rel="stylesheet" href="assets/vendors//plugins/datatables-responsive/css/responsive.bootstrap4.min.css" />
+  <link rel="stylesheet" href="assets/vendors/plugins/datatables-responsive/css/responsive.bootstrap4.min.css" />
+
+   <!-- iCheck for checkboxes and radio inputs -->
+   <link rel="stylesheet" href="assets/vendors/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+
+    <!-- Bootstrap4 Duallistbox -->
+  <link rel="stylesheet" href="assets/vendors/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
 
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
@@ -226,6 +232,7 @@
               <button type="button" class="btn btn-warning add-btn" data-toggle="modal" data-target="#modal-add">
                 Add Slideshow Photo
               </button>
+              
             </div>
 
             <div class="card-body">
@@ -238,6 +245,7 @@
                       <th>Title</th>
                       <th>Sub Title</th>
                       <th>Image</th>
+                      <th style="width:10px">Status</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -255,6 +263,7 @@
                       <td>Ubur-ubur Lembur</td>
                       <td>Raditya Dika</td>
                       <td><img src="assets/media/books/uburlembur.png" style="width: 10rem; display: block; margin-left: auto; margin-right: auto;"></td>
+                      <td><input type="checkbox" name="my-checkbox" checked data-bootstrap-switch data-off-color="danger" data-on-color="success"></td>
                     </tr>
 
                     <tr>
@@ -271,6 +280,7 @@
                         <td>Laskar Pelangi</td>
                         <td>Andrea Hirata</td>
                         <td><img src="assets/media/books/laskar.png" style="width: 10rem; display: block; margin-left: auto; margin-right: auto;"></td>
+                        <td><input type="checkbox" name="my-checkbox" checked data-bootstrap-switch data-off-color="danger" data-on-color="success"></td>
                       </tr>
 
                       <tr>
@@ -287,6 +297,7 @@
                         <td>Dilan 1990</td>
                         <td>Raditya Dika</td>
                         <td><img src="assets/media/books/dilan.png" style="width: 10rem; display: block; margin-left: auto; margin-right: auto;"></td>
+                        <td><input type="checkbox" name="my-checkbox" checked data-bootstrap-switch data-off-color="danger" data-on-color="success"></td>
                       </tr>
 
                   </tbody>
@@ -470,6 +481,30 @@
   <script src="assets/vendors/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
   <script src="assets/js/dtpage.js"></script>
   <script src="assets/js/customfileinput.js"></script>
+
+  <!-- Bootstrap Switch -->
+<script src="assets/vendors/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+
+<!-- bootstrap color picker -->
+<script src="assets/vendors/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+
+<script>
+  $(function () {
+    //Colorpicker
+    $('.my-colorpicker1').colorpicker()
+    //color picker with addon
+    $('.my-colorpicker2').colorpicker()
+
+    $('.my-colorpicker2').on('colorpickerChange', function(event) {
+      $('.my-colorpicker2 .fa-square').css('color', event.color.toString());
+    });
+
+    $("input[data-bootstrap-switch]").each(function(){
+      $(this).bootstrapSwitch('state', $(this).prop('checked'));
+    });
+
+  })
+</script>
 </body>
 
 </html>

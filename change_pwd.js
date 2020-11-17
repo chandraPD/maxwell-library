@@ -14,17 +14,17 @@ $(document).ready(function () {
         },
         oldPassword: {
           required: true,
-          minlength: 8
+          minlength: 8,
           maxlength: 20
         },
         newPassword: {
           required: true,
-          minlength: 8
+          minlength: 8,
           maxlength: 20
         },
         verifyPassword: {
           required: true,
-          minlength: 8
+          minlength: 8,
           maxlength: 20
         },
       },
@@ -35,17 +35,17 @@ $(document).ready(function () {
         },
         oldPassword: {
           required: "Please provide a password",
-          minlength: "Your password must be at least 8 characters long"
+          minlength: "Your password must be at least 8 characters long",
           maxlength: "Your password more than 20 characters long"
         },
         newPassword: {
           required: "Please provide a password",
-          minlength: "Your password must be at least 8 characters long"
+          minlength: "Your password must be at least 8 characters long",
           maxlength: "Your password more than 20 characters long"
         },
         verifyPassword: {
           required: "Please provide a password",
-          minlength: "Your password must be at least 8 characters long"
+          minlength: "Your password must be at least 8 characters long",
           maxlength: "Your password more than 20 characters long"
         },
       },

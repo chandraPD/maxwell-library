@@ -1,54 +1,134 @@
-// ------------step-wizard-------------
-$(document).ready(function () {
-    $('.nav-tabs > li a[title]').tooltip();
-    
-    //Wizard
-    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+$(document).ready(function(){
 
-        var target = $(e.target);
+    var current_fs, next_fs, previous_fs; //fieldsets
+    var opacity,totalnominal,x;
+    var current = 1;
+    var steps = $("fieldset").length;
     
-        if (target.parent().hasClass('disabled')) {
-            return false;
+    setProgressBar(current);
+    $('input[name=option]').click(function() {
+        document.getElementById("totalnominal").value = $('input[name=option]:checked').val();        
+        totalnominal=document.getElementById("totalnominal").value;
+    });
+
+    $('.radio-group2 .radio1').click(function(){
+        document.getElementById("paymentmethod").value = $(this).data("id");
+    }); 
+
+    $(".any").keyup(function(){
+        x = document.getElementById("any").value;  
+        document.getElementById("option6").value = x;     
+      });
+
+  
+    $(".next").click(function(){                
+    if (document.getElementById("totalnominal").value !== "")        {        
+        current_fs = $(this).parent();
+        next_fs = $(this).parent().next();
+        
+        //Add Class Active
+        $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+        
+        //show the next fieldset
+        next_fs.show();
+        //hide the current fieldset with style
+        current_fs.animate({opacity: 0}, {
+        step: function(now) {
+        // for making fielset appear animation
+        opacity = 1 - now;
+        
+        current_fs.css({
+        'display': 'none',
+        'position': 'relative'
+        });
+        next_fs.css({'opacity': opacity});
+        },
+        duration: 500
+        });
+        setProgressBar(++current);
+    } else{
+        alert("Please Insert Your Nominal First!")
+    }
+
+
+    });
+
+    $(".next1").click(function(){                
+        if (document.getElementById("paymentmethod").value !== "")        {        
+            current_fs = $(this).parent();
+            next_fs = $(this).parent().next();
+            
+            //Add Class Active
+            $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+            
+            //show the next fieldset
+            next_fs.show();
+            //hide the current fieldset with style
+            current_fs.animate({opacity: 0}, {
+            step: function(now) {
+            // for making fielset appear animation
+            opacity = 1 - now;
+            
+            current_fs.css({
+            'display': 'none',
+            'position': 'relative'
+            });
+            next_fs.css({'opacity': opacity});
+            },
+            duration: 500
+            });
+            setProgressBar(++current);
+        } else{
+            alert("Please Select Your Payment Method!")
         }
+    
+    
+        });
+
+    
+    $(".previous").click(function(){
+        
+    
+    current_fs = $(this).parent();
+    previous_fs = $(this).parent().prev();
+    
+    //Remove class active
+    $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+    
+    //show the previous fieldset
+    previous_fs.show();
+    
+    //hide the current fieldset with style
+    current_fs.animate({opacity: 0}, {
+    step: function(now) {
+    // for making fielset appear animation
+    opacity = 1 - now;
+    
+    current_fs.css({
+    'display': 'none',
+    'position': 'relative'
+    });
+    previous_fs.css({'opacity': opacity});
+    },
+    duration: 500
+    });
+    setProgressBar(--current);
+    });
+    
+    function setProgressBar(curStep){
+    var percent = parseFloat(100 / steps) * curStep;
+    percent = percent.toFixed();
+    $(".progress-bar")
+    .css("width",percent+"%")
+    }
+    
+    $(".submit").click(function(){
+    return false;
+    })
+    
     });
 
-    $(".next-step").click(function (e) {
-
-        var active = $('.wizard .nav-tabs li.active');
-        active.next().removeClass('disabled');
-        nextTab(active);
-
-    });
-    $(".prev-step").click(function (e) {
-
-        var active = $('.wizard .nav-tabs li.active');
-        prevTab(active);
-
-    });
-});
-
-function nextTab(elem) {
-    $(elem).next().find('a[data-toggle="tab"]').click();
-}
-function prevTab(elem) {
-    $(elem).prev().find('a[data-toggle="tab"]').click();
-}
-
-
-$('.nav-tabs').on('click', 'li', function() {
-    $('.nav-tabs li.active').removeClass('active');
-    $(this).addClass('active');
-});
-
-$('.radio-group2 .radio1').click(function(){
-    $(this).parent().find('.radio1').removeClass('selected');
-    $(this).addClass('selected');
-    });
-
-function nextclik(){
-    $('.nav-tabs').on('click', 'li', function() {
-        $('.nav-tabs li.active').removeClass('active');
-        $(this).addClass('active');
-    });
-}
-
+    $('.radio-group2 .radio1').click(function(){
+        $(this).parent().find('.radio1').removeClass('selected');
+        $(this).addClass('selected');
+        });

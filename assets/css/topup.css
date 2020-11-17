@@ -118,7 +118,7 @@ p {
 }
 
 .purple-text {
-    color:black
+    color:black;
     font-weight: normal
 }
 
@@ -155,22 +155,22 @@ p {
 }
 
 #progressbar #nominal:before {
-    font-family: FontAwesome;
+    font-family: FontAwesome!important;
     content: "\f13e"
 }
 
 #progressbar #payment:before {
-    font-family: FontAwesome;
+    font-family: FontAwesome!important;
     content: "\f007"
 }
 
 #progressbar #confirm:before {
-    font-family: FontAwesome;
+    font-family: FontAwesome!important;
     content: "\f030"
 }
 
 #progressbar #password:before {
-    font-family: FontAwesome;
+    font-family: FontAwesome!important;
     content: "\f00c"
 }
 

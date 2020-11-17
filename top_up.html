@@ -48,7 +48,7 @@
                 <div class="container-fluid">
                     <div class="row justify-content-center">
                         <div class="col-11 col-sm-9 col-md-7 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2">
-                            <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+                            <div class="card px-4 pt-4 pb-4 mt-6 mb-6">
                                 <h2 id="heading">Top Up Your User Account</h2>
                                 <p>Fill all form field to go to next step</p>
                                 <form id="msform">
@@ -73,7 +73,7 @@
                                                     <h2 class="steps">Step 1 - 4</h2>
                                                 </div>
                                             </div>
-                                            <div class="radio-group">
+                                            <div class="radio-group" >
                                                 <div class="row row-cols-1 row-cols-md-4">
                                                     <div class="md-1"><input type="radio" id="option1" name="option" value="10000"></div>
                                                     <div class="md-1"><label>Rp 10000</label><br></div>
@@ -86,11 +86,11 @@
                                                     <div class="md-1"><input type="radio" id="option5" name="option" value="200000"></div>
                                                     <div class="md-1"><label>Rp 200000</label><br></div>
                                                     <div class="md-1"><input type="radio" id="option6" name="option" value=""></div>
-                                                    <div class="md-1"><input type="text" id="any" name="any"></div>
+                                                    <div class="md-1"><input class="any" type="text" id="any" name="any" ></div>                                                    
                                                 </div>
                                             </div>
                                         </div> <input type="button" name="next" class="next action-button"
-                                            value="Next" />
+                                            value="Next"  />
                                     </fieldset>
                                     <fieldset>
                                         <div class="form-card">
@@ -104,16 +104,16 @@
                                             </div> 
                                             <div class="radio-group2">
                                                 <div class="row row-cols-1 row-cols-md-2">
-                                                    <div class='radio1' id="credit" data-value="credit"><img src="assets/media/icon/creditcard.jpg" width="200px" height="100px"></div><p class="payment-name">Credit Card</p>
-                                                    <div class='radio1' data-value="paypal"><img src="assets/media/icon/paypal.jpg" width="200px" height="100px"></div><p class="payment-name">Paypal</p>
-                                                    <div class='radio1' data-value="ovo"><img src="assets/media/icon/ovo.png" width="200px" height="100px"></div><p class="payment-name">OVO</p>
-                                                    <div class='radio1' data-value="gopay"><img src="assets/media/icon/gopay.jpg" width="200px" height="100px"></div><p class="payment-name">Gopay</p><p class="payment-name"></p>
-                                                    <div class='radio1' data-value="dana"><img src="assets/media/icon/dana.jpg" width="200px" height="100px"></div><p class="payment-name">Dana</p>
-                                                    <div class='radio1' data-value="cash"><img src="assets/media/icon/cash.png" width="200px" height="100px"></div><p class="payment-name">Cash</p>
+                                                    <div class='radio1' name="payment1" data-id="Credit Card"><img src="assets/media/icon/creditcard.jpg" width="200px" height="100px"></div><p class="payment-name">Credit Card</p>
+                                                    <div class='radio1' name="payment1" data-id="Paypal"><img src="assets/media/icon/paypal.jpg" width="200px" height="100px"></div><p class="payment-name">Paypal</p>
+                                                    <div class='radio1' name="payment1" data-id="OVO"><img src="assets/media/icon/ovo.png" width="200px" height="100px"></div><p class="payment-name">OVO</p>
+                                                    <div class='radio1' name="payment1" data-id="Gopay"><img src="assets/media/icon/gopay.jpg" width="200px" height="100px"></div><p class="payment-name">Gopay</p><p class="payment-name"></p>
+                                                    <div class='radio1' name="payment1" data-id="Dana"><img src="assets/media/icon/dana.jpg" width="200px" height="100px"></div><p class="payment-name">Dana</p>
+                                                    <div class='radio1' name="payment1" data-id="Cash"><img src="assets/media/icon/cash.png" width="200px" height="100px"></div><p class="payment-name">Cash</p>
                                                 </div>                                                
                                             </div>
                                         </div> 
-                                        <input type="button" name="next" class="next action-button" value="Next" /> 
+                                        <input type="button" name="next" class="next1 action-button" value="Next" /> 
                                         <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
                                     </fieldset>
                                     <fieldset>
@@ -127,8 +127,8 @@
                                                 </div>
                                             </div> 
                                             <div class="row row-cols-1 row-cols-md-1">                                                
-                                                <div class="md-2"><input type="text" readonly placeholder="Total Nominal"></div>
-                                                <div class="md-2"><input type="text" readonly placeholder="Payment Method"></div>
+                                                <div class="md-2"><label>Total Nominal = Rp </label><input value="" id="totalnominal" type="text" readonly placeholder="Total Nominal"></div>
+                                                <div class="md-2"><label>Payment Method =</label><input id="paymentmethod" type="text" readonly placeholder="Payment Method"></div>
                                             </div>
                                         </div> 
                                         <input type="button" name="next" class="next action-button" value="Next" /> 
@@ -145,11 +145,10 @@
                                                 </div>
                                             </div> <br><br>
                                             <div class="row row-cols-1 row-cols-md-1">                                                
-                                                <div class="md-2"><input type="password" placeholder="Password"></div>
-                                                <div class="md-2"><input type="password" placeholder="Confirm Password"></div>
-                                            </div>
-                                            <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
-                                            <a href="index.html" class="default-btn next-step">Finish</a>
+                                                <div class="md-2"><input  id="passwordconfirm" type="password" placeholder="Password" ></div>
+                                                <div class="md-2"><input  id="passwordconfirm2" type="password" placeholder="Confirm Password"></div>
+                                            </div>                                            
+                                            <input type="button"W onclick="checkpassword()" value="Submit">
                                         </div>
                                     </fieldset>
                                 </form>

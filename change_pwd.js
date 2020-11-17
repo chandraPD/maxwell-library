@@ -1,9 +1,9 @@
 
-// Password Validation //
+// Password Validation Change Password//
 $(document).ready(function () {
     $.validator.setDefaults({
       submitHandler: function () {
-        alert( "Change Password Complete!" );
+        window.location.href = "../Profile.html";
       }
     });
     $('#changePwdForm').validate({
@@ -65,12 +65,34 @@ $(document).ready(function () {
 
   // Save Pop Up //
 
-  const saveChangePwd = document.querySelector('.save-pwd#save-change');
-  saveChangePwd.addEventListener('click', function(){
-    Swal.fire(
-      'Submitted !',
-      'You clicked the button!',
-      'success'
-    );
-  });
+  // const saveChangePwd = document.querySelector('button#save-change');
+  // saveChangePwd.addEventListener('click', function(){
+  //   Swal.fire(
+  //     'Save Complete !',
+  //     'You clicked the button!',
+  //     'success'
+  //   );
+  // });
+
+    const saveChangePwd = document.querySelector('button#save-change');
+    saveChangePwd.addEventListener('click', function() {
+    var email = document.getElementById('inputEmail').value;
+    var oldPassword = document.getElementById('inputOldPassword').value;
+    var newPassword = document.getElementById('inputNewPassword').value;
+    var verifyPassword = document.getElementById('inpurVerifyPassword').value;
+
+    if (email == '' || oldPassword == '' || newPassword == '' || verifyPassword == ''){
+        Swal.fire(
+            'Submit Failed !',
+            'You should fill in the blank',
+            'error'
+          );
+    }else{
+        Swal.fire(
+            'Submitted !',
+            'You clicked the button!',
+            'success'
+          );
+    }
+});
   

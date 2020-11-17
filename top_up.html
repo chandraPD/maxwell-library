@@ -44,38 +44,35 @@
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
-                <h1>Saldo : Rp<input type="text" id="saldo" readonly value="50000"></h1>
             <section class="signup-step-container">
-                <div class="container">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-md-8">
-                            <div class="wizard">
-                                <div class="wizard-inner">
-                                    <div class="connecting-line"></div>
-                                    <ul class="nav nav-tabs" role="tablist">
-                                        <li role="presentation" class="active">
-                                            <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab"
-                                                aria-expanded="true"><span class="round-tab">1 </span> <i>Step 1</i></a>
-                                        </li>
-                                        <li role="presentation" class="disabled">
-                                            <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab"
-                                                aria-expanded="false"><span class="round-tab">2</span> <i>Step 2</i></a>
-                                        </li>
-                                        <li role="presentation" class="disabled">
-                                            <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab"><span
-                                                    class="round-tab">3</span> <i>Step 3</i></a>
-                                        </li>
-                                        <li role="presentation" class="disabled">
-                                            <a href="#step4" data-toggle="tab" aria-controls="step4" role="tab"><span
-                                                    class="round-tab">4</span> <i>Step 4</i></a>
-                                        </li>
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-11 col-sm-9 col-md-7 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2">
+                            <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+                                <h2 id="heading">Top Up Your User Account</h2>
+                                <p>Fill all form field to go to next step</p>
+                                <form id="msform">
+                                    <!-- progressbar -->
+                                    <ul id="progressbar">
+                                        <li class="active" id="nominal">Nominal</li>
+                                        <li id="payment">Payment</li>
+                                        <li id="confirm">Confirm</li>
+                                        <li id="password">Password</li>
                                     </ul>
-                                </div>
-
-                                <form role="form" action="index.html" class="login-box">
-                                    <div class="tab-content" id="main_form">
-                                        <div class="tab-pane active" role="tabpanel" id="step1">
-                                            <h4 class="text-center">Step 1 Pick Nominal</h4>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                            role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div> <br> <!-- fieldsets -->
+                                    <fieldset>
+                                        <div class="form-card">
+                                            <div class="row">
+                                                <div class="col-7">
+                                                    <h2 class="fs-title">Total Nominal:</h2>
+                                                </div>
+                                                <div class="col-5">
+                                                    <h2 class="steps">Step 1 - 4</h2>
+                                                </div>
+                                            </div>
                                             <div class="radio-group">
                                                 <div class="row row-cols-1 row-cols-md-4">
                                                     <div class="md-1"><input type="radio" id="option1" name="option" value="10000"></div>
@@ -92,16 +89,22 @@
                                                     <div class="md-1"><input type="text" id="any" name="any"></div>
                                                 </div>
                                             </div>
-                                            <ul class="list-inline pull-right">
-                                                <li><button onclick="nextclik()" type="button" class="default-btn next-step">Continue to next
-                                                        step</button></li>
-                                            </ul>
-                                        </div>
-                                        <div class="tab-pane" role="tabpanel" id="step2">
-                                            <h4 class="text-center">Step 2 Select Payment</h4>
+                                        </div> <input type="button" name="next" class="next action-button"
+                                            value="Next" />
+                                    </fieldset>
+                                    <fieldset>
+                                        <div class="form-card">
+                                            <div class="row">
+                                                <div class="col-7">
+                                                    <h2 class="fs-title">Payment Method:</h2>
+                                                </div>
+                                                <div class="col-5">
+                                                    <h2 class="steps">Step 2 - 4</h2>
+                                                </div>
+                                            </div> 
                                             <div class="radio-group2">
                                                 <div class="row row-cols-1 row-cols-md-2">
-                                                    <div class='radio1' data-value="credit"><img src="assets/media/icon/creditcard.jpg" width="200px" height="100px"></div><p class="payment-name">Credit Card</p>
+                                                    <div class='radio1' id="credit" data-value="credit"><img src="assets/media/icon/creditcard.jpg" width="200px" height="100px"></div><p class="payment-name">Credit Card</p>
                                                     <div class='radio1' data-value="paypal"><img src="assets/media/icon/paypal.jpg" width="200px" height="100px"></div><p class="payment-name">Paypal</p>
                                                     <div class='radio1' data-value="ovo"><img src="assets/media/icon/ovo.png" width="200px" height="100px"></div><p class="payment-name">OVO</p>
                                                     <div class='radio1' data-value="gopay"><img src="assets/media/icon/gopay.jpg" width="200px" height="100px"></div><p class="payment-name">Gopay</p><p class="payment-name"></p>
@@ -109,47 +112,46 @@
                                                     <div class='radio1' data-value="cash"><img src="assets/media/icon/cash.png" width="200px" height="100px"></div><p class="payment-name">Cash</p>
                                                 </div>                                                
                                             </div>
-                                            <ul class="list-inline pull-right">
-                                                <li><button type="button" class="default-btn prev-step">Back</button>
-                                                </li>
-                                                <li><button type="button"
-                                                        class="default-btn next-step">Continue</button></li>
-                                            </ul>
-                                        </div>
-                                        <div class="tab-pane" role="tabpanel" id="step3">
-                                            <h4 class="text-center">Step 3 Confirm Topup</h4>
+                                        </div> 
+                                        <input type="button" name="next" class="next action-button" value="Next" /> 
+                                        <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                                    </fieldset>
+                                    <fieldset>
+                                        <div class="form-card">
+                                            <div class="row">
+                                                <div class="col-7">
+                                                    <h2 class="fs-title">Top Up Confirmation:</h2>
+                                                </div>
+                                                <div class="col-5">
+                                                    <h2 class="steps">Step 3 - 4</h2>
+                                                </div>
+                                            </div> 
+                                            <div class="row row-cols-1 row-cols-md-1">                                                
+                                                <div class="md-2"><input type="text" readonly placeholder="Total Nominal"></div>
+                                                <div class="md-2"><input type="text" readonly placeholder="Payment Method"></div>
+                                            </div>
+                                        </div> 
+                                        <input type="button" name="next" class="next action-button" value="Next" /> 
+                                        <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                                    </fieldset>
+                                    <fieldset>
+                                        <div class="form-card">
+                                            <div class="row">
+                                                <div class="col-7">
+                                                    <h2 class="fs-title">Confirmation Password:</h2>
+                                                </div>
+                                                <div class="col-5">
+                                                    <h2 class="steps">Step 4 - 4</h2>
+                                                </div>
+                                            </div> <br><br>
                                             <div class="row row-cols-1 row-cols-md-1">                                                
                                                 <div class="md-2"><input type="password" placeholder="Password"></div>
                                                 <div class="md-2"><input type="password" placeholder="Confirm Password"></div>
                                             </div>
-                                            <ul class="list-inline pull-right">
-                                                <li><button type="button" class="default-btn prev-step">Back</button>
-                                                </li>
-                                                <li><button type="button"
-                                                        class="default-btn next-step">Continue</button></li>
-                                            </ul>
+                                            <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                                            <a href="index.html" class="default-btn next-step">Finish</a>
                                         </div>
-                                        <div class="tab-pane" role="tabpanel" id="step4">
-                                            <h4 class="text-center">Step 4 Success Top Up</h4>
-                                            <div class="form-card">
-                                                <h2 class="fs-title text-center">Success !</h2> <br><br>
-                                                <div class="row justify-content-center">
-                                                    <div class="col-3"> <img src="assets/media/check.png" class="fit-image"> </div>
-                                                </div> <br><br>
-                                                <div class="row justify-content-center">
-                                                    <div class="col-7 text-center">
-                                                        <h5>You Have Successfully Top Up</h5>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <ul class="list-inline pull-right">
-                                                <li><a href="index.html" class="default-btn next-step">Finish</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-
+                                    </fieldset>
                                 </form>
                             </div>
                         </div>

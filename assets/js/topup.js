@@ -1,12 +1,12 @@
 $(document).ready(function(){
 
     var current_fs, next_fs, previous_fs; //fieldsets
-    var opacity,totalnominal,x;
+    var opacity,totalnominal,anynominal;
     var current = 1;
-    var steps = $("fieldset").length;
+    var steps = $("fieldset").length;    
     
     setProgressBar(current);
-    $('input[name=option]').click(function() {
+    $('input[name=option]').click(function() {       
         document.getElementById("totalnominal").value = $('input[name=option]:checked').val();        
         totalnominal=document.getElementById("totalnominal").value;
     });
@@ -16,10 +16,9 @@ $(document).ready(function(){
     }); 
 
     $(".any").keyup(function(){
-        x = document.getElementById("any").value;  
-        document.getElementById("option6").value = x;     
-      });
-
+        anynominal = document.getElementById("any").value;  
+        document.getElementById("option6").value = anynominal;     
+      });     
   
     $(".next").click(function(){                
     if (document.getElementById("totalnominal").value !== "")        {        
@@ -132,3 +131,18 @@ $(document).ready(function(){
         $(this).parent().find('.radio1').removeClass('selected');
         $(this).addClass('selected');
         });
+
+    function checkpassword(){
+        var password1=document.getElementById("passwordconfirm").value;
+        var password2=document.getElementById("passwordconfirm2").value;
+        if (password1 !=="" && password2 !==""){                         
+            if(password1==password2){
+                alert("Succesfully Top up");
+                location.href = "index.html";
+            } else{
+               alert("Passwords Don't Match");
+            }
+        } else{
+            alert("There is Blank Space");
+        }    
+    }

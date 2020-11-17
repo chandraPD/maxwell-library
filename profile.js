@@ -4,8 +4,6 @@ const submitForm = document.querySelector('.btn-editform input');
 // const submitForm = document.querySelector('#submit-profile');
 const cancelForm = document.querySelector('.btn-editform button');
 
-
-
 editButton.addEventListener('click', function(){
     editForm.style.display = 'block';
 });
@@ -28,19 +26,20 @@ submitForm.addEventListener('click', function() {
             'You should fill in the blank',
             'error'
           );
+          editForm.style.display = 'none';
     }else{
         Swal.fire(
             'Submitted !',
             'You clicked the button!',
             'success'
           );
+          
     }
 });
 
 cancelForm.addEventListener('click', function(){
     editForm.style.display = 'none';
 });
-
 
 // UPDATE DATA USER 
 function submitEditProfile() {
@@ -59,5 +58,5 @@ function submitEditProfile() {
     document.getElementById('email').innerHTML = emailUser;
     document.getElementById('address').innerHTML = addressUser;
     document.getElementById('phonenumber').innerHTML = phoneNumber;
-
 }
+

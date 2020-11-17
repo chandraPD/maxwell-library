@@ -730,8 +730,13 @@ button.edit-profile {
 }
 
 .data a:hover {
+    margin-top: 5px;
     font-size: 15px;
     color: blue;
+    background-color: #D6DCE4;
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 10px  gray;
 }
 .edit-btn {
     padding: 25px;
@@ -778,17 +783,17 @@ button.edit-profile {
     float: right;
 }
 
-@media (max-width: 767px){
+@media (max-width: 989px){
     /* .container-profile {
         margin: 20px;
         margin-top: 20px;
         margin-left: 20px; 
     }*/
-
+/* 
     .content-user {
         margin: 0;
-    }
-
+    } */
+/* 
     .container-changepwd {
         border: 3px solid;
         margin: 0;;
@@ -798,11 +803,13 @@ button.edit-profile {
     .content-changepwd {
         margin-left: 0;
         border: 3px solid;
-    }
+    } */
 
     
 
 }
+
+@media (max-width: 989px) {}
 
 
 /* Style Change_Password */

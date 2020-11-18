@@ -13,20 +13,20 @@
         );
     }else{
       Swal.fire(
-        'Submitted !',
+        'Submitted',
         'You clicked the button!',
         'success'
-      );
+      ).then (function (){
+        window.location.href = "../Profile.html";
+      })
     }
-  
-
-}
+  }
 
 // Password Validation Change Password//
 $(document).ready(function () {
     $.validator.setDefaults({
       submitHandler: function () {
-        window.location.href = "../Profile.html";
+        
       }
     });
     $('#changePwdForm').validate({
@@ -85,28 +85,4 @@ $(document).ready(function () {
       }
     });
   });
-
-  // function submitChangePassword() {
-  //   // const saveChangePwd = document.querySelector('input#save-change');
-  //   var email = document.getElementById('email').value;
-  //   var oldPassword = document.getElementById('oldPassword').value;
-  //   var newPassword = document.getElementById('newPassword').value;
-  //   var verifyPassword = document.getElementById('verifyPassword').value;
-
-  //   if (email == '' || oldPassword == '' || newPassword == '' || verifyPassword == ''){
-  //       Swal.fire(
-  //           'Submit Failed !',
-  //           'You should fill in the blank',
-  //           'error'
-  //         );
-  //   }else{
-  //       Swal.fire(
-  //           'Submitted !',
-  //           'You clicked the button!',
-  //           'success'
-  //         );
-  //   }
-
-  // }
- 
   

@@ -13,7 +13,7 @@ $(document).ready(function(){
 
     $(".any").keyup(function(){
         anynominal = document.getElementById("any").value;  
-        document.getElementById("option6").setAttribute("value",anynominal);     
+        document.getElementById("option7").value=anynominal;     
       });     
   
     $(".next").click(function(){                
@@ -43,11 +43,19 @@ $(document).ready(function(){
         });
         setProgressBar(++current);
         } else{
-            alert("Must Above Rp10.000")
+            Swal.fire(
+                'Error!',
+                'Must Above RP 10.0000!',
+                'error'
+              )  
         }
         
     } else{
-        alert("Please Insert Your Nominal First!")
+        Swal.fire(
+            'Error!',
+            'There is Blank Space!',
+            'error'
+          )  
     }
 
 
@@ -79,7 +87,11 @@ $(document).ready(function(){
             });
             setProgressBar(++current);
         } else{
-            alert("Please Select Your Payment Method!")
+            Swal.fire(
+                'Error!',
+                'Select Payment Method!',
+                'error'
+              )
         }
     
     
@@ -138,15 +150,29 @@ $(document).ready(function(){
         var password2=document.getElementById("passwordconfirm2").value;
         if (password1 !=="" && password2 !==""){                         
             if(password1==password2){
-                Swal.fire(
-                    'Good job!',
-                    'You clicked the button!',
-                    'success'
-                  )                
+                Swal.fire({
+                    
+                    icon: 'success',
+                    title: 'Success!',
+                    text: 'Top Up Succes Wait for Confirmation Admin!',                    
+                  }).then((result) => {
+                    /* Read more about isConfirmed, isDenied below */
+                    if (result.isConfirmed) {
+                        window.location.href = "../index.html";
+                    } 
+                  })                                               
             } else{
-               alert("Passwords Don't Match");
+                Swal.fire(
+                    'Error!',
+                    'Password Not Match!',
+                    'error'
+                  )
             }
         } else{
-            alert("There is Blank Space");
+            Swal.fire(
+                'Error!',
+                'There is Blank Space!',
+                'error'
+              )
         }    
     }

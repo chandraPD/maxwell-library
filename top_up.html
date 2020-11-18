@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Detail Buku</title>
+    <title>Top Up Page</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
@@ -31,7 +31,7 @@
     <link rel="icon" href="./assets/media/icon/favicons.ico">
     <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
     <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css'>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icheck-bootstrap/3.0.1/icheck-bootstrap.min.css">
 
 
 </head>
@@ -67,90 +67,143 @@
                                         <div class="form-card">
                                             <div class="row">
                                                 <div class="col-7">
-                                                    <h2 class="fs-title">Total Nominal:</h2>
+                                                    <h5 class="fs-title">Total Nominal:</h5>
                                                 </div>
                                                 <div class="col-5">
-                                                    <h2 class="steps">Step 1 - 4</h2>
+                                                    <h5 class="steps">Step 1 - 4</h5>
                                                 </div>
                                             </div>
-                                            <div class="radio-group" >
-                                                <div class="row row-cols-1 row-cols-md-4">
-                                                    <div class="md-1"><input type="radio" id="option1" name="option" value="10000"></div>
-                                                    <div class="md-1"><label>Rp 10000</label><br></div>
-                                                    <div class="md-1"><input type="radio" id="option2" name="option" value="20000"></div>
-                                                    <div class="md-1"><label>Rp 20000</label><br></div>
-                                                    <div class="md-1"><input type="radio" id="option3" name="option" value="50000"></div>
-                                                    <div class="md-1"><label>Rp 50000</label><br></div>
-                                                    <div class="md-1"><input type="radio" id="option4" name="option" value="100000"></div>
-                                                    <div class="md-1"><label>Rp 100000</label><br></div>
-                                                    <div class="md-1"><input type="radio" id="option5" name="option" value="200000"></div>
-                                                    <div class="md-1"><label>Rp 200000</label><br></div>
-                                                    <div class="md-1"><input type="radio" id="option6" name="option" value=""></div>
-                                                    <div class="md-1"><input class="any" type="text" id="any" name="any" ></div>                                                    
+                                            <div class="radio-group">
+                                                <div class="row row-cols-md-3" style="text-align: center;">
+                                                    <div class="icheck-primary">
+                                                        <input type="radio" name="option" id="option1" value="10000"/>
+                                                        <label for="option1" style="font-weight: normal;">Rp. 10000</label>
+                                                    </div>
+
+                                                    <div class="icheck-primary">
+                                                        <input type="radio" name="option" id="option2" value="20000"/>
+                                                        <label for="option2" style="font-weight: normal;">Rp. 20000</label>
+                                                    </div>
+
+                                                    <div class="icheck-primary">
+                                                        <input type="radio" name="option" id="option3" value="30000"/>
+                                                        <label for="option3" style="font-weight: normal;">Rp. 30000</label>
+                                                    </div>
+
+                                                    <div class="icheck-primary">
+                                                        <input type="radio" name="option" id="option4" value="40000"/>
+                                                        <label for="option4" style="font-weight: normal;">Rp. 40000</label>
+                                                    </div>
+
+                                                    <div class="icheck-primary">
+                                                        <input type="radio" name="option" id="option5" value="50000"/>
+                                                        <label for="option5" style="font-weight: normal;">Rp. 50000</label>
+                                                    </div>
+
+                                                    <div class="icheck-primary">
+                                                        <input type="radio" name="option" id="option6" value="60000"/>
+                                                        <label for="option6" style="font-weight: normal;">Rp. 60000</label>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div> <input type="button" name="next" class="next action-button"
+
+                                            <div class="input-group" style="margin-top: 1rem;">
+                                                <div class="input-group-prepend">
+                                                  <span class="input-group-text"><input type="radio" value="" name="option" id="option7"></span>
+                                                </div>
+                                                <input type="text" class="form-control any" id="any">
+                                            </div>
+
+                                        </div> <input type="button" name="next" class="btn btn-block btn-secondary action-button next action-button"
                                             value="Next"  />
                                     </fieldset>
+
                                     <fieldset>
                                         <div class="form-card">
                                             <div class="row">
                                                 <div class="col-7">
-                                                    <h2 class="fs-title">Payment Method:</h2>
+                                                    <h5 class="fs-title">Payment Method:</h5>
                                                 </div>
                                                 <div class="col-5">
-                                                    <h2 class="steps">Step 2 - 4</h2>
+                                                    <h5 class="steps">Step 2 - 4</h5>
                                                 </div>
-                                            </div> 
+                                            </div>
                                             <div class="radio-group2">
-                                                <div class="row row-cols-1 row-cols-md-2">
-                                                    <div class='radio1' name="payment1" data-id="Credit Card"><img src="assets/media/icon/creditcard.jpg" width="200px" height="100px"></div><p class="payment-name">Credit Card</p>
-                                                    <div class='radio1' name="payment1" data-id="Paypal"><img src="assets/media/icon/paypal.jpg" width="200px" height="100px"></div><p class="payment-name">Paypal</p>
-                                                    <div class='radio1' name="payment1" data-id="OVO"><img src="assets/media/icon/ovo.png" width="200px" height="100px"></div><p class="payment-name">OVO</p>
-                                                    <div class='radio1' name="payment1" data-id="Gopay"><img src="assets/media/icon/gopay.jpg" width="200px" height="100px"></div><p class="payment-name">Gopay</p><p class="payment-name"></p>
-                                                    <div class='radio1' name="payment1" data-id="Dana"><img src="assets/media/icon/dana.jpg" width="200px" height="100px"></div><p class="payment-name">Dana</p>
-                                                    <div class='radio1' name="payment1" data-id="Cash"><img src="assets/media/icon/cash.png" width="200px" height="100px"></div><p class="payment-name">Cash</p>
-                                                </div>                                                
+                                                <div class="row row-cols-md-3" style="justify-content: center;">
+                                                    <a class="btn btn-app radio1" name="payment1" data-id="Credit Card" style="margin-right:3.5rem">
+                                                        <img src="https://www.pinclipart.com/picdir/big/48-488752_credit-card-atm-card-logo-png-clipart.png" alt="" style="height: 2rem;"> &nbsp; Card
+                                                    </a>
+
+                                                    <a class="btn btn-app radio1" name="payment1" data-id="Paypal">
+                                                        <img src="https://cdn0.iconfinder.com/data/icons/shift-ecommerce/32/Paypal-512.png" alt="" style="height: 2rem;"> &nbsp; Paypal
+                                                    </a>
+
+                                                    <a class="btn btn-app radio1" name="payment1" data-id="OVO" style="margin-right:3.5rem">
+                                                        <img src="https://play-lh.googleusercontent.com/8zSxWSL5U-2KbIgeTHttb5FtDuW07GThugzAzyF75p-J0RQC0hZ0xZNxjZk9kpxk1Q" alt="" style="height: 2rem;"> &nbsp; OVO
+                                                    </a>
+                                                    <a class="btn btn-app radio1" name="payment1" data-id="Gopay">
+                                                        <img src="./assets/media/icon/gopaybg.png" alt="" style="height: 2rem;"> &nbsp;  Gopay
+                                                    </a>
+
+                                                    <a class="btn btn-app radio1" name="payment1" data-id="Dana" style="margin-right:3.5rem">
+                                                        <img src="./assets/media/icon/danabg.png" alt="" style="height: 2rem;"> &nbsp; Dana
+                                                    </a>
+                                                    
+                                                    <a class="btn btn-app radio1" name="payment1" data-id="Cash" >
+                                                        <img src="https://www.clipartmax.com/png/middle/223-2235279_cash-in-hand-icon.png" alt="" style="height: 2rem;"> &nbsp; Cash
+                                                    </a>
+
+                                                </div>
                                             </div>
-                                        </div> 
-                                        <input type="button" name="next" class="next1 action-button" value="Next" /> 
-                                        <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                                        </div>
+                                        <input type="button" name="next" class="btn btn-block btn-secondary action-button next1 action-button" value="Next" />
+                                        <input type="button" name="previous" class="btn btn-block btn-secondary action-button previous action-button-previous" value="Previous" />
                                     </fieldset>
                                     <fieldset>
                                         <div class="form-card">
                                             <div class="row">
                                                 <div class="col-7">
-                                                    <h2 class="fs-title">Top Up Confirmation:</h2>
+                                                    <h5 class="fs-title">Top Up Confirmation:</h5>
                                                 </div>
                                                 <div class="col-5">
-                                                    <h2 class="steps">Step 3 - 4</h2>
+                                                    <h5 class="steps">Step 3 - 4</h5>
                                                 </div>
-                                            </div> 
-                                            <div class="row row-cols-1 row-cols-md-1">                                                
-                                                <div class="md-2"><label>Total Nominal = Rp </label><input value="" id="totalnominal" type="text" readonly placeholder="Total Nominal"></div>
-                                                <div class="md-2"><label>Payment Method =</label><input id="paymentmethod" type="text" readonly placeholder="Payment Method"></div>
                                             </div>
-                                        </div> 
-                                        <input type="button" name="next" class="next action-button" value="Next" /> 
-                                        <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                                            <div class="row row-cols-1 row-cols-md-1">
+                                                <div class="form-group">
+                                                    <label for="totalnominal">Total Nominal</label>
+                                                    <input type="text" class="form-control" id="totalnominal" value="" disabled>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="paymentmethod">Payment Method</label>
+                                                    <input type="text" class="form-control" id="paymentmethod"  disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input type="button" name="next" class="btn btn-block btn-secondary action-button next1 action-button" value="Next" />
+                                        <input type="button" name="previous" class="btn btn-block btn-secondary action-button previous action-button-previous" value="Previous" />
                                     </fieldset>
                                     <fieldset>
                                         <div class="form-card">
                                             <div class="row">
                                                 <div class="col-7">
-                                                    <h2 class="fs-title">Confirmation Password:</h2>
+                                                    <h5 class="fs-title">Confirmation Password:</h5>
                                                 </div>
                                                 <div class="col-5">
-                                                    <h2 class="steps">Step 4 - 4</h2>
+                                                    <h5 class="steps">Step 4 - 4</h5>
                                                 </div>
                                             </div> 
-                                            <div class="row row-cols-1 row-cols-md-1">                                                
-                                                <div class="md-2"><input  id="passwordconfirm" type="password" placeholder="Password" ></div>
-                                                <div class="md-2"><input  id="passwordconfirm2" type="password" placeholder="Confirm Password"></div>
+                                            <div class="row row-cols-1 row-cols-md-1">
+                                                <div class="form-group">                                                
+                                                    <div class="md-2"><input class="form-control"  id="passwordconfirm" type="password" placeholder="Password" ></div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="md-2"><input class="form-control" id="passwordconfirm2" type="password" placeholder="Confirm Password"></div>
+                                                </div>
                                             </div>
                                         </div> 
-                                        <input type="button" onclick="checkpassword()" value="Submit">                                         
-                                        <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                                        <input type="button" class="btn btn-block btn-secondary" onclick="checkpassword()" value="Submit">                                         
+                                        <input type="button" name="previous" class="btn btn-block btn-secondary action-button previous action-button-previous" value="Previous" />
                                     </fieldset>                                    
                                 </form>
                             </div>

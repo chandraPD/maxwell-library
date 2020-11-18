@@ -26,6 +26,12 @@ function showModal1(arg) {
     }
 }
 
+function showModal2(arg) {
+    if (arg == 'topup') {        
+        $('#topupModal').modal('show');
+    } 
+}
+
 $('[name="url"]').keyup(function () {
     var url = $('[name="url"]').val();
     if (url == '') {
@@ -134,4 +140,92 @@ function clickstatus() {
     }
 
 }
+
+function confirmstatus(){
+    Swal.fire(
+        'Success!',
+        'Confirm Top Up Already Success!',
+        'success'
+      )
+}
+
+
+function cancelstatus(){
+    Swal.fire(
+        'Success!',
+        'Cancel Top Up Already Success!',
+        'success'
+      )
+}
+
+$(".any").keyup(function(){    
+    anynominal = document.getElementById("any").value;  
+    document.getElementById("option7").value=anynominal;     
+  });
+
+
+  
+function topup_process(){
+    if (document.getElementById("topup-user").value !== "" && $('input[name=option1]:checked').val() !=="" && $('input[name=option2]:checked').val() !=="") {
+        if ($('input[name=option]:checked').val() >= 10000){
+            if ($('input[name=option2]:checked').val() == "Credit Card" || $('input[name=option2]:checked').val() == "Paypall" || $('input[name=option2]:checked').val() == "OVO" || $('input[name=option2]:checked').val() == "Gopay" || $('input[name=option2]:checked').val() == "Dana" || $('input[name=option2]:checked').val() == "Cash"){
+                document.getElementById("checkuser").setAttribute("value",document.getElementById("topup-user").value);
+                document.getElementById("checknominal").setAttribute("value",$('input[name=option]:checked').val());
+                document.getElementById("checkmethod").setAttribute("value",$('input[name=option2]:checked').val());
+                $('#checkModal').modal('show');
+                $('#topupModal').modal('hide');
+            } else{
+                Swal.fire(
+                    'Error!',
+                    'Select Payment Method !',
+                    'error'
+                  )
+            }
+            
+        } else{
+            Swal.fire(
+                'Error!',
+                'Must Above RP 10.0000! or There is Blank Space!',
+                'error'
+              ) 
+        }
+        
+    } else {
+        Swal.fire(
+            'Error!',
+            'There is Blank Space!',
+            'error'
+          ) 
+    }
+    
+}
+
+function topupstatus(){
+    var password1=document.getElementById("passwordconfirm").value;
+    var password2=document.getElementById("passwordconfirm2").value;
+        if (password1 !=="" && password2 !==""){                         
+            if(password1==password2){
+            Swal.fire(
+                'Success!',
+                'Top Up Succes Wait for Confirmation Admin!',
+                'success'
+              )
+              $('#passwordModal').modal('hide');
+        } else{
+            Swal.fire(
+                'Error!',
+                'Password Not Match!',
+                'error'
+              )
+        }
+    
+    } else {
+        Swal.fire(
+            'Error!',
+            'There is Blank Space!',
+            'error'
+          )
+    }
+}
+
 

@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Detail Buku</title>
+    <title>Donation Page</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
@@ -18,10 +18,11 @@
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
-    <!-- daterange picker -->
-    <link rel="stylesheet" href="./assets/vendors/plugins/daterangepicker/daterangepicker.css">
     <!-- Tempusdominus Bbootstrap 4 -->
     <link rel="stylesheet" href="./assets/vendors/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./assets/vendors/plugins/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./assets/vendors/plugins/slick/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <link rel="icon" href="./assets/media/icon/favicons.ico">
 
@@ -38,21 +39,10 @@
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <div class="container-fluid">
-          <div class="button">
-            <div class="back-btn">
-              <a href="index.html" role="button"><i class="fas fa-arrow-left"></i></a>
-            </div>
           </div>
           <div class="row">
             <div class="col-sm-12">
-              <img class="big-preview" width="1600px" height="1200px">
-              <div class="menu-right">
-                <ul class="menuhead">
-                  <li><a href="#" onclick="showModal('edit')" >Edit</a></li>
-                  <li><a href="#" data-toggle="modal" data-target="#deleteModal">Delete</a></li>
-                </ul>
-                <img class="small-preview" src="./assets/media/books/covernya2.png">
-              </div>
+              <img class="big-preview" src="./assets/media/books/donation-book.jpg" width="600px" height="200px">
             </div>
           </div>
         </div><!-- /.container-fluid -->
@@ -60,101 +50,126 @@
 
       <!-- Main content -->
       <section class="content">
-        <div class="category">
-          <p>Novel</p>
-        </div>
         <div class="container-fluid">
 
           <div class="row">
             <div class="col-sm-6">
-              <h1 class="titletext">Dilan 1991</h1>
+              <h1 class="titletext">GREAT REASONS TO DONATE GOOD USED BOOKS!</h1>
             </div>
-            <div class="col-sm-6">
-              <h1 class="statustext">Available</h1>
-            </div>
-          </div>
-          <p class="date">08 November 2020</p>
-          <div class="row">
+                <div class="row">
             <div class=col-sm-8>
               <p class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac diam eget est rutrum ultrices. Donec
-                laoreet enim a massa dapibus, cursus egestas dui pulvinar. Proin sit amet accumsan lectus. Nullam auctor
-                auctor consequat. Donec semper magna erat, sed fringilla lacus pretium eget. Cras porttitor, nibh sit
-                amet interdum bibendum, nibh velit accumsan tellus, vel vehicula tellus leo vitae ipsum. Praesent sit
-                amet libero sed orci ullamcorper efficitur. Pellentesque in euismod purus, sit amet ultrices tortor.
-                Vestibulum ante dui, tempor at dui id, tincidunt euismod diam. Integer pellentesque massa nibh, ac
-                eleifend odio malesuada sed. Phasellus orci sem, cursus nec orci ut, accumsan facilisis lacus. Nullam at
-                elementum nibh, ac gravida felis. In sagittis rhoncus nisi tempus dignissim. Sed fringilla consequat
-                ante vitae lobortis. Cras posuere ligula vel enim suscipit malesuada. Vivamus non nulla ut ante
-                imperdiet euismod quis nec massa.
-              </p>
+                Even in today’s high-tech world, traditional hard copy books still have the amazing ability to offer inspiration, insight and education. 
+                Sometimes, there’s just nothing better than holding a book in your hand, rather than a cell phone or a tablet.
+                Below are some fantastic reasons why you should donate good quality used books.</p>
             </div>
-          </div>
-          <div class="borrowbutton">
-            <button id="button_borrow" value="borrow" class="btn btn-warning" href="#" onclick="showModal1(value)">Borrow</button>                  
+          </div>                  
           </div>
         </div>
       </section>
       <section>
-        <!--Adding list books-->
-        <div class="list-title">
-          <h4>Recommended</h4><br>
+        <!--Adding list donate reason-->
+        <div class="list-reason">
+          <h4>Reason</h4><br>
         </div>
-        <div class="row" id="recomended">
+        <div class="row" id="reason">
           <div class="col-xs-4 col-sm-4 col-lg-4">
-            <div class="card" id="recomendedcard" >
-              <img src="./assets/media/books/novel-dilan.jpg" class="card-img-top" alt="Dilan 1991">
+            <div class="card" id="reasoncard" >
+              <img src="./assets/media/books/donate1.jpg" class="card-img-top" alt="donate1">
               <div class="card-body">
-                <h5 class="recommend-title">Dilan 1991</h5>
-                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati aspernatur enim
-                  ullam officia ... </p>
-                <a class="recomendedcard-read btn" href="#" class="btn btn-primary">Read More</a>
+                <h5 class="list-reason">DONATING GOOD BOOKS GIVES THEM EXTRA PURPOSE</h5>
+                <p class="card-text">When you donate your books, you allow the opportunity to let those texts have new life. 
+                  Whether they end up in the hands of a young teen looking for an exciting new story to read, or they become part of a collection on someone else’s shelf, 
+                  donating your books expands their purpose and influence in a fascinating way.</p>
               </div>
             </div>
           </div>
 
           <div class="col-xs-4 col-sm-4 col-lg-4">
-            <div class="card" id="recomendedcard" >
-              <img src="./assets/media/books/buku-seni-minimalis.jpg" class="card-img-top" alt="Dilan 1991">
+            <div class="card" id="reasoncard" >
+              <img src="./assets/media/books/donate2.jpg" class="card-img-top" alt="donate2">
               <div class="card-body">
-                <h5 class="recommend-title">Seni Hidup Minimalis</h5>
-                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati aspernatur enim
-                  ullam officia ... </p>
-                <a class="recomendedcard-read btn" href="#" class="btn btn-primary">Read More</a>
+                <h5 class="list-reason">YOU CAN SUPPORT YOUR LOCAL LIBRARY SYSTEM</h5>
+                <p class="card-text">If you donate good books, you are supporting all of our public libraries. We collect these books
+                  which helps raise money in support of early childhood literacy, technology, education and other programs held at various libraries in our system.
+               </p>
               </div>
             </div>
           </div>
 
           <div class="col-xs-4 col-sm-4 col-lg-4">
-            <div class="card" id="recomendedcard" >
-              <img src="./assets/media/books/novel-milea.jpg" class="card-img-top" alt="Milea">
+            <div class="card" id="reasoncard" >
+              <img src="./assets/media/books/donate3.jpg" class="card-img-top" alt="donate3">
               <div class="card-body">
-                <h5 class="recommend-title">Milea</h5>
-                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati aspernatur enim
-                  ullam officia ... </p>
-                <a class="recomendedcard-read btn" href="#">Read More</a>
+                <h5 class="list-reason">IT’S TIME FOR CLEANING</h5>
+                <p class="card-text">Have a few (or a bunch) of great books sitting on a shelf? 
+                  Clear out the space by bringing in books by the box-load at our donation center.
+                  Or if you’re downsizing into a new home, consider going through your book cases to see which ones you think others will love reading as much as you did.
+                  </p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+        <!--Donate Form-->
+        <!-- /.card -->
+            <!-- Horizontal Form -->
+            <div class="card card-info">
+              <div class="card-header">
+                <h3 class="card-title">Donation Form</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <form class="form-horizontal">
+                <div class="card-body">
+                  <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Name</label>
+                    <div class="col-sm-10">
+                      <input type="Name" class="form-control" id="inputName3" placeholder="Name">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputDonationType3" class="col-sm-2 col-form-label">Donation Type</label>
+                    <div class="col-sm-10">
+                      <input type="Name" class="form-control" id="inputDonationtype3" placeholder="Donation">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputPhone3" class="col-sm-2 col-form-label">Phone Number</label>
+                    <div class="col-sm-10">
+                      <input type="Numberofphone" class="form-control" id="inputPhone3" placeholder="Phone Number">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputBookbybook3" class="col-sm-2 col-form-label">Book by each book</label>
+                    <div class="col-sm-10">
+                      <input type="Numberofbook" class="form-control" id="inputBookbybook3" placeholder="Book by number of book">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Book by weights</label>
+                    <div class="col-sm-10">
+                      <input type="weight" class="form-control" id="inputBookbyweight3" placeholder="Book by weight in kg">
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-info float-right">Submit</button>
+                </div>
+                <!-- /.card-footer -->
+        
       <!-- /.content -->
     </div>
   </div>
     <!-- /.modal -->
-      <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabesl"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Do you want to delete?</h5>
-              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">×</span>
-              </button>
-            </div>
-            <div class="modal-body">If you delete this, you can't be returned</div>
-            <div class="modal-footer">
-              <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
               <a class="btn btn-danger" id="btn-delete" href="#" data-dismiss="modal" data-toggle="modal"
                 data-target="#BerhasilModal">Delete</a>
             </div>
@@ -356,32 +371,6 @@
                 <input type="text"  name="name" class="form-control" readonly placeholder="Niki Zefanya">
               </div>
             </div>
-            <hr class="divider">
-            <div class="row">
-              <div class="col-md-3">
-              <label class="title-module">Date Borrow:</label>
-              </div>
-              
-              <div class="col-md-6">
-                  <div class="input-group date" id="datetimepicker5" data-target-input="nearest">
-                    <input placeholder="Borrow Date" type="text" name="borrowdate" id="borrowdate" class="form-control datetimepicker-input" data-target="#datetimepicker5" required autofocus/>
-                    <div class="input-group-append" data-target="#datetimepicker5" data-toggle="datetimepicker">
-                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                    </div>
-                </div>
-              </div>
-            </div>
-            <hr class="divider">
-            <div class="row">
-              <div class="col-md-3">
-              <label class="title-module">Date Return:</label>
-              </div>
-              <div class="col-md-6">
-                  <div class="input-group date" id="datetimepicker6" data-target-input="nearest">
-                    <input placeholder="Return Date" type="text" name="returndate" id="returndate" class="form-control datetimepicker-input" data-target="#datetimepicker6" required/>
-                    <div class="input-group-append" data-target="#datetimepicker6" data-toggle="datetimepicker">
-                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                    </div>
                 </div>
               </div>
             </div>
@@ -416,9 +405,6 @@
   <!-- Tempusdominus Bootstrap 4 -->
   <script src="./assets/vendors/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
   <script type="text/javascript" src="./assets/js/modal.js"></script>
-  <!-- Datepicker -->
-  <script src="./assets/js/datepicker.js" type="text/javascript"></script>
-
 </body>
 
 </html>

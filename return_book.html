@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rent Management</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./assets/vendors/plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="./assets/vendors/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="./assets/vendors/dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/media/icon/favicons.ico">
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+    <!-- Site wrapper -->
+    <div class="wrapper">
+        <div w3-include-html="include_navbar.html"></div>
+        <div w3-include-html="include_sidebar.html"></div>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1>Return Book</h1>
+                        </div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="rent_management.html">Rent Management</a></li>
+                                <li class="breadcrumb-item active">Return Book</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Return Book</h3>
+                                </div>
+                                <!-- /.card-header -->
+                                <!-- form start -->
+                                <form class="form-horizontal">
+                                    <div class="card-body">
+                                        <div class="form-group row">
+                                            <button type="button" class="btn bg-gradient-primary" onclick="addRow()" >Add</button>
+                                        </div>
+                                        <div class="return-book-list">
+                                            <div class="return-book-list-item">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-2 col-form-label text-right">Book :</label>
+                                                    <div class="col-sm-4">
+                                                        <select name="book_id[]" class="form-control" onchange="setDetail(this)" >
+                                                            <option value="">Choose Book</option>
+                                                            <option value="001">Dilan 1991</option>
+                                                            <option value="002">Dilan 1992</option>
+                                                            <option value="003">Dilan 1993</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <button type="button" class="btn bg-gradient-danger" value="delete" onclick="deleteRow(this)" >Delete</button>
+                                                    </div>
+                                                </div>
+                                                <div class="return-book-list-detail">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /.card-body -->
+                                        <div class="card-footer text-center ">
+                                            <button type="reset" class="btn btn-default">Cancel</button>
+                                            <button type="submit" class="btn btn-info">Submit</button>
+                                        </div>
+                                        <!-- /.card-footer -->
+                                </form>
+                                <!-- /.card-body -->
+                            </div>
+                            <!-- /.card -->
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container-fluid -->
+            </section>
+            <!-- /.content -->
+        </div>
+
+        <div w3-include-html="include_footer.html"></div>
+
+    </div>
+
+    <script src="./assets/js/js.js" type="text/javascript"></script>
+    <!-- jQuery -->
+    <script src="./assets/vendors/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="./assets/vendors/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- DataTables -->
+    <script src="./assets/vendors/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="./assets/vendors/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="./assets/vendors/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="./assets/vendors/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="./assets/vendors/dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="./assets/vendors/dist/js/demo.js"></script>
+
+    <script>
+        function addRow(){
+            var addRow = '<div class="return-book-list-item"> <div class="form-group row"> <label class="col-sm-2 col-form-label text-right">Book :</label> <div class="col-sm-4"> <select name="book_id[]" class="form-control" onchange="setDetail(this)" > <option value="">Choose Book</option> <option value="001">Dilan 1991</option> <option value="002">Dilan 1992</option> <option value="003">Dilan 1993</option> </select> </div><div class="col-sm-2"> <button type="button" class="btn bg-gradient-danger" value="delete" onclick="deleteRow(this)" >Delete</button> </div></div><div class="return-book-list-detail"> </div></div>';
+            $('div.return-book-list').append(addRow);
+        }
+
+        function setDetail(x){
+            var i = $('select').index(x);
+            var detail = '<div class="form-group row"><div class="form-group col-sm-4"><span class="info">Book Title</span><input type="text" class="form-control" name="book_title[]" value="Dilan 1990" readonly></div><div class="form-group col-sm-4"><span>Borrowed On</span><input type="text" class="form-control" name="borrow_date[]" value="17 Nov 2020" readonly></div><div class="form-group col-sm-4"><span>Due On</span><input type="text" class="form-control" name="due_on[]" value="20 Nov 2020" readonly></div></div><div class="form-group row"><div class="form-group col-sm-4"><span class="info">Date Of Return</span><input type="text" class="form-control" name="return_date[]" value="21 Nov 2020" readonly></div><div class="form-group col-sm-4"><span>Late By</span><input type="text" class="form-control" name="late_by[]" value="1" readonly></div><div class="form-group col-sm-4"><span>Fine</span><input type="text" class="form-control" name="fine[]" value="5000" readonly></div></div>';
+            $('div.return-book-list-detail').eq(i).append(detail);
+        }
+
+        function deleteRow(x){
+            var i = $('[value="delete"]').index(x);
+            $('div.return-book-list-item').eq(i).remove();            
+        }
+    </script>
+
+</body>
+
+</html>

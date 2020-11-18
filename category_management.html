@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Maxwell | Library</title>
+    <title>Maxwell | Categories</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Font Awesome -->
@@ -35,46 +35,19 @@
     <!-- Site wrapper -->
     <div class="wrapper">
         <!-- Navbar -->
-        <nav class="main-header navbar navbar-expand navbar-light navbar-white d-flex flex-row">
-            <!-- Left navbar links -->
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                        class="nav-link dropdown-toggle">All Categories</a>
-                    <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow"
-                        style="left: 0px; right: inherit">
-                        <li><a href="#" class="dropdown-item">Novel</a></li>
-                        <li><a href="#" class="dropdown-item">Comic Book</a></li>
-                        <li>
-                            <a href="#" class="dropdown-item">Detective and Mystery</a>
-                        </li>
-                        <li><a href="#" class="dropdown-item">Historical Fiction</a></li>
-                        <li><a href="#" class="dropdown-item">Horror</a></li>
-                        <li><a href="#" class="dropdown-item">literary Fiction</a></li>
-                        <!-- End Level two -->
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                        class="nav-link dropdown-toggle">All Time</a>
-                    <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow"
-                        style="left: 0px; right: inherit">
-                        <li><a href="#" class="dropdown-item">2020</a></li>
-                        <li><a href="#" class="dropdown-item">2019</a></li>
-                        <li><a href="#" class="dropdown-item">2018</a></li>
-                        <li><a href="#" class="dropdown-item">2017</a></li>
-                        <li><a href="#" class="dropdown-item">2016</a></li>
-                        <li><a href="#" class="dropdown-item">2015</a></li>
-                        <!-- End Level two -->
-                    </ul>
-                </li>
-            </ul>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-                </li>
-            </ul>
-        </nav>
+      <nav
+      class="main-header navbar navbar-expand navbar-light navbar-white d-flex flex-row"
+    >
+      <div class="toggle-navbar-nav">
+        <ul class="navbar-nav toggle-navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"
+              ><i class="fas fa-bars"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
         <!-- /.navbar -->
         <div w3-include-html="include_sidebar.html"></div>
         <!-- Content Wrapper. Contains page content -->
@@ -256,302 +229,320 @@
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td>
-                                                <button type="button" class="btn" data-toggle="modal"
-                                                    data-target="#modal-edit">
-                                                    <i class="fas fa-edit"></i>
-                                                </button>
-                                                |
-                                                <button type="button" class="btn" data-toggle="modal"
-                                                    data-target="#modal-delete">
-                                                    <i class="fas fa-trash"></i>
-                                                </button>
-                                            </td>
+                                            <td class="text-center py-0 align-middle">
+                                                <div class="btn-group btn-group-sm">
+                                                  <button data-toggle="modal" data-target="#modal-edit" class="btn btn-success"
+                                                  ><i class="fas fa-pen"></i
+                                                  ></button>
+                                                  <button data-toggle="modal" data-target="#modal-delete" class="btn btn-danger"
+                                                  ><i class="fas fa-trash"></i
+                                                  ></a>
+                                               </div>
+                                              </td>
                                             <td>CTG0001</td>
                                             <td>Fantasy</td>
                                         </tr>
 
                                         <tr>
                                             <td>2</td>
-                                            <td>
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-edit"></i>
-                                                </button>
-                                                |
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-trash"></i>
-                                                </button>
-                                            </td>
+                                            <td class="text-center py-0 align-middle">
+                                                <div class="btn-group btn-group-sm">
+                                                  <button data-toggle="modal" data-target="#modal-edit" class="btn btn-success"
+                                                  ><i class="fas fa-pen"></i
+                                                  ></button>
+                                                  <button data-toggle="modal" data-target="#modal-delete" class="btn btn-danger"
+                                                  ><i class="fas fa-trash"></i
+                                                  ></a>
+                                               </div>
+                                              </td>
                                             <td>CTG0002</td>
                                             <td>Adventure</td>
                                         </tr>
 
                                         <tr>
                                             <td>3</td>
-                                            <td>
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-edit"></i>
-                                                </button>
-                                                |
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-trash"></i>
-                                                </button>
-                                            </td>
+                                            <td class="text-center py-0 align-middle">
+                                                <div class="btn-group btn-group-sm">
+                                                  <button data-toggle="modal" data-target="#modal-edit" class="btn btn-success"
+                                                  ><i class="fas fa-pen"></i
+                                                  ></button>
+                                                  <button data-toggle="modal" data-target="#modal-delete" class="btn btn-danger"
+                                                  ><i class="fas fa-trash"></i
+                                                  ></a>
+                                               </div>
+                                              </td>
                                             <td>CTG0003</td>
                                             <td>Romance</td>
                                         </tr>
 
                                         <tr>
                                             <td>4</td>
-                                            <td>
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-edit"></i>
-                                                </button>
-                                                |
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-trash"></i>
-                                                </button>
-                                            </td>
+                                            <td class="text-center py-0 align-middle">
+                                                <div class="btn-group btn-group-sm">
+                                                  <button data-toggle="modal" data-target="#modal-edit" class="btn btn-success"
+                                                  ><i class="fas fa-pen"></i
+                                                  ></button>
+                                                  <button data-toggle="modal" data-target="#modal-delete" class="btn btn-danger"
+                                                  ><i class="fas fa-trash"></i
+                                                  ></a>
+                                               </div>
+                                              </td>
                                             <td>CTG0004</td>
                                             <td>Contemporary</td>
                                         </tr>
 
                                         <tr>
                                             <td>5</td>
-                                            <td>
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-edit"></i>
-                                                </button>
-                                                |
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-trash"></i>
-                                                </button>
-                                            </td>
+                                            <td class="text-center py-0 align-middle">
+                                                <div class="btn-group btn-group-sm">
+                                                  <button data-toggle="modal" data-target="#modal-edit" class="btn btn-success"
+                                                  ><i class="fas fa-pen"></i
+                                                  ></button>
+                                                  <button data-toggle="modal" data-target="#modal-delete" class="btn btn-danger"
+                                                  ><i class="fas fa-trash"></i
+                                                  ></a>
+                                               </div>
+                                              </td>
                                             <td>CTG0005</td>
                                             <td>Dystopian</td>
                                         </tr>
 
                                         <tr>
                                             <td>6</td>
-                                            <td>
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-edit"></i>
-                                                </button>
-                                                |
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-trash"></i>
-                                                </button>
-                                            </td>
+                                            <td class="text-center py-0 align-middle">
+                                                <div class="btn-group btn-group-sm">
+                                                  <button data-toggle="modal" data-target="#modal-edit" class="btn btn-success"
+                                                  ><i class="fas fa-pen"></i
+                                                  ></button>
+                                                  <button data-toggle="modal" data-target="#modal-delete" class="btn btn-danger"
+                                                  ><i class="fas fa-trash"></i
+                                                  ></a>
+                                               </div>
+                                              </td>
                                             <td>CTG0006</td>
                                             <td>Mystery</td>
                                         </tr>
 
                                         <tr>
                                             <td>7</td>
-                                            <td>
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-edit"></i>
-                                                </button>
-                                                |
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-trash"></i>
-                                                </button>
-                                            </td>
+                                            <td class="text-center py-0 align-middle">
+                                                <div class="btn-group btn-group-sm">
+                                                  <button data-toggle="modal" data-target="#modal-edit" class="btn btn-success"
+                                                  ><i class="fas fa-pen"></i
+                                                  ></button>
+                                                  <button data-toggle="modal" data-target="#modal-delete" class="btn btn-danger"
+                                                  ><i class="fas fa-trash"></i
+                                                  ></a>
+                                               </div>
+                                              </td>
                                             <td>CTG0007</td>
                                             <td>Horror</td>
                                         </tr>
 
                                         <tr>
                                             <td>8</td>
-                                            <td>
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-edit"></i>
-                                                </button>
-                                                |
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-trash"></i>
-                                                </button>
-                                            </td>
+                                            <td class="text-center py-0 align-middle">
+                                                <div class="btn-group btn-group-sm">
+                                                  <button data-toggle="modal" data-target="#modal-edit" class="btn btn-success"
+                                                  ><i class="fas fa-pen"></i
+                                                  ></button>
+                                                  <button data-toggle="modal" data-target="#modal-delete" class="btn btn-danger"
+                                                  ><i class="fas fa-trash"></i
+                                                  ></a>
+                                               </div>
+                                              </td>
                                             <td>CTG0008</td>
                                             <td>Thriller</td>
                                         </tr>
 
                                         <tr>
                                             <td>9</td>
-                                            <td>
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-edit"></i>
-                                                </button>
-                                                |
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-trash"></i>
-                                                </button>
-                                            </td>
+                                            <td class="text-center py-0 align-middle">
+                                                <div class="btn-group btn-group-sm">
+                                                  <button data-toggle="modal" data-target="#modal-edit" class="btn btn-success"
+                                                  ><i class="fas fa-pen"></i
+                                                  ></button>
+                                                  <button data-toggle="modal" data-target="#modal-delete" class="btn btn-danger"
+                                                  ><i class="fas fa-trash"></i
+                                                  ></a>
+                                               </div>
+                                              </td>
                                             <td>CTG0009</td>
                                             <td>Paranormal</td>
                                         </tr>
 
                                         <tr>
                                             <td>10</td>
-                                            <td>
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-edit"></i>
-                                                </button>
-                                                |
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-trash"></i>
-                                                </button>
-                                            </td>
+                                            <td class="text-center py-0 align-middle">
+                                                <div class="btn-group btn-group-sm">
+                                                  <button data-toggle="modal" data-target="#modal-edit" class="btn btn-success"
+                                                  ><i class="fas fa-pen"></i
+                                                  ></button>
+                                                  <button data-toggle="modal" data-target="#modal-delete" class="btn btn-danger"
+                                                  ><i class="fas fa-trash"></i
+                                                  ></a>
+                                               </div>
+                                              </td>
                                             <td>CTG0010</td>
                                             <td>Historical Fiction</td>
                                         </tr>
 
                                         <tr>
                                             <td>11</td>
-                                            <td>
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-edit"></i>
-                                                </button>
-                                                |
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-trash"></i>
-                                                </button>
-                                            </td>
+                                            <td class="text-center py-0 align-middle">
+                                                <div class="btn-group btn-group-sm">
+                                                  <button data-toggle="modal" data-target="#modal-edit" class="btn btn-success"
+                                                  ><i class="fas fa-pen"></i
+                                                  ></button>
+                                                  <button data-toggle="modal" data-target="#modal-delete" class="btn btn-danger"
+                                                  ><i class="fas fa-trash"></i
+                                                  ></a>
+                                               </div>
+                                              </td>
                                             <td>CTG0011</td>
                                             <td>Science Fiction</td>
                                         </tr>
 
                                         <tr>
                                             <td>12</td>
-                                            <td>
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-edit"></i>
-                                                </button>
-                                                |
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-trash"></i>
-                                                </button>
-                                            </td>
+                                            <td class="text-center py-0 align-middle">
+                                                <div class="btn-group btn-group-sm">
+                                                  <button data-toggle="modal" data-target="#modal-edit" class="btn btn-success"
+                                                  ><i class="fas fa-pen"></i
+                                                  ></button>
+                                                  <button data-toggle="modal" data-target="#modal-delete" class="btn btn-danger"
+                                                  ><i class="fas fa-trash"></i
+                                                  ></a>
+                                               </div>
+                                              </td>
                                             <td>CTG0012</td>
                                             <td>Memoir</td>
                                         </tr>
 
                                         <tr>
                                             <td>13</td>
-                                            <td>
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-edit"></i>
-                                                </button>
-                                                |
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-trash"></i>
-                                                </button>
-                                            </td>
+                                            <td class="text-center py-0 align-middle">
+                                                <div class="btn-group btn-group-sm">
+                                                  <button data-toggle="modal" data-target="#modal-edit" class="btn btn-success"
+                                                  ><i class="fas fa-pen"></i
+                                                  ></button>
+                                                  <button data-toggle="modal" data-target="#modal-delete" class="btn btn-danger"
+                                                  ><i class="fas fa-trash"></i
+                                                  ></a>
+                                               </div>
+                                              </td>
                                             <td>CTG0013</td>
                                             <td>Cooking</td>
                                         </tr>
 
                                         <tr>
                                             <td>14</td>
-                                            <td>
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-edit"></i>
-                                                </button>
-                                                |
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-trash"></i>
-                                                </button>
-                                            </td>
+                                            <td class="text-center py-0 align-middle">
+                                                <div class="btn-group btn-group-sm">
+                                                  <button data-toggle="modal" data-target="#modal-edit" class="btn btn-success"
+                                                  ><i class="fas fa-pen"></i
+                                                  ></button>
+                                                  <button data-toggle="modal" data-target="#modal-delete" class="btn btn-danger"
+                                                  ><i class="fas fa-trash"></i
+                                                  ></a>
+                                               </div>
+                                              </td>
                                             <td>CTG0014</td>
                                             <td>Art</td>
                                         </tr>
 
                                         <tr>
                                             <td>15</td>
-                                            <td>
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-edit"></i>
-                                                </button>
-                                                |
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-trash"></i>
-                                                </button>
-                                            </td>
+                                            <td class="text-center py-0 align-middle">
+                                                <div class="btn-group btn-group-sm">
+                                                  <button data-toggle="modal" data-target="#modal-edit" class="btn btn-success"
+                                                  ><i class="fas fa-pen"></i
+                                                  ></button>
+                                                  <button data-toggle="modal" data-target="#modal-delete" class="btn btn-danger"
+                                                  ><i class="fas fa-trash"></i
+                                                  ></a>
+                                               </div>
+                                              </td>
                                             <td>CTG0015</td>
                                             <td>Self-help</td>
                                         </tr>
 
                                         <tr>
                                             <td>16</td>
-                                            <td>
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-edit"></i>
-                                                </button>
-                                                |
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-trash"></i>
-                                                </button>
-                                            </td>
+                                            <td class="text-center py-0 align-middle">
+                                                <div class="btn-group btn-group-sm">
+                                                  <button data-toggle="modal" data-target="#modal-edit" class="btn btn-success"
+                                                  ><i class="fas fa-pen"></i
+                                                  ></button>
+                                                  <button data-toggle="modal" data-target="#modal-delete" class="btn btn-danger"
+                                                  ><i class="fas fa-trash"></i
+                                                  ></a>
+                                               </div>
+                                              </td>
                                             <td>CTG0016</td>
                                             <td>Development</td>
                                         </tr>
 
                                         <tr>
                                             <td>17</td>
-                                            <td>
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-edit"></i>
-                                                </button>
-                                                |
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-trash"></i>
-                                                </button>
-                                            </td>
+                                            <td class="text-center py-0 align-middle">
+                                                <div class="btn-group btn-group-sm">
+                                                  <button data-toggle="modal" data-target="#modal-edit" class="btn btn-success"
+                                                  ><i class="fas fa-pen"></i
+                                                  ></button>
+                                                  <button data-toggle="modal" data-target="#modal-delete" class="btn btn-danger"
+                                                  ><i class="fas fa-trash"></i
+                                                  ></a>
+                                               </div>
+                                              </td>
                                             <td>CTG0017</td>
                                             <td>Motivational</td>
                                         </tr>
 
                                         <tr>
                                             <td>18</td>
-                                            <td>
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-edit"></i>
-                                                </button>
-                                                |
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-trash"></i>
-                                                </button>
-                                            </td>
+                                            <td class="text-center py-0 align-middle">
+                                                <div class="btn-group btn-group-sm">
+                                                  <button data-toggle="modal" data-target="#modal-edit" class="btn btn-success"
+                                                  ><i class="fas fa-pen"></i
+                                                  ></button>
+                                                  <button data-toggle="modal" data-target="#modal-delete" class="btn btn-danger"
+                                                  ><i class="fas fa-trash"></i
+                                                  ></a>
+                                               </div>
+                                              </td>
                                             <td>CTG0018</td>
                                             <td>Health</td>
                                         </tr>
 
                                         <tr>
                                             <td>19</td>
-                                            <td>
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-edit"></i>
-                                                </button>
-                                                |
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-trash"></i>
-                                                </button>
-                                            </td>
+                                            <td class="text-center py-0 align-middle">
+                                                <div class="btn-group btn-group-sm">
+                                                  <button data-toggle="modal" data-target="#modal-edit" class="btn btn-success"
+                                                  ><i class="fas fa-pen"></i
+                                                  ></button>
+                                                  <button data-toggle="modal" data-target="#modal-delete" class="btn btn-danger"
+                                                  ><i class="fas fa-trash"></i
+                                                  ></a>
+                                               </div>
+                                              </td>
                                             <td>CTG0019</td>
                                             <td>History</td>
                                         </tr>
 
                                         <tr>
                                             <td>20</td>
-                                            <td>
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-edit"></i>
-                                                </button>
-                                                |
-                                                <button type="button" class="btn">
-                                                    <i class="fas fa-trash"></i>
-                                                </button>
-                                            </td>
+                                            <td class="text-center py-0 align-middle">
+                                                <div class="btn-group btn-group-sm">
+                                                  <button data-toggle="modal" data-target="#modal-edit" class="btn btn-success"
+                                                  ><i class="fas fa-pen"></i
+                                                  ></button>
+                                                  <button data-toggle="modal" data-target="#modal-delete" class="btn btn-danger"
+                                                  ><i class="fas fa-trash"></i
+                                                  ></a>
+                                               </div>
+                                              </td>
                                             <td>CTG0020</td>
                                             <td>Travel</td>
                                         </tr>

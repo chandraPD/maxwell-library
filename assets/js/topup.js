@@ -5,11 +5,7 @@ $(document).ready(function(){
     var current = 1;
     var steps = $("fieldset").length;    
     
-    setProgressBar(current);
-    $('input[name=option]').click(function() {       
-        document.getElementById("totalnominal").value = $('input[name=option]:checked').val();        
-        totalnominal=document.getElementById("totalnominal").value;
-    });
+    setProgressBar(current);    
 
     $('.radio-group2 .radio1').click(function(){
         document.getElementById("paymentmethod").value = $(this).data("id");
@@ -17,11 +13,12 @@ $(document).ready(function(){
 
     $(".any").keyup(function(){
         anynominal = document.getElementById("any").value;  
-        document.getElementById("option6").value = anynominal;     
+        document.getElementById("option6").setAttribute("value",anynominal);     
       });     
   
     $(".next").click(function(){                
-    if (document.getElementById("totalnominal").value !== "")        {        
+    if ($('input[name=option]:checked').val() !== "") {
+        if ($('input[name=option]:checked').val() >= 10000){
         current_fs = $(this).parent();
         next_fs = $(this).parent().next();
         
@@ -45,6 +42,10 @@ $(document).ready(function(){
         duration: 500
         });
         setProgressBar(++current);
+        } else{
+            alert("Must Above Rp10.000")
+        }
+        
     } else{
         alert("Please Insert Your Nominal First!")
     }
@@ -56,7 +57,7 @@ $(document).ready(function(){
         if (document.getElementById("paymentmethod").value !== "")        {        
             current_fs = $(this).parent();
             next_fs = $(this).parent().next();
-            
+            document.getElementById("totalnominal").value = $('input[name=option]:checked').val();        
             //Add Class Active
             $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
             
@@ -137,8 +138,11 @@ $(document).ready(function(){
         var password2=document.getElementById("passwordconfirm2").value;
         if (password1 !=="" && password2 !==""){                         
             if(password1==password2){
-                alert("Succesfully Top up");
-                location.href = "index.html";
+                Swal.fire(
+                    'Good job!',
+                    'You clicked the button!',
+                    'success'
+                  )                
             } else{
                alert("Passwords Don't Match");
             }

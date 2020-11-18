@@ -1,3 +1,25 @@
+  function submitChangePassword() {
+  // const saveChangePwd = document.querySelector('input#save-change');
+  var email = document.getElementById('email').value;
+  var oldPassword = document.getElementById('oldPassword').value;
+  var newPassword = document.getElementById('newPassword').value;
+  var verifyPassword = document.getElementById('verifyPassword').value;
+
+  if (email == '' || oldPassword == '' || newPassword == '' || verifyPassword == ''){
+      Swal.fire(
+          'Submit Failed !',
+          'You should fill in the blank',
+          'error'
+        );
+  }else{
+      Swal.fire(
+          'Submitted !',
+          'You clicked the button!',
+          'success'
+        );
+  }
+
+}
 
 // Password Validation Change Password//
 $(document).ready(function () {
@@ -63,36 +85,27 @@ $(document).ready(function () {
     });
   });
 
-  // Save Pop Up //
+  // function submitChangePassword() {
+  //   const saveChangePwd = document.querySelector('input#save-change');
+  //   var email = document.getElementById('inputEmail').value;
+  //   var oldPassword = document.getElementById('inputOldPassword').value;
+  //   var newPassword = document.getElementById('inputNewPassword').value;
+  //   var verifyPassword = document.getElementById('inpurVerifyPassword').value;
 
-  // const saveChangePwd = document.querySelector('button#save-change');
-  // saveChangePwd.addEventListener('click', function(){
-  //   Swal.fire(
-  //     'Save Complete !',
-  //     'You clicked the button!',
-  //     'success'
-  //   );
-  // });
+  //   if (email == '' || oldPassword == '' || newPassword == '' || verifyPassword == ''){
+  //       Swal.fire(
+  //           'Submit Failed !',
+  //           'You should fill in the blank',
+  //           'error'
+  //         );
+  //   }else{
+  //       Swal.fire(
+  //           'Submitted !',
+  //           'You clicked the button!',
+  //           'success'
+  //         );
+  //   }
 
-    const saveChangePwd = document.querySelector('button#save-change');
-    saveChangePwd.addEventListener('click', function() {
-    var email = document.getElementById('inputEmail').value;
-    var oldPassword = document.getElementById('inputOldPassword').value;
-    var newPassword = document.getElementById('inputNewPassword').value;
-    var verifyPassword = document.getElementById('inpurVerifyPassword').value;
-
-    if (email == '' || oldPassword == '' || newPassword == '' || verifyPassword == ''){
-        Swal.fire(
-            'Submit Failed !',
-            'You should fill in the blank',
-            'error'
-          );
-    }else{
-        Swal.fire(
-            'Submitted !',
-            'You clicked the button!',
-            'success'
-          );
-    }
-});
+  // }
+ 
   

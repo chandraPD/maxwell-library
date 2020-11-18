@@ -1,15 +1,10 @@
 const editButton = document.querySelector('button.edit-profile');
 const editForm = document.querySelector('#container-editform');
 const submitForm = document.querySelector('.btn-editform input');
-// const submitForm = document.querySelector('#submit-profile');
 const cancelForm = document.querySelector('.btn-editform button');
 
 editButton.addEventListener('click', function(){
     editForm.style.display = 'block';
-});
-
-submitForm.addEventListener('click', function(){
-    editForm.style.display = 'none';
 });
 
 cancelForm.addEventListener('click', function(){

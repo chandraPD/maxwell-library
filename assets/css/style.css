@@ -15,6 +15,7 @@ img.check{
 
 p{
     text-align: center;
+    margin-left: 0.2rem;
 }
 
 img.big-preview{
@@ -43,12 +44,34 @@ p.content{
     margin-left: 70px;
 }
 
+.list-reason{
+    padding-left: 1rem;
+
+}
+
 h1.titletext{
     color: black;
     margin-left: 70px;
     font-weight: bold;
 }
 
+h1.title-text{
+    color: black;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+#reason.row{
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+}
+
+.card.card-info{
+    margin-left: 7.5px;
+    margin-right: 7.5px; 
+}
+h3
 button#button_borrow{
 
     position: absolute;

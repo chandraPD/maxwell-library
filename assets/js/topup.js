@@ -45,7 +45,7 @@ $(document).ready(function(){
         } else{
             Swal.fire(
                 'Error!',
-                'Must Above RP 10.0000!',
+                'Must Above RP 10.000!',
                 'error'
               )  
         }

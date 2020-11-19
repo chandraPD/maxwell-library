@@ -7,12 +7,18 @@
             swal("Success", "Your Category has been Edited!", "success");
         }
 
+        function resetModal() {
+            $('#modal-add').on('hidden.bs.modal', function () {
+                $(this).find('#addCategory')[0].reset();
+            });
+        }
+
         $(document).ready(function () {
             $.validator.setDefaults({
                 submitHandler: function () {
                     alertSuccess();
                     $('#modal-add').modal('hide');
-                    $('#modal-add').on('hidden.bs.modal', function (e) {
+                    $('#modal-add').on('hidden.bs.modal', function () {
                         $(this).find('#addCategory')[0].reset();
                     });
                 }

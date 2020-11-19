@@ -597,6 +597,7 @@ form#search-books {
 h3.book-not-found {
   text-align: center;
 }
+
 .menuhead a {
   color: white;
   font-weight: 600;
@@ -708,6 +709,7 @@ h3.book-not-found {
 .content-user {
   padding-top: 20px;
 }
+
 .container-profile {
   background-color: white;
   margin: 20px;
@@ -725,9 +727,11 @@ button.edit-profile {
   font-size: 10px;
   margin-top: 10px;
 }
+
 .edit-photo {
   margin-top: -20px;
 }
+
 .edit-photo i {
   padding: 5px;
   margin-top: -50px;
@@ -744,6 +748,7 @@ button.edit-profile {
 .title-profile {
   margin: 10px 0 20px 30px;
 }
+
 .data-user {
   padding-top: 5px;
   padding-left: 30px;
@@ -764,6 +769,7 @@ button.edit-profile {
   border-radius: 20px;
   box-shadow: 1px 2px 10px gray;
 }
+
 .edit-btn {
   padding: 25px;
 }
@@ -830,8 +836,7 @@ button.edit-profile {
     } */
 }
 
-@media (max-width: 989px) {
-}
+@media (max-width: 989px) {}
 
 /* Style Change_Password */
 
@@ -852,9 +857,11 @@ button.edit-profile {
 h3.changepwd-title {
   margin-bottom: 20px;
 }
+
 small.passwordHelpBlock {
   font-size: 5px;
 }
+
 .save-pwd {
   bottom: 20px;
   right: 10px;
@@ -890,57 +897,57 @@ small.passwordHelpBlock {
 }
 
 .hero-book {
-    min-width: 400px;
-    width: 100%;
-    margin-top: 6.5rem;
-    margin-bottom: 20px;
-    padding: 36px 40px;
-    height: 283px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    border-radius: 4px;
-    -webkit-box-shadow: 0 2px 7px 0 rgba(0,0,0,.26);
-    box-shadow: 0 2px 7px 0 rgba(0,0,0,.26);
-    background-color: #fff;
-    z-index: 1;
+  min-width: 400px;
+  width: 100%;
+  margin-top: 6.5rem;
+  margin-bottom: 20px;
+  padding: 36px 40px;
+  height: 283px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 7px 0 rgba(0, 0, 0, .26);
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, .26);
+  background-color: #fff;
+  z-index: 1;
 }
 
 .hero-book-cover {
-    margin: -100px 30px 0 0;
-    background-color: transparent;
+  margin: -100px 30px 0 0;
+  background-color: transparent;
 }
 
 .hero-book-cover img {
-    width: 200px;
-    height: 312px;
-    border-radius: 4px;
-    -webkit-box-shadow: 0 3px 14px 2px rgba(34,34,34,.08), 0 8px 10px 1px rgba(34,34,34,.1);
-    box-shadow: 0 3px 14px 2px rgba(34,34,34,.08), 0 8px 10px 1px rgba(34,34,34,.1);
+  width: 200px;
+  height: 312px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 3px 14px 2px rgba(34, 34, 34, .08), 0 8px 10px 1px rgba(34, 34, 34, .1);
+  box-shadow: 0 3px 14px 2px rgba(34, 34, 34, .08), 0 8px 10px 1px rgba(34, 34, 34, .1);
 }
 
 .hero-book .title {
-    width: 80px;
-    height: 24px;
-    line-height: 1.33;
-    font-size: 32px;
-    font-weight: 700;
-    color: #222;
+  width: 80px;
+  height: 24px;
+  line-height: 1.33;
+  font-size: 32px;
+  font-weight: 700;
+  color: #222;
 }
 
 .hero-book-cover .description {
-    font-size: 16px;
-    line-height: 1.38;
-    color: #6f6f6f;
-    text-align: left !important;
+  font-size: 16px;
+  line-height: 1.38;
+  color: #6f6f6f;
+  text-align: left !important;
 }
 
 .hero-book p {
-    text-align: left !important;
+  text-align: left !important;
 }
 
 @media (max-width: 900px) {
-    .hero-book {
-        display: none;
-    }
+  .hero-book {
+    display: none;
+  }
 }

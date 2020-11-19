@@ -44,17 +44,17 @@ $(document).ready(function(){
         setProgressBar(++current);
         } else{
             Swal.fire(
-                'Error!',
-                'Must Above RP 10.0000!',
-                'error'
+                'Warning!',
+                'Must Above RP 10.000!',
+                'warning'
               )  
         }
         
     } else{
         Swal.fire(
-            'Error!',
+            'Warning!',
             'There is Blank Space!',
-            'error'
+            'warning'
           )  
     }
 
@@ -88,9 +88,9 @@ $(document).ready(function(){
             setProgressBar(++current);
         } else{
             Swal.fire(
-                'Error!',
+                'Warning!',
                 'Select Payment Method!',
-                'error'
+                'warning'
               )
         }
     
@@ -163,16 +163,16 @@ $(document).ready(function(){
                   })                                               
             } else{
                 Swal.fire(
-                    'Error!',
+                    'Warning!',
                     'Password Not Match!',
-                    'error'
+                    'warning'
                   )
             }
         } else{
             Swal.fire(
-                'Error!',
+                'Warning!',
                 'There is Blank Space!',
-                'error'
+                'warning'
               )
         }    
     }

@@ -141,21 +141,42 @@ function clickstatus() {
 
 }
 
-function confirmstatus(){
-    Swal.fire(
-        'Success!',
-        'Confirm Top Up Already Success!',
-        'success'
-      )
+function confirmclick(){
+    Swal.fire({
+                    
+        icon: 'warning',
+        title: 'Warning!',
+        showCancelButton: true,
+        text: 'Are you sure want to confirm this?',                    
+      }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+            Swal.fire(
+                'Success!',
+                'Confirm Top Up Already Success!',
+                'success'
+              )
+        } 
+      })  
 }
 
-
-function cancelstatus(){
-    Swal.fire(
-        'Success!',
-        'Cancel Top Up Already Success!',
-        'success'
-      )
+function cancelclick(){
+    Swal.fire({
+                    
+        icon: 'warning',
+        title: 'Warning!',
+        showCancelButton: true,
+        text: 'Are you sure want to cancel this?',                    
+      }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+            Swal.fire(
+                'Success!',
+                'Cancel Top Up Already Success!',
+                'success'
+              )
+        } 
+      })  
 }
 
 $(".any").keyup(function(){    
@@ -176,25 +197,25 @@ function topup_process(){
                 $('#topupModal').modal('hide');
             } else{
                 Swal.fire(
-                    'Error!',
+                    'Warning!',
                     'Select Payment Method !',
-                    'error'
+                    'warning'
                   )
             }
             
         } else{
             Swal.fire(
-                'Error!',
-                'Must Above RP 10.0000! or There is Blank Space!',
-                'error'
+                'Warning!',
+                'Must Above RP 10.000! or There is Blank Space!',
+                'warning'
               ) 
         }
         
     } else {
         Swal.fire(
-            'Error!',
+            'Warning!',
             'There is Blank Space!',
-            'error'
+            'warning'
           ) 
     }
     
@@ -213,17 +234,17 @@ function topupstatus(){
               $('#passwordModal').modal('hide');
         } else{
             Swal.fire(
-                'Error!',
+                'Warning!',
                 'Password Not Match!',
-                'error'
+                'warning'
               )
         }
     
     } else {
         Swal.fire(
-            'Error!',
+            'Warning!',
             'There is Blank Space!',
-            'error'
+            'warning'
           )
     }
 }

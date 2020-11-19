@@ -19,8 +19,6 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet" />
 
     <link rel="stylesheet" href="./assets/css/searchpage.css" />
-    <!-- Flickity -->
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/extra_css.css" />
 
     <!-- Tempusdominus Bbootstrap 4 -->
@@ -41,137 +39,11 @@
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
-            <!-- /.modal -->
-            <div class="modal fade" id="BerhasilModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabesl"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                                Save Complete!
-                            </h5>
-                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <img class="check" src="./assets/media/check.png" />
-                        </div>
-                        <p>Data already saved</p>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" type="button" data-dismiss="modal">
-                                Close
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade" id="ModalBook" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabesl"
-                aria-hidden="true">
-                <div class="modal-dialog modal-xl" role="document">
-                    <div class="modal-content" id="edit-module">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modal-title">Edit Data</h5>
-                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-lg-2">
-                                    <label class="title-module">Url Image</label>
-                                </div>
-                                <div class="col-lg-10">
-                                    <input type="text" name="url" class="form-control"
-                                        placeholder="/assets/background.png" />
-                                </div>
-                            </div>
-                            <hr class="divider" />
-                            <div class="row">
-                                <div class="col-lg-2">
-                                    <label class="title-module">Book Tittle</label>
-                                </div>
-                                <div class="col-lg-4">
-                                    <input type="text" name="title" class="form-control" placeholder="Dilan 1991" />
-                                </div>
-                            </div>
-                            <hr class="divider" />
-                            <div class="row">
-                                <div class="col-lg-2">
-                                    <label class="title-module">Date:</label>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
-                                        <input type="text" name="date" class="form-control datetimepicker-input"
-                                            data-target="#datetimepicker4" />
-                                        <div class="input-group-append" data-target="#datetimepicker4"
-                                            data-toggle="datetimepicker">
-                                            <div class="input-group-text">
-                                                <i class="fa fa-calendar"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr class="divider" />
-                            <div class="row">
-                                <div class="col-lg-2">
-                                    <label class="title-module">Category</label>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="form-group">
-                                        <select class="form-control" name="category">
-                                            <option value="">Choose Category</option>
-                                            <option value="Novel">Novel</option>
-                                            <option value="Comic Book">Comic Book</option>
-                                            <option value="Detective and Mystery">
-                                                Detective and Mystery
-                                            </option>
-                                            <option value="Historical Fiction">
-                                                Historical Fiction
-                                            </option>
-                                            <option value="Horror">Horror</option>
-                                            <option value="literary Fiction">
-                                                literary Fiction
-                                            </option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr class="divider" />
-                            <div class="row">
-                                <div class="col-lg-2">
-                                    <label class="title-module">Description</label>
-                                </div>
-                                <hr class="divider" />
-                                <div class="col-lg-10">
-                                    <textarea name="description" class="ckeditor" cols="50" rows="5"
-                                        placeholder="Type Here"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" type="button" data-dismiss="modal">
-                                Close
-                            </button>
-                            <button id="confirmBook" class="btn btn-warning" onclick="confirmBook()">
-                                Save
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <!-- Main content -->
             <section class="content">
                 <div class="container-fluid search-content">
-                    <input class="form-control form-control" type="text" placeholder="Dilan 1945">
-
-                    <p class="recommended-books">Suggested Categories : &nbsp;
-                        <span class="badge badge-success category-book">novel</span>
-                        <span class="badge badge-success category-book">comedy</span>
-                        <span class="badge badge-success category-book">fantasy</span>
-                        <span class="badge badge-success category-book">horror</span>
-                        <span class="badge badge-success category-book">fiction</span>
+                    <p class="recommended-books">Year : &nbsp;
+                        <span class="badge badge-success category-book">2020</span>
                     </p>
 
                     <div class="hero-book">
@@ -198,7 +70,7 @@
                                     hari, semua rekanku mati akibat sekelompok orang bermata merah dan bertaring yang
                                     menyerang perkemahan kami.
                                 </p>
-                                <span class="badge badge-success category-book">fantasy</span>
+                                <span class="badge badge-success category-book">Novel</span>
                             </div>
 
                             <div class="book-content">
@@ -212,7 +84,7 @@
                                     beberapa manusia untuk mengalahkan orang yang ingin menguasai dunia itu dengan
                                     meminjamkan kekuatan mereka untuk manusia-manusia tersebut.
                                 </p>
-                                <span class="badge badge-success category-book">comedy</span>
+                                <span class="badge badge-success category-book">Romance</span>
                             </div>
 
                             <div class="book-content">
@@ -227,7 +99,7 @@
                                     mencari jati
                                     dirinya.
                                 </p>
-                                <span class="badge badge-success category-book">romance</span>
+                                <span class="badge badge-success category-book">Horror</span>
                             </div>
 
                             <div class="book-content">
@@ -241,7 +113,7 @@
                                     itu, anak panah itu menggores lengan kiri sang gadis membuat luka sayatan menganga
                                     di sana.
                                 </p>
-                                <span class="badge badge-success category-book">fantasy</span>
+                                <span class="badge badge-success category-book">Detective And Mystery</span>
                             </div>
 
                             <div class="book-content">
@@ -257,7 +129,7 @@
                                     laki-laki tampan, Nadine kehilangan kata-kata untuk menjelaskannya. Bahkan untuk
                                     dirinya sendiri.
                                 </p>
-                                <span class="badge badge-success category-book">comedy</span>
+                                <span class="badge badge-success category-book">Historical</span>
                             </div>
 
                             <div class="book-content">
@@ -271,7 +143,7 @@
                                     hari, semua rekanku mati akibat sekelompok orang bermata merah dan bertaring yang
                                     menyerang perkemahan kami.
                                 </p>
-                                <span class="badge badge-success category-book">comedy</span>
+                                <span class="badge badge-success category-book">novel</span>
                             </div>
 
                             <div class="book-content">
@@ -285,7 +157,7 @@
                                     beberapa manusia untuk mengalahkan orang yang ingin menguasai dunia itu dengan
                                     meminjamkan kekuatan mereka untuk manusia-manusia tersebut.
                                 </p>
-                                <span class="badge badge-success category-book">comedy</span>
+                                <span class="badge badge-success category-book">novel</span>
                             </div>
 
                             <div class="book-content">
@@ -300,7 +172,7 @@
                                     mencari jati
                                     dirinya.
                                 </p>
-                                <span class="badge badge-success category-book">fantasy</span>
+                                <span class="badge badge-success category-book">novel</span>
                             </div>
                         </div>
 

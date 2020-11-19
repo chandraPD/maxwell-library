@@ -197,25 +197,25 @@ function topup_process(){
                 $('#topupModal').modal('hide');
             } else{
                 Swal.fire(
-                    'Error!',
+                    'Warning!',
                     'Select Payment Method !',
-                    'error'
+                    'warning'
                   )
             }
             
         } else{
             Swal.fire(
-                'Error!',
+                'Warning!',
                 'Must Above RP 10.000! or There is Blank Space!',
-                'error'
+                'warning'
               ) 
         }
         
     } else {
         Swal.fire(
-            'Error!',
+            'Warning!',
             'There is Blank Space!',
-            'error'
+            'warning'
           ) 
     }
     
@@ -234,17 +234,17 @@ function topupstatus(){
               $('#passwordModal').modal('hide');
         } else{
             Swal.fire(
-                'Error!',
+                'Warning!',
                 'Password Not Match!',
-                'error'
+                'warning'
               )
         }
     
     } else {
         Swal.fire(
-            'Error!',
+            'Warning!',
             'There is Blank Space!',
-            'error'
+            'warning'
           )
     }
 }

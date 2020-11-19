@@ -152,23 +152,25 @@ p {
 }
 
 #progressbar #nominal:before {
-    font-family: FontAwesome!important;
-    content: "\f13e"
+    font-family: "Font Awesome 5 Free";  
+    font-weight: 900; 
+    content: "\f53a"
 }
 
 #progressbar #payment:before {
-    font-family: FontAwesome!important;
-    content: "\f007"
+    font-family: "Font Awesome 5 Free";    
+    content: "\f09d"
 }
 
 #progressbar #confirm:before {
-    font-family: FontAwesome!important;
-    content: "\f030"
+    font-family: "Font Awesome 5 Free";    
+    content: "\f058"
 }
 
 #progressbar #password:before {
-    font-family: FontAwesome!important;
-    content: "\f00c"
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; 
+    content: "\f4fc"
 }
 
 #progressbar li:before {

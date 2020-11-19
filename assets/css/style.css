@@ -752,6 +752,10 @@ button.edit-profile {
 
 
 /* FORM EDIT PROFILE */
+section.padding-editform {
+    padding: 1px;
+}
+
 #container-editform {
     width: 50%;
     background-color: white;

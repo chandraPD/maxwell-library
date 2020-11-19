@@ -1,0 +1,7 @@
+@media (max-width: 425px){
+    label.col-3.col-form-label {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: left!important;
+    }
+}

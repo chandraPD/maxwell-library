@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Rent Management</title>
-
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="./assets/vendors/plugins/fontawesome-free/css/all.min.css">
     <!-- Ionicons -->
@@ -18,6 +19,8 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <link rel="icon" href="./assets/media/icon/favicons.ico">
+    <link rel="stylesheet" type="text/css" href="./assets/css/returnbook.css">
+
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -64,8 +67,8 @@
                                         <div class="return-book-list">
                                             <div class="return-book-list-item">
                                                 <div class="form-group row">
-                                                    <label class="col-sm-2 col-form-label text-right">Book :</label>
-                                                    <div class="col-sm-4">
+                                                    <label class="col-3 col-form-label text-right">Book</label>
+                                                    <div class="col">
                                                         <select name="book_id[]" class="form-control" onchange="setDetail(this)" >
                                                             <option value="">Choose Book</option>
                                                             <option value="001">Dilan 1991</option>
@@ -73,7 +76,7 @@
                                                             <option value="003">Dilan 1993</option>
                                                         </select>
                                                     </div>
-                                                    <div class="col-sm-2">
+                                                    <div class="col-3">
                                                         <button type="button" class="btn bg-gradient-danger" value="delete" onclick="deleteRow(this)" >Delete</button>
                                                     </div>
                                                 </div>

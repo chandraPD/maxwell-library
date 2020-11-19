@@ -671,7 +671,7 @@ h3.book-not-found {
 
 .container-fluid.book-list {
   margin-top: 3rem;
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
 }
 
 

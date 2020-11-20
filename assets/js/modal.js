@@ -28,7 +28,7 @@ function showModal1(arg) {
 
 function showModal2(arg) {
     if (arg == 'topup') {        
-        $('#topupModal').modal('show');
+        $('#topupModal').modal('show');        
     } 
 }
 

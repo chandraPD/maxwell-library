@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="./assets/css/styleuser.css" />
   <!-- Flickity -->
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+  <!-- responsive Nav Bar -->
   <link rel="stylesheet" type="text/css" href="./assets/css/extra_css.css" />
 
   <!-- Tempusdominus Bbootstrap 4 -->
@@ -35,58 +36,7 @@
 <body class="hold-transition sidebar-mini layout-fixed">
   <!-- Site wrapper -->
   <div class="wrapper">
-    <!-- Navbar -->
-    <nav class="main-header navbar navbar-expand navbar-light navbar-white d-flex flex-row">
-      <!-- Left navbar links -->
-      <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-          <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-            class="nav-link dropdown-toggle">All Categories</a>
-          <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow"
-            style="left: 0px; right: inherit">
-            <li><a href="#" class="dropdown-item">Novel</a></li>
-            <li><a href="#" class="dropdown-item">Comic Book</a></li>
-            <li>
-              <a href="#" class="dropdown-item">Detective and Mystery</a>
-            </li>
-            <li><a href="#" class="dropdown-item">Historical Fiction</a></li>
-            <li><a href="#" class="dropdown-item">Horror</a></li>
-            <li><a href="#" class="dropdown-item">literary Fiction</a></li>
-            <!-- End Level two -->
-          </ul>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-            class="nav-link dropdown-toggle">All Time</a>
-          <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow"
-            style="left: 0px; right: inherit">
-            <li><a href="#" class="dropdown-item">2020</a></li>
-            <li><a href="#" class="dropdown-item">2019</a></li>
-            <li><a href="#" class="dropdown-item">2018</a></li>
-            <li><a href="#" class="dropdown-item">2017</a></li>
-            <li><a href="#" class="dropdown-item">2016</a></li>
-            <li><a href="#" class="dropdown-item">2015</a></li>
-            <!-- End Level two -->
-          </ul>
-        </li>
-      </ul>
-      <!-- SEARCH FORM -->
-      <form id="search-books" class="form-inline flex-grow-1" action="./searchpage.html">
-        <div id="searchbar" class="form-group has-search">
-          <span class="fa fa-search form-control-feedback"></span>
-          <input id="input-search" type="text" class="form-control" placeholder="Search Book" />
-        </div>
-      </form>
-      <div class="toggle-navbar-nav">
-        <ul class="navbar-nav toggle-navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- /.navbar -->
+    <div w3-include-html="include_navbar.html"></div>
     <div w3-include-html="include_sidebar.html"></div>
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
@@ -467,7 +417,6 @@
   <script src="./assets/js/js.js" type="text/javascript"></script>
   <!-- Flickity -->
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <script type="text/javascript" src="./assets/js/search.js"></script>
   <!-- Ckeditor -->
   <script src="//cdn.ckeditor.com/4.15.1/standard/ckeditor.js"></script>
   <!-- InputMask -->

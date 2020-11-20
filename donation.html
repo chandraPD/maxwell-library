@@ -113,38 +113,38 @@
               <div class="form-group row">
                 <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
                 <div class="col-sm-10">
-                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                  <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email">
                 </div>
               </div>
               <div class="form-group row">
                 <label for="inputName3" class="col-sm-2 col-form-label">Name</label>
                 <div class="col-sm-10">
-                  <input type="Name" class="form-control" id="inputName3" placeholder="Name">
+                  <input type="text" name="name" class="form-control" id="inputName" placeholder="Name">
                 </div>
               </div>
               <div class="form-group row">
                 <label for="inputDonationType3" class="col-sm-2 col-form-label">Donation Type</label>
                 <div class="col-sm-10">
-                  <input type="Name" class="form-control" id="inputDonationtype3" placeholder="person or organization">
+                  <input type="text" name="donation_type" class="form-control" id="inputDonationtype" placeholder="person or organization">
                 </div>
               </div>
               <div class="form-group row">
                 <label for="inputNumberofphone3" class="col-sm-2 col-form-label">Phone Number</label>
                 <div class="col-sm-10">
-                  <input type="Numberofphone" class="form-control" id="inputPhone3" placeholder="Phone Number">
+                  <input type="text" name="phone_number" class="form-control" id="inputPhone" placeholder="Phone Number">
                 </div>
               </div>
               <div class="form-group row">
                 <label for="inputNumberofbook3" class="col-sm-2 col-form-label">Total Book by number</label>
                 <div class="col-sm-10">
-                  <input type="Numberofbook" class="form-control" id="inputBookbybook3" placeholder="1,2,3,...">
+                  <input type="text" name="number_donation" class="form-control" id="inputBookbybook" placeholder="1,2,3,...">
                 </div>
               </div>
             </div>
             <!-- /.card-body -->
             <div class="card-footer">
               <div class="btn-submitform">
-              <input class="btn btn-info float-right" type="submit" value="submit" onclick="submitdonate()">
+              <a class="btn btn-info float-right" onclick="submitdonate()">Submit</a>
             </div>
             </div>
             <!-- /.card-footer -->
@@ -177,6 +177,7 @@
   <script src="./assets/vendors/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
   <script type="text/javascript" src="./assets/js/modal.js"></script>
   <script type="text/javascript" src="./assets/js/donation.js"></script>
+  <script type="text/javascript" src="./assets/js/donate_submit.js"></script>
    <!-- Sweeet Alert -->
  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>

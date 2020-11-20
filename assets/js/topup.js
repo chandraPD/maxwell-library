@@ -158,7 +158,7 @@ $(document).ready(function(){
                   }).then((result) => {
                     /* Read more about isConfirmed, isDenied below */
                     if (result.isConfirmed) {
-                        window.location.href = "./index.html";
+                        window.location.href = "index.html";
                     } 
                   })                                               
             } else{

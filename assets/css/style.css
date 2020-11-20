@@ -279,7 +279,8 @@ a#toggle{
 
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px){   
+
     img.big-preview{
         background-size: cover;
         background-image: url(../media/books/novel-dilanmini.jpg);
@@ -331,6 +332,21 @@ a#toggle{
 }
 
 @media (max-width: 450px){
+    p.date{
+        margin-left: 10px;
+    }        
+
+    .category {
+        margin-left: 10px;  
+    }
+
+    h1.titletext{
+        margin-left: 10px;
+    }
+
+    p.content{
+        margin-left: 10px;
+    }
         /* ul.menuhead{
             margin-left: 200px;
             float: right;
@@ -346,9 +362,9 @@ a#toggle{
             top: 22%;
             left: 65%;
             color: white;
-            font-size: 15px;
+            font-size: 20px;
 
-            width: 75px;
+            width: 85px;
             border-radius: 10px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
         }
@@ -363,7 +379,7 @@ a#toggle{
         h1.statustext{
             color: green;
             font-size: 20px;
-            margin-left: 70px;
+            margin-left: 10px;
         }
 
         .row#recomended{
@@ -393,9 +409,9 @@ a#toggle{
         top: 21%;
         left: 65%;
         color: white;
-        font-size: 15px;
+        font-size: 20px;
 
-        width: 75px;
+        width: 85px;
         border-radius: 10px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     }
@@ -415,11 +431,11 @@ a#toggle{
 
     button#button_borrow{
         position: absolute;
-        top: 19%;
-        left: 70%;
+        top: 21%;
+        left: 65%;
         color: white;
-        font-size: 15px;
-        width: 80px;
+        font-size: 20px;
+        width: 90px;
         border-radius: 10px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     }

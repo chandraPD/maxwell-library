@@ -32,6 +32,7 @@
                         required: true,
                     },
                     slideshowImage: {
+                        required: true,
                         extension: "png|jpe?g",
                     },
                 },
@@ -43,6 +44,7 @@
                         required: "Please enter Image Subtitle",
                     },
                     slideshowImage: {
+                        required: "Please enter Image",
                         extension: "Only accept jpg, jpeg, or png images",
                     }
                 },

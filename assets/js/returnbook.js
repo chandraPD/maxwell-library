@@ -1,5 +1,5 @@
 function addRow(){
-    var addRow = '<div class="return-book-list-item"> <div class="form-group row"> <label class="col-3 col-form-label">Book</label> <div class="col"> <select name="book_id[]" class="form-control" onchange="setDetail(this)" > <option value="">Choose Book</option> <option value="001">Dilan 1991</option> <option value="002">Dilan 1992</option> <option value="003">Dilan 1993</option> </select> </div><div class="col-3 "> <button type="button" class="btn bg-gradient-danger" value="delete" onclick="deleteRow(this)" >Delete</button> </div></div><div class="return-book-list-detail"> </div></div>';
+    var addRow = '<div class="return-book-list-item"> <div class="form-group row"> <label class="col-3 col-form-label text-right">Book</label> <div class="col"> <select name="book_id[]" class="form-control" onchange="setDetail(this)" > <option value="">Choose Book</option> <option value="001">Dilan 1991</option> <option value="002">Dilan 1992</option> <option value="003">Dilan 1993</option> </select> </div><div class="col-3 "> <button type="button" class="btn bg-gradient-danger" value="delete" onclick="deleteRow(this)" >Delete</button> </div></div><div class="return-book-list-detail"> </div></div>';
     $('div.return-book-list').append(addRow);
 }
 
